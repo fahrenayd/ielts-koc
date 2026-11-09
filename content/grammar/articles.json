@@ -1,0 +1,62 @@
+{
+  "intro": "Türkçede article olmadığı için Türk öğrencilerin en sık yaptığı hata budur. Writing ve Speaking'de Grammatical Range & Accuracy puanını doğrudan etkiler: band 7 için hataların \"seyrek\" olması gerekir.",
+  "sections": [
+    {
+      "h": "1. a / an — tekil, sayılabilen, belirsiz",
+      "p": [
+        "Tekil sayılabilen bir ismi ilk kez veya \"herhangi biri\" anlamında kullanırken **a/an** gerekir. Tekil sayılabilen isim asla tek başına duramaz.",
+        "**a / an seçimi yazıma değil sese göre yapılır:** an hour (h okunmaz), a university (\"yu\" diye başlar), an MBA (\"em\" diye başlar)."
+      ],
+      "ex": [
+        { "wrong": "My brother is engineer.", "right": "My brother is an engineer.", "note": "Meslek söylerken a/an zorunludur." },
+        { "wrong": "It is important problem.", "right": "It is an important problem." }
+      ]
+    },
+    {
+      "h": "2. the — belirli, tek, bilinen",
+      "p": [
+        "Konuşan ve dinleyen için hangisi olduğu belli olan şeyler: daha önce bahsedilen, tek olan (the internet, the environment, the government), superlative (the most, the best), sıra sayıları (the first).",
+        "**the + sıfat = bir grup insan:** the elderly, the young, the poor, the unemployed.",
+        "Task 1 kalıpları: **The graph shows…**, **the number of…**, **the proportion of…**. (\"a number of\" = birkaç, \"the number of\" = sayısı.)"
+      ],
+      "ex": [
+        { "wrong": "Unemployment is one of most serious problems.", "right": "Unemployment is one of the most serious problems." },
+        { "wrong": "Elderly often feel lonely.", "right": "The elderly often feel lonely." }
+      ]
+    },
+    {
+      "h": "3. Article yok (∅) — genel anlam",
+      "p": [
+        "Bir şeyden **genel olarak** bahsederken çoğul ve sayılamayan isimlerle article kullanılmaz. Türkçede \"Teknoloji hayatımızı değiştirdi\" dediğimiz cümlelerin çoğu bu gruba girer.",
+        "En sık hata: **the society, the people, the technology, the nature** (genel anlamda). Doğrusu: society, people, technology, nature."
+      ],
+      "ex": [
+        { "wrong": "The technology has changed the education.", "right": "Technology has changed education." },
+        { "wrong": "The people should respect the nature.", "right": "People should respect nature." }
+      ]
+    },
+    {
+      "h": "4. Sayılamayan isim tuzakları",
+      "p": [
+        "Bu isimler İngilizcede **sayılamaz**: a/an almaz, -s almaz: advice, information, research, knowledge, evidence, equipment, furniture, homework, traffic, accommodation, progress, news.",
+        "Sayı bildirmek için: **a piece of advice**, **some information**, **a great deal of research**."
+      ],
+      "ex": [
+        { "wrong": "She gave me an advice.", "right": "She gave me some advice / a piece of advice." },
+        { "wrong": "Recent researches show that…", "right": "Recent research shows that…", "note": "Fiil de tekil olur: research **shows**." }
+      ]
+    }
+  ],
+  "quiz": [
+    { "q": "___ technology has transformed the way we communicate.", "options": ["The", "A", "∅ (article yok)"], "answer": 2, "explain": "Teknolojiden **genel olarak** bahsediliyor; soyut ve sayılamayan bir isim olduğu için article kullanılmaz." },
+    { "q": "In ___ developing countries, access to clean water is still limited.", "options": ["a", "∅ (article yok)", "an"], "answer": 1, "explain": "Genel anlamda çoğul isim (**developing countries**): article yok. a/an çoğul isimle hiç kullanılmaz." },
+    { "q": "___ elderly often feel isolated in big cities.", "options": ["The", "∅ (article yok)", "An"], "answer": 0, "explain": "**the + sıfat** bir insan grubunu anlatır: the elderly, the poor, the unemployed." },
+    { "q": "Hangisi doğru?", "options": ["She gave me an advice.", "She gave me some advice.", "She gave me advices."], "answer": 1, "explain": "**advice** sayılamaz: a/an veya -s almaz. \"some advice\" ya da \"a piece of advice\" denir." },
+    { "q": "The graph shows ___ number of tourists who visited Spain between 2000 and 2020.", "options": ["a", "the", "∅ (article yok)"], "answer": 1, "explain": "**the number of** = …in sayısı. \"a number of\" ise \"birkaç, bazı\" demektir; Task 1'de en sık karıştırılan kalıp." },
+    { "q": "Unemployment is one of ___ most serious problems facing young people.", "options": ["the", "a", "∅ (article yok)"], "answer": 0, "explain": "Superlative (**the most**…) her zaman **the** ister." },
+    { "q": "I believe ___ society should do more to help homeless people.", "options": ["the", "∅ (article yok)", "a"], "answer": 1, "explain": "Genel anlamda **society** article almaz. \"the society\" Türk öğrencilerin klasik hatasıdır." },
+    { "q": "My brother is ___ engineer.", "options": ["a", "an", "the"], "answer": 1, "explain": "Meslekte a/an zorunlu; **engineer** ünlü sesle başladığı için **an**." },
+    { "q": "It took me ___ hour to finish the essay.", "options": ["a", "an", "the"], "answer": 1, "explain": "**hour** kelimesinde h okunmaz, ünlü sesle başlar: **an hour**." },
+    { "q": "She is studying at ___ university in Ankara.", "options": ["a", "an"], "answer": 0, "explain": "**university** \"yu\" sesiyle (ünsüz) başlar: **a university**. Kural harfe değil sese bakar." }
+  ]
+}

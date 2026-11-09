@@ -1,0 +1,53 @@
+{
+  "intro": "Türkçede hepsi \"yapmak\" ile söylendiği için make ve do sık karıştırılır. Doğru collocation kullanmak Lexical Resource puanını yükseltir; band 7 için \"less common lexical items and collocation\" gerekir.",
+  "sections": [
+    {
+      "h": "1. make — bir şey ortaya çıkarmak, üretmek",
+      "p": [
+        "Genel fikir: sonunda **yeni bir şey oluşuyorsa** make.",
+        "Ezberle: **make** a decision, a mistake, progress, an effort, money, a difference, a contribution, an improvement, a complaint, a suggestion, sense, an appointment."
+      ],
+      "ex": [
+        { "wrong": "Governments should do more effort.", "right": "Governments should make more effort." },
+        { "wrong": "Many students do the same mistake.", "right": "Many students make the same mistake." }
+      ]
+    },
+    {
+      "h": "2. do — iş, görev, faaliyet",
+      "p": [
+        "Genel fikir: bir **iş veya görevi yerine getirmek**.",
+        "Ezberle: **do** research, homework, business, a course, exercise, sport, damage, harm, your best, the shopping, a favour, well/badly."
+      ],
+      "ex": [
+        { "wrong": "Scientists have made a lot of research.", "right": "Scientists have done a lot of research." },
+        { "wrong": "I make sport every day.", "right": "I do sport / exercise every day." }
+      ]
+    },
+    {
+      "h": "3. Türkçeden çeviri tuzakları",
+      "p": [
+        "Bu hatalar examiner'ın gözünden kaçmaz ve hepsi kolayca düzeltilebilir."
+      ],
+      "ex": [
+        { "wrong": "We discussed about the problem.", "right": "We discussed the problem.", "note": "**discuss** doğrudan nesne alır; \"a discussion about\" ise doğrudur." },
+        { "wrong": "Can you explain me this rule?", "right": "Can you explain this rule to me?" },
+        { "wrong": "Could you make a photo of us?", "right": "Could you take a photo of us?" },
+        { "wrong": "According to me, …", "right": "In my view, … / I would argue that …" },
+        { "wrong": "Most people work to win money.", "right": "Most people work to earn money.", "note": "**win** = yarışma/piyango ile kazanmak; çalışarak kazanmak **earn** veya **make money**." },
+        { "wrong": "In my opinion, I think that…", "right": "In my opinion, … / I think that…", "note": "Aynı fikri iki kez söylemek gereksiz tekrardır." }
+      ]
+    }
+  ],
+  "quiz": [
+    { "q": "Governments must ___ more effort to reduce air pollution.", "options": ["make", "do"], "answer": 0, "explain": "Kalıp: **make an effort**." },
+    { "q": "Scientists have ___ a great deal of research into ageing.", "options": ["made", "done"], "answer": 1, "explain": "Kalıp: **do research** (research sayılamaz: \"researches\" denmez)." },
+    { "q": "Using public transport can ___ a real difference to air quality.", "options": ["make", "do"], "answer": 0, "explain": "Kalıp: **make a difference**." },
+    { "q": "Smoking ___ serious harm to your lungs.", "options": ["makes", "does"], "answer": 1, "explain": "Kalıp: **do harm / do damage**." },
+    { "q": "Hangisi doğru?", "options": ["We discussed about the problem.", "We discussed the problem."], "answer": 1, "explain": "**discuss** fiilinden sonra \"about\" gelmez." },
+    { "q": "Hangisi doğru?", "options": ["Can you explain me this rule?", "Can you explain this rule to me?"], "answer": 1, "explain": "**explain something to someone**: kişiden önce \"to\" gerekir." },
+    { "q": "Most people work in order to ___ money.", "options": ["win", "earn", "gain"], "answer": 1, "explain": "Çalışarak para kazanmak: **earn** (veya make) money. **win** yarışma ve piyango içindir." },
+    { "q": "I usually ___ exercise three times a week.", "options": ["make", "do"], "answer": 1, "explain": "Kalıp: **do exercise / do sport**." },
+    { "q": "Hangisi doğru?", "options": ["Could you make a photo of us?", "Could you take a photo of us?"], "answer": 1, "explain": "Fotoğraf çekmek: **take a photo**." },
+    { "q": "Many students ___ the same mistake with articles.", "options": ["do", "make"], "answer": 1, "explain": "Kalıp: **make a mistake**." }
+  ]
+}

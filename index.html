@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+  <title>IELTS Koç</title>
+  <meta name="description" content="Kişisel IELTS çalışma uygulaması">
+  <meta name="theme-color" content="#1f3a5f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <main id="view" tabindex="-1"></main>
+    <nav id="tabbar" aria-label="Ana menü">
+      <a href="#/today" data-tab="today"><span class="ti">☀️</span><span>Bugün</span></a>
+      <a href="#/practice" data-tab="practice"><span class="ti">🎯</span><span>Pratik</span></a>
+      <a href="#/vocab" data-tab="vocab"><span class="ti">📚</span><span>Kelime</span></a>
+      <a href="#/mock" data-tab="mock"><span class="ti">⏱️</span><span>Deneme</span></a>
+      <a href="#/me" data-tab="me"><span class="ti">📈</span><span>Ben</span></a>
+    </nav>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Bu uygulama için JavaScript gerekli.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

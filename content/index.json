@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "vocab": [
+    { "id": "education", "file": "vocab/education.json", "title": "Education", "tr": "Eğitim", "icon": "🎓" },
+    { "id": "environment", "file": "vocab/environment.json", "title": "Environment", "tr": "Çevre", "icon": "🌍" },
+    { "id": "technology", "file": "vocab/technology.json", "title": "Technology", "tr": "Teknoloji", "icon": "💻" },
+    { "id": "health", "file": "vocab/health.json", "title": "Health", "tr": "Sağlık", "icon": "🩺" },
+    { "id": "urbanisation", "file": "vocab/urbanisation.json", "title": "Urbanisation", "tr": "Şehirleşme", "icon": "🏙️" },
+    { "id": "work", "file": "vocab/work.json", "title": "Work & Economy", "tr": "İş & Ekonomi", "icon": "💼" }
+  ],
+  "grammar": [
+    { "id": "articles", "file": "grammar/articles.json", "title": "Articles: a / an / the / ∅", "tr": "Article kullanımı", "icon": "🅰️" },
+    { "id": "perfect-past", "file": "grammar/perfect-past.json", "title": "Present Perfect vs Past Simple", "tr": "Present Perfect mi, Past Simple mı?", "icon": "⏳" },
+    { "id": "make-do", "file": "grammar/make-do.json", "title": "Make vs Do & common collocations", "tr": "Make / Do ve sık hatalar", "icon": "🔧" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "intro": "Türkçedeki \"-di\" eki İngilizcede hem Past Simple hem Present Perfect'e karşılık gelebilir. Bu yüzden \"I have visited London last year\" gibi hatalar çok yaygındır. Task 1'de zamanı doğru seçmek doğrudan puan getirir.",
+  "sections": [
+    {
+      "h": "1. Past Simple — bitmiş zaman",
+      "p": [
+        "Olay **bitmiş ve zamanı belli** bir dönemde olduysa: yesterday, last year, in 2010, two years ago, when I was a child.",
+        "**When** ile soru soruyorsan cevap da soru da Past Simple olur: When **did** you **start**…?"
+      ],
+      "ex": [
+        { "wrong": "I have visited London last year.", "right": "I visited London last year." },
+        { "wrong": "When have you graduated?", "right": "When did you graduate?" }
+      ]
+    },
+    {
+      "h": "2. Present Perfect — şimdiye bağlı",
+      "p": [
+        "Zaman belirtilmemiş deneyim (ever, never), **hâlâ devam eden** dönem (this year, so far, recently) veya geçmişten bugüne süren durum (for, since).",
+        "**for** + süre (for ten years), **since** + başlangıç noktası (since 2015).",
+        "Türkçe \"10 yıldır burada yaşıyorum\" cümlesi İngilizcede şimdiki zamanla kurulmaz: **I have lived here for ten years.**"
+      ],
+      "ex": [
+        { "wrong": "I live in Istanbul since 2015.", "right": "I have lived in Istanbul since 2015." },
+        { "wrong": "I am working here for five years.", "right": "I have been working here for five years." }
+      ]
+    },
+    {
+      "h": "3. Writing Task 1'de zaman seçimi",
+      "p": [
+        "Grafik **tamamen geçmişte** biten bir dönemi gösteriyorsa (1990–2010): Past Simple. \"Car ownership **rose** sharply between 1990 and 2000.\"",
+        "Dönem **bugüne kadar** geliyorsa: Present Perfect. \"Since 2015, the number of electric cars **has increased** dramatically.\"",
+        "Gelecek tahminleri varsa (2030 projection): \"is expected to / is predicted to / will\"."
+      ],
+      "ex": [
+        { "wrong": "In 2005, sales have reached their peak.", "right": "In 2005, sales reached their peak." }
+      ]
+    }
+  ],
+  "quiz": [
+    { "q": "I ___ London last summer.", "options": ["have visited", "visited"], "answer": 1, "explain": "**last summer** bitmiş ve belli bir zaman → Past Simple." },
+    { "q": "I ___ in Izmir for ten years, and I still love it.", "options": ["lived", "have lived", "am living"], "answer": 1, "explain": "Geçmişte başlayıp **hâlâ devam ediyor** (still) + **for ten years** → Present Perfect." },
+    { "q": "Between 1990 and 2000, car ownership ___ sharply.", "options": ["has risen", "rose"], "answer": 1, "explain": "Dönem tamamen geçmişte bitmiş (1990–2000) → Past Simple. Task 1'de en sık kullanacağın yapı." },
+    { "q": "Since 2015, the number of electric cars ___ dramatically.", "options": ["increased", "has increased"], "answer": 1, "explain": "**since** + bugüne kadar süren değişim → Present Perfect." },
+    { "q": "___ you ever ___ abroad?", "options": ["Did / travel", "Have / travelled"], "answer": 1, "explain": "Zaman belirtilmemiş **deneyim** sorusu (ever) → Present Perfect. Speaking Part 1'de çok çıkar." },
+    { "q": "Hangisi doğru?", "options": ["I am working here since 2020.", "I have been working here since 2020.", "I work here since 2020."], "answer": 1, "explain": "\"…den beri\" anlamında **since** ile şimdiki zaman kullanılmaz; Present Perfect (Continuous) gerekir." },
+    { "q": "The company ___ 200 new workers two years ago.", "options": ["has hired", "hired"], "answer": 1, "explain": "**ago** her zaman Past Simple ister." },
+    { "q": "So far this year, inflation ___ by 4%.", "options": ["rose", "has risen"], "answer": 1, "explain": "**so far this year** = yıl henüz bitmedi → Present Perfect." },
+    { "q": "When ___ you ___ to university?", "options": ["have / gone", "did / go"], "answer": 1, "explain": "**When** ile belirli zaman sorulur → Past Simple. \"When have you…\" yanlıştır." },
+    { "q": "The population ___ 5 million in 1950 and ___ steadily ever since.", "options": ["was / has grown", "has been / grew"], "answer": 0, "explain": "**in 1950** → Past Simple (was); **ever since** (o zamandan beri) → Present Perfect (has grown)." }
+  ]
+}
