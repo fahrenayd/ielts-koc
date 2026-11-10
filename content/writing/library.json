@@ -1,0 +1,69 @@
+{
+  "intro": "Bu kalıplar iskelet kurmana yardım eder; ezberleyip her yere aynen koyma. Examiner ezber cümleleri fark eder ve kelime puanına saymaz. Kalıbı sorunun konusuna uyarla.",
+  "sections": [
+    {
+      "h": "Task 1 — Paragraf iskeleti",
+      "note": "4 paragraf: **1) Giriş** (soruyu kendi kelimelerinle yeniden yaz) **2) Overview** (2 ana eğilim, sayı yok) **3–4) Detaylar** (verileri grupla ve karşılaştır). Sonuç paragrafı gerekmez.",
+      "items": [
+        { "en": "The line graph **illustrates / compares** how … changed between 2000 and 2020.", "tr": "Giriş: shows yerine illustrates/compares; tarih ve birimleri koru." },
+        { "en": "**Overall**, … rose considerably, **while** … remained relatively stable.", "tr": "Overview: en önemli iki eğilim." },
+        { "en": "**It is clear that** … was by far the most popular …", "tr": "Overview alternatifi." },
+        { "en": "In 2000, … stood at 48%, **compared with** only 10% in …", "tr": "Başlangıç karşılaştırması." }
+      ]
+    },
+    {
+      "h": "Task 1 — Trend ve karşılaştırma dili",
+      "items": [
+        { "en": "**rose / increased / climbed** steadily · **soared / surged** · **fell / declined / dropped** sharply · **plummeted**", "tr": "Artış/azalış fiilleri (geçmiş zamanda)." },
+        { "en": "a **gradual / steady / significant / dramatic** rise · a **slight** fall", "tr": "Sıfat + isim yapısı fiil tekrarını önler." },
+        { "en": "**levelled off** at … · **remained stable / unchanged** · **fluctuated** between … and … · **peaked at** …", "tr": "Durağanlık ve tepe noktaları." },
+        { "en": "**overtook** … in 2012 · **twice as many as** · **three times higher than** · **respectively**", "tr": "Karşılaştırma." },
+        { "en": "**the proportion of** … · **the number of** (sayılabilir) · **the amount of** (sayılamaz)", "tr": "Doğru isim seçimi." },
+        { "en": "Process: is collected → is sorted → **Once this has been done**, … → **Finally**, …", "tr": "Süreç: edilgen yapı + sıralama." },
+        { "en": "Map: **was replaced by** · **was converted into** · **has been extended** · **to the north of**", "tr": "Harita: değişim ve konum dili." }
+      ]
+    },
+    {
+      "h": "Task 2 — Paragraf iskeleti (4–5 paragraf)",
+      "note": "**Giriş:** konuyu yeniden ifade et + tezini yaz (2 cümle). **Gövde 1–2:** konu cümlesi → açıklama → örnek → bağlantı. **Sonuç:** tezini ve ana nedenleri kısaca tekrarla; yeni fikir ekleme.",
+      "items": [
+        { "en": "Opinion: **While I accept that** …, **I firmly believe that** …", "tr": "Kısmi katılım gösteren güçlü tez." },
+        { "en": "Discussion: **Some argue that** … , **whereas others believe** … . **In my view**, …", "tr": "İki görüş + kendi görüşün." },
+        { "en": "Problem–Solution: **The most serious problem is** … **To tackle this**, governments **could** …", "tr": "Problem ve çözümü eşleştir." },
+        { "en": "Adv–Disadv: **Although this trend has some drawbacks, its benefits are greater.**", "tr": "\"Outweigh\" sorularında taraf seç." },
+        { "en": "Two-part: her soruya **ayrı paragraf**; ilk cümlede hangi soruyu cevapladığını belli et.", "tr": "" }
+      ]
+    },
+    {
+      "h": "Bağlaçlar (işlevine göre)",
+      "items": [
+        { "en": "Ekleme: **In addition**, **Furthermore**, **What is more**, **Not only … but also**", "tr": "" },
+        { "en": "Zıtlık: **However**, **Nevertheless**, **whereas**, **although**, **despite + isim**, **On the other hand**", "tr": "" },
+        { "en": "Neden–sonuç: **As a result**, **Consequently**, **This means that**, **due to + isim**, **because of + isim**", "tr": "" },
+        { "en": "Örnek: **For example**, **For instance**, **such as**, **A case in point is** …", "tr": "" },
+        { "en": "Vurgu: **In particular**, **Notably**, **Above all**, **More importantly**", "tr": "" }
+      ]
+    },
+    {
+      "h": "Akademik ifadeler",
+      "items": [
+        { "en": "**There is considerable evidence that** …", "tr": "… olduğuna dair önemli kanıt var." },
+        { "en": "**This is particularly true of / for** …", "tr": "Bu özellikle … için geçerlidir." },
+        { "en": "**plays a crucial role in** · **has a significant impact on** · **contributes to**", "tr": "" },
+        { "en": "**address / tackle / alleviate** the problem · **raise awareness of**", "tr": "\"solve\" tekrarına alternatif." },
+        { "en": "**It could be argued that** … · **It is often claimed that** …", "tr": "Mesafeli dil (hedging): band 7+ için önemli." }
+      ]
+    },
+    {
+      "h": "Kaçınılması gerekenler",
+      "warn": [
+        { "bad": "It is a well-known fact that … / In this day and age …", "good": "Nowadays, … / In recent years, …", "why": "Ezber kalıplar; examiner bunları görmezden gelir." },
+        { "bad": "This essay will discuss both sides of the argument.", "good": "This essay will … yerine doğrudan tezini yaz.", "why": "Bilgi taşımayan cümle." },
+        { "bad": "In my opinion, I think that …", "good": "In my opinion, … / I believe that …", "why": "Gereksiz tekrar." },
+        { "bad": "Every coin has two sides.", "good": "There are arguments on both sides.", "why": "Akademik olmayan deyim." },
+        { "bad": "don't, can't, it's, a lot of, kids, stuff", "good": "do not, cannot, it is, a large number of, children, items", "why": "Kısaltma ve gündelik dil akademik yazıda kullanılmaz." },
+        { "bad": "Firstly … Secondly … Thirdly … Moreover … Furthermore …", "good": "Bağlaçları paragrafın mantığına göre seç; her cümleye koyma.", "why": "Mekanik bağlaç kullanımı Coherence puanını 6'da tutar." }
+      ]
+    }
+  ]
+}

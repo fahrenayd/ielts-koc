@@ -1,0 +1,52 @@
+{
+  "section": 2,
+  "context": "You will hear a volunteer ranger giving information to visitors at a city park.",
+  "speakers": { "A": { "name": "Tom (ranger)", "accent": "en-GB", "gender": "m" } },
+  "script": [
+    { "s": "A", "t": "Hello and welcome to Greenfield Park. I'm Tom, one of the volunteer rangers here, and I'd like to tell you a little about the park and what you can do today." },
+    { "s": "A", "t": "The park was originally the garden of a large house, which was destroyed by fire in 1921. The land was bought by the city council in 1935, and it's been open to the public ever since." },
+    { "s": "A", "t": "Let me show you where things are on the map. As you come in through the main entrance, the visitor centre is immediately on your right. That's where you can pick up a free guide and find out about today's events." },
+    { "s": "A", "t": "If you turn left at the entrance and follow the path, you'll come to the playground, which was completely refurbished last summer." },
+    { "s": "A", "t": "Carry on along that path, past the playground, and you'll reach the rose garden, on the west side of the lake. It's at its best in June, so you've chosen a good time to visit." },
+    { "s": "A", "t": "Now, a lot of people expect the café to be near the entrance, but in fact it's on the far side of the lake, directly opposite the entrance. It has a lovely terrace overlooking the water." },
+    { "s": "A", "t": "And the toilets are in the north-east corner of the park, just behind the tennis courts." },
+    { "s": "A", "t": "A few things you should know. Cycling is allowed on the main paths, but not on the grass or around the lake. Dogs are welcome, but they must be kept on a lead near the playground." },
+    { "s": "A", "t": "Fishing in the lake used to be free, but since this spring you need a permit, which you can buy at the visitor centre for five pounds a day." },
+    { "s": "A", "t": "This afternoon there's a guided bird walk starting at two o'clock. It lasts about an hour and a half, and you don't need to book, just meet at the café." },
+    { "s": "A", "t": "We're also always looking for volunteers. Most of our volunteers help with planting and weeding, and we provide all the tools and training." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "map", "label": "Map labelling",
+      "instructions": "Label the map below. Choose the correct letter, **A–G**, for each place.",
+      "tip": "Haritada önce girişi ve yönleri (kuzey, sol/sağ) bul. Konuşmacı girişten başlayarak anlatır: \"on your right\", \"opposite\", \"north-east corner\".",
+      "svg": "<svg viewBox='0 0 300 230' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Greenfield Park map'><rect x='2' y='2' width='296' height='226' rx='8' fill='var(--surface-2)' stroke='var(--line)'/><ellipse cx='150' cy='112' rx='62' ry='38' fill='#4aa3df' opacity='.45'/><text x='150' y='116' text-anchor='middle' font-size='11' fill='var(--text)' font-weight='600'>LAKE</text><path d='M150 222 L150 165 M150 165 C 70 165, 40 150, 40 100 C 40 50, 90 30, 150 30 C 210 30, 260 50, 260 100 C 260 150, 230 165, 150 165' fill='none' stroke='var(--muted)' stroke-width='3' stroke-dasharray='6 4'/><rect x='118' y='212' width='64' height='14' rx='3' fill='var(--primary)'/><text x='150' y='223' text-anchor='middle' font-size='9' fill='var(--primary-ink)' font-weight='700'>ENTRANCE</text><rect x='225' y='18' width='50' height='26' rx='3' fill='none' stroke='var(--muted)'/><text x='250' y='34' text-anchor='middle' font-size='8' fill='var(--muted)'>tennis</text><text x='285' y='16' text-anchor='end' font-size='10' fill='var(--text)'>N ↑</text><g font-size='13' font-weight='800' fill='var(--primary-ink)'><circle cx='75' cy='185' r='11' fill='var(--primary)'/><text x='75' y='190' text-anchor='middle'>A</text><circle cx='225' cy='185' r='11' fill='var(--primary)'/><text x='225' y='190' text-anchor='middle'>B</text><circle cx='22' cy='100' r='11' fill='var(--primary)'/><text x='22' y='105' text-anchor='middle'>C</text><circle cx='278' cy='100' r='11' fill='var(--primary)'/><text x='278' y='105' text-anchor='middle'>D</text><circle cx='150' cy='58' r='11' fill='var(--primary)'/><text x='150' y='63' text-anchor='middle'>E</text><circle cx='80' cy='35' r='11' fill='var(--primary)'/><text x='80' y='40' text-anchor='middle'>F</text><circle cx='250' cy='58' r='11' fill='var(--primary)'/><text x='250' y='63' text-anchor='middle'>G</text></g></svg>",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }, { "key": "F", "text": "" }, { "key": "G", "text": "" }],
+      "questions": [
+        { "id": "l02-1", "n": 1, "prompt": "Visitor centre", "answer": "B", "quote": "the visitor centre is immediately on your right", "explain": "Girişten girince hemen **sağda**: B." },
+        { "id": "l02-2", "n": 2, "prompt": "Playground", "answer": "A", "quote": "If you turn left at the entrance and follow the path, you'll come to the playground", "explain": "Girişten **sola** dönünce ilk yer: A." },
+        { "id": "l02-3", "n": 3, "prompt": "Rose garden", "answer": "C", "quote": "you'll reach the rose garden, on the west side of the lake", "explain": "Oyun alanını geçince, gölün **batısı**: C." },
+        { "id": "l02-4", "n": 4, "prompt": "Café", "answer": "E", "trap": "distractor", "quote": "it's on the far side of the lake, directly opposite the entrance", "explain": "\"Birçok kişi girişe yakın sanıyor\" — tuzak. Gölün karşı tarafı, girişin **tam karşısı**: E." },
+        { "id": "l02-5", "n": 5, "prompt": "Toilets", "answer": "G", "quote": "the toilets are in the north-east corner of the park, just behind the tennis courts", "explain": "**Kuzey-doğu** köşe, tenis kortlarının arkası: G." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l02-6", "n": 6, "prompt": "When did the park first open to the public?", "options": ["1921", "1935", "1953"], "answer": "B", "trap": "distractor", "quote": "The land was bought by the city council in 1935, and it's been open to the public ever since.", "explain": "1921 yangın yılı (çeldirici). Halka açılış **1935**." },
+        { "id": "l02-7", "n": 7, "prompt": "What is true about cycling in the park?", "options": ["It is allowed on the main paths.", "It is allowed around the lake.", "It is not allowed anywhere."], "answer": "A", "quote": "Cycling is allowed on the main paths, but not on the grass or around the lake.", "explain": "Sadece **ana yollarda** serbest." },
+        { "id": "l02-8", "n": 8, "prompt": "What do visitors need in order to fish in the lake?", "options": ["nothing – fishing is free", "a permit costing £5 a day", "a membership card"], "answer": "B", "trap": "corrected", "quote": "you need a permit, which you can buy at the visitor centre for five pounds a day", "explain": "\"used to be free\" = **eskiden** ücretsizdi. Artık günlük **£5 izin** gerekiyor." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "note", "maxWords": 1, "number": true,
+      "instructions": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+      "text": "# Guided bird walk\nStarts at: {{9}} pm\nMeeting point: the {{10}}",
+      "questions": [
+        { "id": "l02-9", "n": 9, "answer": ["2", "two"], "quote": "starting at two o'clock", "explain": "Saat **2**; süre bir buçuk saat." },
+        { "id": "l02-10", "n": 10, "answer": ["café", "cafe"], "quote": "just meet at the café", "explain": "Buluşma yeri: **café**." }
+      ]
+    }
+  ]
+}

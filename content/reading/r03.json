@@ -1,0 +1,56 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Some of the most impressive buildings of the ancient world are still standing nearly two thousand years after they were built. The dome of the Pantheon in Rome, completed around 125 AD, remains the largest unreinforced concrete dome on Earth. Harbour walls built by Roman engineers along the Mediterranean coast have survived centuries of constant attack by seawater. Modern concrete, by comparison, often begins to crack and crumble within fifty to a hundred years, particularly in marine environments." },
+    { "key": "B", "text": "For a long time, the durability of Roman concrete was attributed mainly to its ingredients. Roman builders mixed lime with volcanic ash, known as pozzolana, which was found in large quantities near the Bay of Naples. When this mixture reacts with water, it forms extremely stable minerals. The Roman writer Vitruvius, whose ten-volume work on architecture is the only such text to survive from the period, recommended specific proportions of lime and ash, and much research has focused on reproducing his recipes." },
+    { "key": "C", "text": "A study published in 2017 added an unexpected element to the story. Researchers at the University of Utah examined samples from Roman harbour structures and found that seawater, far from damaging the concrete, had actually strengthened it. As seawater seeped through tiny cracks, it dissolved some of the volcanic material and allowed new crystals of a rare mineral, aluminous tobermorite, to grow. These crystals filled the gaps and bound the material more tightly together. Producing this mineral in a laboratory requires very high temperatures, yet in the harbour walls it had formed slowly at the temperature of the sea." },
+    { "key": "D", "text": "In 2023, a team led by researchers at the Massachusetts Institute of Technology proposed a second explanation. They had noticed small white lumps of lime scattered through samples of Roman concrete. These had previously been regarded as evidence of poor mixing or low-quality materials. The team concluded instead that they were the result of a technique called hot mixing, in which quicklime, rather than lime that had already been combined with water, was added directly to the mix. The chemical reaction produces considerable heat, which speeds up the setting process and leaves behind lumps of lime that remain chemically active." },
+    { "key": "E", "text": "These lumps, the researchers argued, give the concrete the ability to repair itself. When a crack forms and water enters, it dissolves some of the lime, which then reacts to form calcium carbonate and seals the crack. To test the idea, the team produced samples of concrete using both ancient and modern methods, deliberately cracked them and ran water through them. Within two weeks, the cracks in the hot-mixed samples had closed completely, while water continued to flow through the samples made with modern methods." },
+    { "key": "F", "text": "The findings have attracted interest from the construction industry, which is responsible for around 8% of global carbon dioxide emissions, much of it from the production of cement. Concrete that lasts longer would need to be replaced less often, reducing emissions over time. However, Roman techniques cannot simply be copied. Roman concrete is considerably weaker than modern concrete when it is first poured and takes longer to set, which makes it unsuitable for many modern purposes, such as tall buildings. Engineers are therefore exploring ways of adding self-healing properties to modern mixes rather than returning to ancient ones." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "headings", "label": "Matching headings",
+      "instructions": "The passage has six paragraphs, **A–F**. Choose the correct heading for each paragraph from the list of headings below.",
+      "tip": "Paragrafın ilk ve son cümlesine odaklan; başlık paragrafın **ana fikrini** vermeli, tek bir detayı değil. Kullanılmayan iki başlık var.",
+      "options": [
+        { "key": "i", "text": "An unexpected effect of the sea" },
+        { "key": "ii", "text": "Ancient structures that have outlasted modern ones" },
+        { "key": "iii", "text": "The search for a perfect Roman recipe" },
+        { "key": "iv", "text": "A test of the theory of self-repair" },
+        { "key": "v", "text": "Why the old methods cannot simply be reused" },
+        { "key": "vi", "text": "A new interpretation of a supposed defect" },
+        { "key": "vii", "text": "The cost of building with volcanic ash" },
+        { "key": "viii", "text": "How Roman engineers trained their workers" }
+      ],
+      "questions": [
+        { "id": "r03-1", "n": 1, "prompt": "Paragraph A", "answer": "ii", "quote": "Modern concrete, by comparison, often begins to crack and crumble within fifty to a hundred years", "explain": "Paragraf, 2000 yıllık Roma yapılarını 50-100 yılda çatlayan modern betonla karşılaştırıyor." },
+        { "id": "r03-2", "n": 2, "prompt": "Paragraph B", "answer": "iii", "quote": "much research has focused on reproducing his recipes", "explain": "Ana fikir: içerikler ve Vitruvius'un tariflerini yeniden üretme çabası." },
+        { "id": "r03-3", "n": 3, "prompt": "Paragraph C", "answer": "i", "quote": "seawater, far from damaging the concrete, had actually strengthened it", "explain": "Beklenmedik etki: deniz suyu betonu **güçlendirmiş**." },
+        { "id": "r03-4", "n": 4, "prompt": "Paragraph D", "answer": "vi", "quote": "These had previously been regarded as evidence of poor mixing or low-quality materials.", "explain": "\"supposed defect\" = kötü karıştırma sanılan beyaz topaklar; yeni yorum = hot mixing." },
+        { "id": "r03-5", "n": 5, "prompt": "Paragraph E", "answer": "iv", "quote": "To test the idea, the team produced samples of concrete using both ancient and modern methods", "explain": "Kendini onarma fikrinin **deneyle test edilmesi**." },
+        { "id": "r03-6", "n": 6, "prompt": "Paragraph F", "answer": "v", "quote": "However, Roman techniques cannot simply be copied.", "explain": "Başlık neredeyse birebir: eski yöntemler neden doğrudan kullanılamaz." }
+      ]
+    },
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r03-7", "n": 7, "prompt": "The Pantheon's dome contains steel reinforcement.", "answer": "FALSE", "quote": "remains the largest unreinforced concrete dome on Earth", "explain": "**unreinforced** = güçlendirme (çelik) içermeyen." },
+        { "id": "r03-8", "n": 8, "prompt": "Vitruvius's work is the only surviving text on architecture from the Roman period.", "answer": "TRUE", "quote": "is the only such text to survive from the period", "explain": "\"only surviving\" = **the only such text to survive**." },
+        { "id": "r03-9", "n": 9, "prompt": "Aluminous tobermorite is easy to produce in a laboratory.", "answer": "FALSE", "quote": "Producing this mineral in a laboratory requires very high temperatures", "explain": "Laboratuvarda üretmek **çok yüksek sıcaklık** gerektiriyor, yani kolay değil." },
+        { "id": "r03-10", "n": 10, "prompt": "The MIT team was the first to notice white lumps in Roman concrete.", "answer": "FALSE", "quote": "These had previously been regarded as evidence of poor mixing or low-quality materials.", "explain": "Topaklar **daha önce** fark edilmiş ve kötü karıştırma sanılmış; MIT ilk fark eden değil, yeni yorum getiren." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "sentence", "label": "Sentence completion", "maxWords": 2,
+      "instructions": "Complete the sentences below. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+      "questions": [
+        { "id": "r03-11", "n": 11, "prompt": "Roman builders combined lime with ___ to make their concrete.", "answer": ["volcanic ash", "pozzolana"], "quote": "Roman builders mixed lime with volcanic ash, known as pozzolana", "explain": "\"combined\" = **mixed**; cevap: volcanic ash (veya pozzolana)." },
+        { "id": "r03-12", "n": 12, "prompt": "In the technique known as ___, quicklime is added directly to the mixture.", "answer": ["hot mixing"], "quote": "a technique called hot mixing", "explain": "\"known as\" = **called**." },
+        { "id": "r03-13", "n": 13, "prompt": "When water dissolves lime in a crack, it forms ___, which closes the gap.", "answer": ["calcium carbonate"], "quote": "reacts to form calcium carbonate and seals the crack", "explain": "\"closes the gap\" = **seals the crack**." },
+        { "id": "r03-14", "n": 14, "prompt": "Because it is weak at first and sets slowly, Roman concrete is unsuitable for structures such as ___.", "answer": ["tall buildings"], "quote": "such as tall buildings", "explain": "Metindeki örnek: **tall buildings**." }
+      ]
+    }
+  ]
+}

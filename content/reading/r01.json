@@ -1,0 +1,50 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "When the honeybee population of North America and Europe began to fall sharply in the early 2000s, attention focused on the countryside. Intensive agriculture, with its large fields of a single crop and heavy use of pesticides, was widely blamed. Less attention was paid to the possibility that cities, often regarded as hostile environments for wildlife, might offer bees a refuge." },
+    { "key": "B", "text": "A growing body of research suggests that this possibility deserves to be taken seriously. A study carried out in the English city of Bristol and its surrounding area found that urban sites supported a greater variety of bee species than nearby farmland, although nature reserves supported the most of all. The researchers explained the result by pointing to the enormous diversity of plants in private gardens, parks and even roadside verges, which together provide food for insects from early spring until late autumn. Farmland, by contrast, tends to produce a short burst of flowers followed by long periods with almost nothing." },
+    { "key": "C", "text": "Not all bees benefit equally, however. The species that thrive in cities tend to be generalists, able to feed on many different plants, and those that nest in cavities, such as holes in walls or dead wood. Bees that nest in the ground, which make up the majority of wild species, are at a disadvantage in places where most surfaces are covered with concrete or asphalt. Some specialist species, which feed on the pollen of only one or two plant families, are almost entirely absent from urban areas." },
+    { "key": "D", "text": "The rise of urban beekeeping has added a further complication. Over the past twenty years, the number of honeybee hives in cities such as London, Paris and New York has grown rapidly, encouraged by companies that install hives on office roofs as a sign of their environmental commitment. In London, the number of registered hives more than doubled in a decade. Some ecologists now warn that this enthusiasm may be doing more harm than good. Honeybees are not endangered, and large numbers of them compete with wild bees for the same limited supply of pollen and nectar. A study in Paris found that the more hives there were in an area, the less frequently wild pollinators were observed visiting flowers there." },
+    { "key": "E", "text": "There are also concerns about disease. Honeybees kept in high densities can spread viruses and parasites to wild species, which may have little resistance to them. For this reason, a number of conservation organisations argue that planting flowers is a far more effective way of helping bees than keeping them." },
+    { "key": "F", "text": "City authorities are beginning to respond. Several have changed the way they manage public land, cutting grass less often to allow wildflowers to bloom and leaving areas of bare soil for ground-nesting species. Utrecht in the Netherlands has covered the roofs of more than three hundred bus stops with plants, creating small islands of habitat across the city. Such measures are cheap, and early monitoring suggests that they can increase the number of insects in an area within two or three years." },
+    { "key": "G", "text": "Researchers caution that cities cannot replace the countryside. Most of the land in many countries remains agricultural, and the long-term survival of wild bees will depend largely on how that land is managed. Nevertheless, the evidence suggests that well-planned cities can play a modest but genuine role in supporting pollinators, provided that the focus is on wild species rather than on the honeybee." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "tip": "T/F/NG soruları metindeki sırayı izler. Sorudaki anahtar kelimenin eş anlamlısını bul, sonra cümleyi dikkatle karşılaştır.",
+      "questions": [
+        { "id": "r01-1", "n": 1, "prompt": "Early explanations for falling bee numbers focused mainly on rural areas.", "answer": "TRUE", "quote": "attention focused on the countryside", "explain": "\"rural areas\" = **the countryside**. İlk açıklamalar kırsal tarıma odaklanmış." },
+        { "id": "r01-2", "n": 2, "prompt": "The Bristol study found that nature reserves had fewer bee species than urban sites.", "answer": "FALSE", "quote": "although nature reserves supported the most of all", "explain": "Doğa koruma alanları **en fazla** türü barındırıyor; ifade bunun tersini söylüyor." },
+        { "id": "r01-3", "n": 3, "prompt": "Farmland provides bees with food for a shorter part of the year than urban areas.", "answer": "TRUE", "quote": "Farmland, by contrast, tends to produce a short burst of flowers followed by long periods with almost nothing.", "explain": "Şehirde ilkbahardan sonbahara kadar besin var; tarım arazisinde ise **kısa bir çiçeklenme** ve sonra uzun boşluk." },
+        { "id": "r01-4", "n": 4, "prompt": "Most wild bee species build their nests underground.", "answer": "TRUE", "quote": "Bees that nest in the ground, which make up the majority of wild species", "explain": "\"most\" = **the majority**, \"underground\" = **in the ground**." },
+        { "id": "r01-5", "n": 5, "prompt": "Companies that install rooftop hives usually employ professional beekeepers.", "answer": "NOT GIVEN", "quote": "encouraged by companies that install hives on office roofs as a sign of their environmental commitment", "explain": "Şirketlerin çatıya kovan kurduğu söyleniyor ama **kimin bakım yaptığına** dair bilgi yok." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–G**.",
+      "tip": "Bu sorular sırayı izlemez. Bir paragraf birden fazla sorunun cevabı olabilir veya hiçbirinin olmayabilir.",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }, { "key": "F", "text": "" }, { "key": "G", "text": "" }],
+      "questions": [
+        { "id": "r01-6", "n": 6, "prompt": "an example of a city using transport infrastructure to create habitat", "answer": "F", "quote": "Utrecht in the Netherlands has covered the roofs of more than three hundred bus stops with plants", "explain": "\"transport infrastructure\" = **bus stops**." },
+        { "id": "r01-7", "n": 7, "prompt": "a reason why some bees are rarely found in cities", "answer": "C", "quote": "Some specialist species, which feed on the pollen of only one or two plant families, are almost entirely absent from urban areas.", "explain": "\"rarely found\" = **almost entirely absent**; neden: yalnızca bir-iki bitki ailesiyle beslenmeleri (ve toprağın betonla kaplı olması)." },
+        { "id": "r01-8", "n": 8, "prompt": "a statistic showing the growth of beekeeping in one city", "answer": "D", "quote": "In London, the number of registered hives more than doubled in a decade.", "explain": "İstatistik = **more than doubled in a decade**." },
+        { "id": "r01-9", "n": 9, "prompt": "a warning that health problems may pass between bee populations", "answer": "E", "quote": "Honeybees kept in high densities can spread viruses and parasites to wild species", "explain": "\"health problems may pass\" = **spread viruses and parasites**." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion", "maxWords": 2,
+      "instructions": "Complete the summary below. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+      "tip": "Boşluktan önce/sonra gelen kelimelere bak: isim mi, fiil mi gerekiyor? Cevap metinden birebir alınmalı.",
+      "text": "# Helping wild bees in cities\nEcologists are worried that large numbers of honeybees {{10}} with wild bees for pollen and nectar.\nResearch in Paris showed that wild pollinators visited flowers less often in areas with more {{11}}.\nConservation groups say that {{12}} is a better way to help bees than beekeeping.\nSome cities now cut grass less frequently and leave patches of {{13}} for bees that nest in the ground.",
+      "questions": [
+        { "id": "r01-10", "n": 10, "answer": ["compete"], "quote": "large numbers of them compete with wild bees", "explain": "Boşluk bir **fiil** istiyor: honeybees **compete** with wild bees." },
+        { "id": "r01-11", "n": 11, "answer": ["hives"], "quote": "the more hives there were in an area", "explain": "\"areas with more **hives**\" — Paris çalışması." },
+        { "id": "r01-12", "n": 12, "answer": ["planting flowers"], "quote": "planting flowers is a far more effective way of helping bees", "explain": "\"a far more effective way\" = **a better way**." },
+        { "id": "r01-13", "n": 13, "answer": ["bare soil"], "quote": "leaving areas of bare soil for ground-nesting species", "explain": "\"patches of\" = **areas of bare soil**; \"bees that nest in the ground\" = ground-nesting species." }
+      ]
+    }
+  ]
+}

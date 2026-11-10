@@ -1,0 +1,10 @@
+{
+  "prompt": "The pie charts below show the sources of electricity in one country in 2000 and 2020.",
+  "tip": "İki pasta grafik = zaman karşılaştırması. Geçmiş zaman kullan. Overview: kömürün düşüşü ve yenilenebilirin yükselişi; en büyük kaynak değişti mi?",
+  "chart": { "type": "pie", "title": "Sources of electricity (%)", "pies": [
+    { "label": "2000", "slices": [{ "name": "Coal", "value": 52 }, { "name": "Natural gas", "value": 25 }, { "name": "Nuclear", "value": 15 }, { "name": "Renewables", "value": 8 }] },
+    { "label": "2020", "slices": [{ "name": "Coal", "value": 18 }, { "name": "Natural gas", "value": 34 }, { "name": "Nuclear", "value": 13 }, { "name": "Renewables", "value": 35 }] }] },
+  "modelBand": "8",
+  "model": "The pie charts compare the proportions of electricity generated from four different sources in one country in 2000 and 2020.\nOverall, the country's electricity mix changed dramatically over the twenty years. Coal, which had been the dominant source, lost most of its share, while renewable energy grew to become the largest single source by 2020.\nIn 2000, more than half of the country's electricity (52%) came from coal. Natural gas was the second most important source, at a quarter of the total, followed by nuclear power (15%), while renewables made up only 8%.\nBy 2020, the picture was very different. The share of coal had fallen to just 18%, roughly a third of its earlier level. Over the same period, the contribution of renewables more than quadrupled to 35%, narrowly ahead of natural gas, which also increased its share to 34%. Nuclear power was the only source to remain relatively stable, falling slightly to 13%.",
+  "modelNotes": ["Overview: en büyük kaynağın değişmesi (coal → renewables) en önemli bilgi.", "Oran dili: more than half, a quarter, roughly a third, more than quadrupled, narrowly ahead of.", "2000 ve 2020 ayrı paragraflarda, karşılaştırmalı."]
+}

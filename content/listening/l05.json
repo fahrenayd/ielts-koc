@@ -1,0 +1,53 @@
+{
+  "section": 1,
+  "context": "You will hear a woman phoning an adult learning centre to enrol on a language course.",
+  "speakers": { "A": { "name": "Receptionist", "accent": "en-GB", "gender": "m" }, "B": { "name": "Anna", "accent": "en-US", "gender": "f" } },
+  "script": [
+    { "s": "A", "t": "Good morning, City Adult Learning Centre. How can I help?" },
+    { "s": "B", "t": "Hello. I'm calling about your evening courses. I'd like to learn Spanish." },
+    { "s": "A", "t": "Lovely. We've got two levels starting next month: beginners and intermediate. Have you studied Spanish before?" },
+    { "s": "B", "t": "Only a little at school, years ago. I think beginners would be best." },
+    { "s": "A", "t": "OK. The beginners' class is on Tuesday evenings. Oh, wait, sorry, that's changed this term. It's on Thursday evenings now, from seven till nine." },
+    { "s": "B", "t": "Thursday's fine. Where is it held?" },
+    { "s": "A", "t": "In the Mitchell Building, room 12. That's on Park Road, opposite the hospital." },
+    { "s": "B", "t": "And how long does the course last?" },
+    { "s": "A", "t": "It's ten weeks, starting on the 6th of October." },
+    { "s": "B", "t": "How much does it cost?" },
+    { "s": "A", "t": "The full fee is 180 pounds, but if you're over sixty or unemployed, it's reduced to 95." },
+    { "s": "B", "t": "I'm afraid I'm not either of those. Does the price include books?" },
+    { "s": "A", "t": "No, you'll need to buy the course book, which is about 20 pounds. Everything else is provided." },
+    { "s": "B", "t": "OK. Can I enrol over the phone?" },
+    { "s": "A", "t": "Yes. Can I have your full name, please?" },
+    { "s": "B", "t": "It's Anna Kowalski. K-O-W-A-L-S-K-I." },
+    { "s": "A", "t": "Thank you. How did you hear about the course, by the way?" },
+    { "s": "B", "t": "A friend told me about it. Actually, I first saw a poster in the library, but my friend recommended it too." },
+    { "s": "A", "t": "We'll put 'poster' then. Is there anything we should know, any special requirements?" },
+    { "s": "B", "t": "Well, I use a wheelchair, so I'd need step-free access." },
+    { "s": "A", "t": "That's no problem. The Mitchell Building has a lift at the side entrance." }
+  ],
+  "groups": [
+    {
+      "type": "gap", "subtype": "form", "maxWords": 1, "number": true,
+      "instructions": "Complete the form below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+      "text": "# Course enrolment form\nCourse: Spanish – {{1}} level\nDay: {{2}}\nLocation: Mitchell Building, room {{3}}, Park Road\nStart date: {{4}} October\nFull fee: £{{5}}\nSurname: {{6}}\nHeard about the course from a: {{7}}",
+      "questions": [
+        { "id": "l05-1", "n": 1, "answer": ["beginners", "beginner", "beginners'"], "quote": "I think beginners would be best.", "explain": "**beginners** seviyesi." },
+        { "id": "l05-2", "n": 2, "answer": ["Thursday", "Thursdays"], "trap": "corrected", "quote": "It's on Thursday evenings now", "explain": "Önce Salı dedi, sonra **düzeltti**: Perşembe." },
+        { "id": "l05-3", "n": 3, "answer": ["12"], "quote": "In the Mitchell Building, room 12.", "explain": "Oda **12**." },
+        { "id": "l05-4", "n": 4, "answer": ["6", "6th"], "quote": "starting on the 6th of October", "explain": "**6** Ekim." },
+        { "id": "l05-5", "n": 5, "answer": ["180"], "trap": "distractor", "quote": "The full fee is 180 pounds", "explain": "Tam ücret **180**; 95 indirimli, 20 kitap." },
+        { "id": "l05-6", "n": 6, "answer": ["Kowalski"], "quote": "K-O-W-A-L-S-K-I.", "explain": "Harf harf: **Kowalski**." },
+        { "id": "l05-7", "n": 7, "answer": ["poster"], "trap": "distractor", "quote": "We'll put 'poster' then.", "explain": "Arkadaşı da önerdi ama **ilk** afişi gördü ve görevli 'poster' yazdı." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l05-8", "n": 8, "prompt": "Where is the Mitchell Building?", "options": ["next to the library", "opposite the hospital", "behind the station"], "answer": "B", "quote": "That's on Park Road, opposite the hospital.", "explain": "Hastanenin **karşısında**. Kütüphane afişin yeri (çeldirici)." },
+        { "id": "l05-9", "n": 9, "prompt": "What does Anna have to pay for in addition to the fee?", "options": ["a course book", "an exam", "a registration card"], "answer": "A", "quote": "you'll need to buy the course book", "explain": "Ek ödeme: **ders kitabı** (~£20)." },
+        { "id": "l05-10", "n": 10, "prompt": "What does Anna need?", "options": ["a hearing loop", "step-free access", "large-print materials"], "answer": "B", "quote": "so I'd need step-free access", "explain": "Tekerlekli sandalye: **basamaksız erişim**; binanın yan girişinde asansör var." }
+      ]
+    }
+  ]
+}

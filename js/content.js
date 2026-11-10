@@ -32,3 +32,20 @@ export async function loadGrammar(id) {
   if (!meta) throw new Error('Ders bulunamadı: ' + id);
   return { ...meta, ...(await getJSON('./content/' + meta.file)) };
 }
+
+// ---------- Aşama 2+ içerikleri ----------
+// kind: reading | listening | writing | speaking | placement
+export async function listItems(kind) {
+  const idx = await loadIndex();
+  return idx[kind] || [];
+}
+export async function loadItem(kind, id) {
+  const idx = await loadIndex();
+  const meta = (idx[kind] || []).find((x) => x.id === id);
+  if (!meta) throw new Error('İçerik bulunamadı: ' + id);
+  return { ...meta, ...(await getJSON('./content/' + meta.file)) };
+}
+export async function loadAll(kind) {
+  const list = await listItems(kind);
+  return Promise.all(list.map((m) => loadItem(kind, m.id)));
+}

@@ -82,3 +82,57 @@ export function topbar(title, { back = true } = {}) {
     back ? h('button', { class: 'icon-btn', 'aria-label': 'Geri', onclick: () => history.length > 1 ? history.back() : (location.hash = '#/today') }, '←') : null,
     h('h1', null, title));
 }
+
+// ---------- Aşama 2+ yardımcıları ----------
+export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export function fmtTime(sec) {
+  const s = Math.max(0, Math.round(sec));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}
+export const countWords = (t) => (String(t || '').trim().match(/[A-Za-z0-9'’-]+/g) || []).length;
+
+// Metni panoya kopyala (eski tarayıcılar için yedek yöntem)
+export async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; } catch (e) { /* yedek yönteme geç */ }
+  const ta = h('textarea', { style: { position: 'fixed', opacity: 0 } }, text);
+  document.body.append(ta); ta.select();
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  ta.remove();
+  return ok;
+}
+
+// Metin içindeki alıntıları <mark> ile vurgula (güvenli: önce kaçış yapılır)
+export function highlight(text, quotes = []) {
+  let html = esc(text);
+  for (const q of quotes.filter(Boolean)) {
+    const e = esc(q);
+    const i = html.indexOf(e);
+    if (i >= 0) html = html.slice(0, i) + '<mark>' + e + '</mark>' + html.slice(i + e.length);
+  }
+  return html;
+}
+
+// Geri sayım: her saniye onTick(kalan), sıfırda onEnd
+export function countdown(seconds, onTick, onEnd) {
+  let left = seconds;
+  onTick(left);
+  const id = setInterval(() => {
+    left -= 1;
+    onTick(left);
+    if (left <= 0) { clearInterval(id); onEnd && onEnd(); }
+  }, 1000);
+  return { stop: () => clearInterval(id), left: () => left };
+}
+
+// Sayfa değişince çalışan zamanlayıcıları durdurmak için
+const cleanups = new Set();
+export function onLeave(fn) { cleanups.add(fn); }
+export function runCleanups() { for (const fn of cleanups) { try { fn(); } catch (e) { console.warn(e); } } cleanups.clear(); }
+
+// replaceChildren'a dizi veya boş (null/false) değer verilebilsin: düzleştir ve boşları at
+const nativeReplace = Element.prototype.replaceChildren;
+Element.prototype.replaceChildren = function (...kids) {
+  return nativeReplace.apply(this, kids.flat(Infinity).filter((k) => k != null && k !== false));
+};

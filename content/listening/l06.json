@@ -1,0 +1,53 @@
+{
+  "section": 2,
+  "context": "You will hear a radio presenter talking about a local festival.",
+  "speakers": { "A": { "name": "Presenter", "accent": "en-AU", "gender": "f" } },
+  "script": [
+    { "s": "A", "t": "Good evening, and welcome to What's On. This week I'm looking at the Harbourside Festival, which returns next week for its twentieth year." },
+    { "s": "A", "t": "The festival runs for six days, from Tuesday to Sunday, and most events are free, although you'll need tickets for the evening concerts." },
+    { "s": "A", "t": "Let me go through some of the highlights. On Tuesday, the festival opens with a parade through the old town, starting at six. This year's theme is the sea, so expect plenty of costumes and boats." },
+    { "s": "A", "t": "Wednesday is family day, with a puppet theatre in the main square. Originally there was going to be a magic show as well, but unfortunately the performer has had to cancel." },
+    { "s": "A", "t": "If you're interested in food, Thursday is the day for you. Around forty local producers will be running a market along the waterfront, and there'll be cooking demonstrations every hour." },
+    { "s": "A", "t": "On Friday evening, there's an outdoor film screening on the beach. Bring a blanket, because it can get cold once the sun goes down." },
+    { "s": "A", "t": "The big concert is on Saturday night, featuring the city's youth orchestra. Tickets are fifteen dollars, or ten for students, and they're selling fast." },
+    { "s": "A", "t": "And on Sunday, the festival ends with fireworks over the harbour at nine thirty." },
+    { "s": "A", "t": "A few practical tips. Parking near the harbour will be very limited, so the organisers strongly recommend using the free shuttle bus from the central station, which runs every twenty minutes." },
+    { "s": "A", "t": "If you'd like to help, the festival still needs volunteers, especially for the Saturday concert. Volunteers get a free festival T-shirt and a meal voucher." },
+    { "s": "A", "t": "The full programme is available on the festival website, and printed copies can be picked up from the tourist information office." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "features", "label": "Matching",
+      "instructions": "On which day does each event take place? Choose the correct letter, **A–F**.",
+      "tip": "Seçenekler sırayla gelir ama soruların sırası farklı olabilir. Duyduğun her günü not al.",
+      "options": [{ "key": "A", "text": "Tuesday" }, { "key": "B", "text": "Wednesday" }, { "key": "C", "text": "Thursday" }, { "key": "D", "text": "Friday" }, { "key": "E", "text": "Saturday" }, { "key": "F", "text": "Sunday" }],
+      "questions": [
+        { "id": "l06-1", "n": 1, "prompt": "food market", "answer": "C", "quote": "Around forty local producers will be running a market along the waterfront", "explain": "Yemek günü: **Perşembe**." },
+        { "id": "l06-2", "n": 2, "prompt": "film screening", "answer": "D", "quote": "On Friday evening, there's an outdoor film screening on the beach.", "explain": "**Cuma** akşamı." },
+        { "id": "l06-3", "n": 3, "prompt": "parade", "answer": "A", "quote": "the festival opens with a parade through the old town", "explain": "Açılış, **Salı**." },
+        { "id": "l06-4", "n": 4, "prompt": "puppet theatre", "answer": "B", "quote": "Wednesday is family day, with a puppet theatre in the main square.", "explain": "**Çarşamba** — aile günü." },
+        { "id": "l06-5", "n": 5, "prompt": "fireworks", "answer": "F", "quote": "the festival ends with fireworks over the harbour", "explain": "Kapanış, **Pazar**." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l06-6", "n": 6, "prompt": "Which event has been cancelled?", "options": ["the magic show", "the puppet theatre", "the cooking demonstrations"], "answer": "A", "quote": "the performer has had to cancel", "explain": "Sihirbazlık gösterisi **iptal**." },
+        { "id": "l06-7", "n": 7, "prompt": "How much is a student ticket for the concert?", "options": ["$10", "$15", "It is free."], "answer": "A", "trap": "distractor", "quote": "Tickets are fifteen dollars, or ten for students", "explain": "$15 tam bilet; öğrenci **$10**." },
+        { "id": "l06-8", "n": 8, "prompt": "What do the organisers recommend for getting to the festival?", "options": ["driving there early", "taking the shuttle bus", "walking from the old town"], "answer": "B", "quote": "the organisers strongly recommend using the free shuttle bus from the central station", "explain": "Ücretsiz **servis otobüsü**." }
+      ]
+    },
+    {
+      "type": "multi",
+      "instructions": "Choose **TWO** letters, **A–E**.",
+      "prompt": "Which **TWO** things do volunteers receive?",
+      "options": ["a T-shirt", "free concert tickets", "a meal voucher", "free parking", "a printed programme"],
+      "answers": ["A", "C"],
+      "questions": [
+        { "id": "l06-9", "n": 9, "quote": "Volunteers get a free festival T-shirt and a meal voucher.", "explain": "**T-shirt** ve **yemek kuponu**." },
+        { "id": "l06-10", "n": 10, "explain": "Basılı program turizm ofisinden herkes alabilir (çeldirici)." }
+      ]
+    }
+  ]
+}

@@ -67,6 +67,11 @@ export function render() {
       h('button', { class: 'btn ghost block', onclick: () => speak('Urbanisation has placed enormous pressure on public infrastructure.', { accent: state.settings.accent, rate: state.settings.rate }) }, '🔊 Sesi dene'),
       voiceNote),
 
+    h('h2', null, 'Speaking (mikrofon)'),
+    h('div', { class: 'card' },
+      seg([['both', 'Kayıt + metin'], ['stt', 'Sadece metin'], ['rec', 'Sadece kayıt']], s.speechMode || 'both', (v) => update({ speechMode: v })),
+      h('p', { class: 'small muted', style: { margin: '8px 0 0' } }, 'Kayıt internetsiz çalışır; metne dökme internet ister. Bazı telefonlar ikisine aynı anda izin vermez: metin gelmiyorsa "Sadece metin"i dene.')),
+
     h('h2', null, 'Kelime kartları'),
     h('div', { class: 'card' },
       h('label', { class: 'field' }, h('span', null, 'Günlük yeni kart'),

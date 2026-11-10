@@ -1,14 +1,15 @@
 // IndexedDB: tüm ilerleme cihazda kalıcı olarak saklanır.
 // Mağazalar sonraki aşamalar için şimdiden açıldı (results, mistakes, writings).
 const DB_NAME = 'ielts-koc';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 export const STORES = {
   kv: { keyPath: 'key' },            // profil, ayarlar, ders durumu
   cards: { keyPath: 'id' },          // kelime kartlarının SRS durumu
   days: { keyPath: 'date' },         // günlük çalışma özeti
   results: { keyPath: 'id', autoIncrement: true }, // bölüm sonuçları / bandlar (Aşama 2+)
   mistakes: { keyPath: 'id' },       // Hata Defteri (Aşama 2+)
-  writings: { keyPath: 'id', autoIncrement: true } // Writing arşivi (Aşama 3)
+  writings: { keyPath: 'id', autoIncrement: true }, // Writing arşivi (Aşama 3)
+  speaking: { keyPath: 'id', autoIncrement: true }  // Speaking oturumları (Aşama 3)
 };
 
 let dbPromise;

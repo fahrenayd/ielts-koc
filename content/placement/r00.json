@@ -1,0 +1,43 @@
+{
+  "minutes": 15,
+  "paragraphs": [
+    { "key": "A", "text": "For much of the twentieth century, overnight trains were a common way to cross Europe. Passengers boarded in the evening, slept in narrow bunks and woke up in a different country. By the early 2000s, however, many of these services had disappeared. Low-cost airlines could carry passengers between capital cities in two hours for a fraction of the price, and rail companies found that sleeper carriages, which are expensive to maintain and carry relatively few people, rarely made a profit." },
+    { "key": "B", "text": "In the last decade, the situation has begun to change. Several national rail operators have reintroduced night routes, and a number of small private companies have entered the market. Their timing is no accident. Growing awareness of the environmental cost of flying has led some travellers to look for alternatives, particularly for journeys of between 600 and 1,500 kilometres, which are too long to cover comfortably by day but short enough to complete overnight." },
+    { "key": "C", "text": "Supporters of night trains argue that their main advantage is not speed but convenience. A traveller who leaves Vienna at nine in the evening and arrives in Brussels the next morning saves the cost of a hotel room and arrives in the city centre rather than at an airport some distance away. For business travellers in particular, this can mean a full working day at the destination without an early start." },
+    { "key": "D", "text": "Nevertheless, the revival faces serious obstacles. Each country charges its own fees for the use of its tracks, and these charges can make up a large share of the ticket price. Modern sleeper carriages are also in short supply: few manufacturers build them, and new orders can take several years to be delivered. Some operators have been forced to refurbish carriages that are more than forty years old." },
+    { "key": "E", "text": "Whether night trains can become more than a niche product is still uncertain. Researchers at one European university estimate that they could replace around 5% of short-haul flights within Europe if ticket prices fell to the level of a budget airline fare. Achieving this, they suggest, would require governments to reduce track charges for overnight services, as some already do for freight." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE** if the statement agrees with the information, **FALSE** if the statement contradicts the information, **NOT GIVEN** if there is no information on this.",
+      "tip": "FALSE = metin tersini söylüyor. NOT GIVEN = metin bu konuda hiçbir şey söylemiyor. Kendi bilgini kullanma.",
+      "questions": [
+        { "id": "r00-1", "n": 1, "prompt": "Overnight trains became less common partly because of competition from cheaper flights.", "answer": "TRUE", "quote": "Low-cost airlines could carry passengers between capital cities in two hours for a fraction of the price", "explain": "\"cheaper flights\" = **low-cost airlines … for a fraction of the price**. Bu, gece trenlerinin azalma nedenlerinden biri olarak verilmiş." },
+        { "id": "r00-2", "n": 2, "prompt": "Sleeper carriages carry more passengers than ordinary carriages.", "answer": "FALSE", "quote": "carry relatively few people", "explain": "Metin yataklı vagonların **görece az kişi** taşıdığını söylüyor; ifade bunun tersini iddia ediyor." },
+        { "id": "r00-3", "n": 3, "prompt": "Most new night train routes are operated by private companies.", "answer": "NOT GIVEN", "quote": "Several national rail operators have reintroduced night routes, and a number of small private companies have entered the market.", "explain": "Hem devlet hem özel şirketlerden bahsediliyor ama hangisinin **çoğunluk** olduğu söylenmiyor." },
+        { "id": "r00-4", "n": 4, "prompt": "Night trains are best suited to journeys of under 600 kilometres.", "answer": "FALSE", "quote": "journeys of between 600 and 1,500 kilometres", "explain": "Uygun mesafe **600–1.500 km** olarak verilmiş; 600 km'nin altı değil." },
+        { "id": "r00-5", "n": 5, "prompt": "Business travellers prefer night trains to flights.", "answer": "NOT GIVEN", "quote": "For business travellers in particular, this can mean a full working day at the destination without an early start.", "explain": "Bir avantaj anlatılıyor ama iş seyahatçilerinin neyi **tercih ettiği** hakkında bilgi yok." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–E**.",
+      "tip": "Bu soru tipi metindeki sırayı izlemez. Önce tüm soruları oku, sonra metni paragraf paragraf tararken eşleştir.",
+      "options": [{ "key": "A", "text": "Paragraph A" }, { "key": "B", "text": "Paragraph B" }, { "key": "C", "text": "Paragraph C" }, { "key": "D", "text": "Paragraph D" }, { "key": "E", "text": "Paragraph E" }],
+      "questions": [
+        { "id": "r00-6", "n": 6, "prompt": "a reference to the age of some equipment currently in use", "answer": "D", "quote": "Some operators have been forced to refurbish carriages that are more than forty years old.", "explain": "\"age of some equipment\" = **carriages that are more than forty years old**." },
+        { "id": "r00-7", "n": 7, "prompt": "a comparison of where passengers arrive", "answer": "C", "quote": "arrives in the city centre rather than at an airport some distance away", "explain": "Şehir merkezi ile uzaktaki havalimanı karşılaştırılıyor." },
+        { "id": "r00-8", "n": 8, "prompt": "a suggestion about how governments could support the service", "answer": "E", "quote": "would require governments to reduce track charges for overnight services", "explain": "Hükümetlerin ray ücretlerini düşürmesi bir öneri olarak sunuluyor." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "sentence", "label": "Sentence completion", "maxWords": 1, "number": true,
+      "instructions": "Complete the sentences below. Choose **ONE WORD AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r00-9", "n": 9, "prompt": "Night trains could replace about ___ of short-haul flights within Europe.", "answer": ["5%", "5 percent", "five percent", "5 per cent"], "quote": "they could replace around 5% of short-haul flights within Europe", "explain": "Sayı metinde **5%** olarak geçiyor." },
+        { "id": "r00-10", "n": 10, "prompt": "Some countries already charge lower track fees for ___.", "answer": ["freight"], "quote": "as some already do for freight", "explain": "\"as some already do for **freight**\": bazı ülkeler yük taşımacılığı için ücreti zaten düşürüyor." }
+      ]
+    }
+  ]
+}

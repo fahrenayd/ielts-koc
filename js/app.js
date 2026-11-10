@@ -1,6 +1,6 @@
 // IELTS Koç — giriş noktası: yönlendirme, tema, service worker
 import { state, loadState } from './store.js';
-import { h, toast } from './util.js';
+import { h, toast, runCleanups } from './util.js';
 import * as onboarding from './screens/onboarding.js';
 import * as today from './screens/today.js';
 import * as practice from './screens/practice.js';
@@ -9,8 +9,14 @@ import * as grammar from './screens/grammar.js';
 import * as mock from './screens/mock.js';
 import * as me from './screens/me.js';
 import * as settings from './screens/settings.js';
+import * as reading from './screens/reading.js';
+import * as listening from './screens/listening.js';
+import * as mistakes from './screens/mistakes.js';
+import * as writing from './screens/writing.js';
+import * as speaking from './screens/speaking.js';
+import * as placement from './screens/placement.js';
 
-export const APP_VERSION = '1.0.0 · Aşama 1';
+export const APP_VERSION = '2.0.0 · Tüm modüller';
 
 // rota → [ekran fonksiyonu, sekme, alt menü görünsün mü]
 const routes = [
@@ -24,8 +30,31 @@ const routes = [
   [/^grammar\/([\w-]+)$/, grammar.renderLesson, 'vocab', true],
   [/^grammar\/([\w-]+)\/quiz$/, grammar.renderQuiz, 'vocab', false],
   [/^mock$/, mock.render, 'mock', true],
+  [/^mock\/([\w-]+)$/, mock.renderRun, 'mock', false],
+  [/^placement$/, placement.render, 'mock', false],
   [/^me$/, me.render, 'me', true],
-  [/^settings$/, settings.render, 'me', true]
+  [/^settings$/, settings.render, 'me', true],
+  [/^reading$/, reading.renderList, 'practice', true],
+  [/^reading\/([\w-]+)$/, reading.renderIntro, 'practice', true],
+  [/^reading\/([\w-]+)\/(practice|timed)$/, reading.renderRun, 'practice', false],
+  [/^listening$/, listening.renderList, 'practice', true],
+  [/^listening\/([\w-]+)$/, listening.renderIntro, 'practice', true],
+  [/^listening\/([\w-]+)\/(practice|exam)$/, listening.renderRun, 'practice', false],
+  [/^mistakes$/, mistakes.renderHome, 'practice', true],
+  [/^mistakes\/review\/([\w-]+)$/, mistakes.renderReview, 'practice', false],
+  [/^writing$/, writing.renderHome, 'practice', true],
+  [/^writing-archive$/, writing.renderArchive, 'practice', true],
+  [/^writing-library$/, writing.renderLibrary, 'practice', true],
+  [/^writing-review\/(\d+)$/, writing.renderReview, 'practice', true],
+  [/^writing\/([\w-]+)$/, writing.renderTask, 'practice', true],
+  [/^writing\/([\w-]+)\/models$/, writing.renderModels, 'practice', true],
+  [/^writing\/([\w-]+)\/plan$/, writing.renderPlan, 'practice', false],
+  [/^writing\/([\w-]+)\/write$/, writing.renderWrite, 'practice', false],
+  [/^speaking$/, speaking.renderHome, 'practice', true],
+  [/^speaking-archive$/, speaking.renderArchive, 'practice', true],
+  [/^speaking\/examiner$/, speaking.renderExaminer, 'practice', false],
+  [/^speaking\/p1\/([\w-]+)$/, speaking.renderP1, 'practice', false],
+  [/^speaking\/p2\/([\w-]+)$/, speaking.renderP2, 'practice', false]
 ];
 
 let renderToken = 0;
@@ -38,6 +67,7 @@ async function route() {
   const params = path.match(re)?.slice(1) || [];
   document.body.classList.toggle('no-tabbar', !showTabs);
   document.querySelectorAll('#tabbar a').forEach((a) => a.classList.toggle('on', a.dataset.tab === tab));
+  runCleanups();
   if (window.speechSynthesis) speechSynthesis.cancel();
   const token = ++renderToken;
   try {

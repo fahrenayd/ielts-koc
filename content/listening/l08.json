@@ -1,0 +1,37 @@
+{
+  "section": 4,
+  "context": "You will hear part of a lecture about urban heat islands.",
+  "speakers": { "A": { "name": "Lecturer", "accent": "en-US", "gender": "f" } },
+  "script": [
+    { "s": "A", "t": "Today's lecture is about urban heat islands, which is the term used to describe cities that are significantly warmer than the countryside around them." },
+    { "s": "A", "t": "The difference can be surprisingly large. On a calm summer night, the centre of a large city can be up to 10 degrees Celsius warmer than nearby rural areas. The effect is usually strongest at night rather than during the day." },
+    { "s": "A", "t": "There are several causes. The first is the materials cities are built from. Asphalt and concrete absorb heat from the sun during the day and release it slowly after dark." },
+    { "s": "A", "t": "The second cause is the lack of vegetation. In the countryside, plants cool the air through a process called evapotranspiration, in which water evaporates from their leaves. Cities, with far fewer plants, lose much of this natural cooling." },
+    { "s": "A", "t": "Third, the shape of cities matters. Tall buildings close together create what are sometimes called urban canyons, which trap heat and reduce wind." },
+    { "s": "A", "t": "And finally, human activity itself produces heat: from cars, factories and, ironically, air conditioners, which pump hot air out into the street." },
+    { "s": "A", "t": "Why does this matter? The most serious consequence is for health. During heatwaves, death rates rise sharply, and elderly people are most at risk." },
+    { "s": "A", "t": "Higher temperatures also increase energy use, as more people switch on air conditioning, and they can worsen air quality, because heat speeds up the chemical reactions that produce ground-level ozone." },
+    { "s": "A", "t": "So what can be done? One of the simplest solutions is to make surfaces lighter in colour. Los Angeles, for example, has experimented with coating streets in a light grey material that reflects sunlight, and measurements suggest these streets can be several degrees cooler." },
+    { "s": "A", "t": "Green roofs, which are covered with plants, are another option. They not only cool buildings but also absorb rainwater. However, they are expensive to install and require regular maintenance." },
+    { "s": "A", "t": "Finally, and perhaps most effectively, cities can plant more trees. Medellín in Colombia created a network of green corridors along roads and waterways, and temperatures along them fell by around 2 degrees." }
+  ],
+  "groups": [
+    {
+      "type": "gap", "subtype": "note", "maxWords": 1, "number": true,
+      "instructions": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+      "text": "# Urban heat islands\nCity centres can be up to {{1}}°C warmer than rural areas\nThe effect is strongest at {{2}}\nAsphalt and concrete release heat slowly after {{3}}\nPlants cool the air when water {{4}} from their leaves\nTall buildings create urban {{5}} that trap heat\nDuring heatwaves, {{6}} people are most at risk\nHeat increases the production of ground-level {{7}}\nLos Angeles: streets coated in a light {{8}} material\nGreen roofs also absorb {{9}}\nMedellín: green corridors reduced temperatures by about {{10}} degrees",
+      "questions": [
+        { "id": "l08-1", "n": 1, "answer": ["10", "ten"], "quote": "can be up to 10 degrees Celsius warmer", "explain": "**10** derece." },
+        { "id": "l08-2", "n": 2, "answer": ["night"], "quote": "The effect is usually strongest at night rather than during the day.", "explain": "**night** (gündüz değil)." },
+        { "id": "l08-3", "n": 3, "answer": ["dark"], "quote": "release it slowly after dark", "explain": "after **dark**." },
+        { "id": "l08-4", "n": 4, "answer": ["evaporates"], "quote": "in which water evaporates from their leaves", "explain": "water **evaporates** — fiil, -s ekiyle." },
+        { "id": "l08-5", "n": 5, "answer": ["canyons"], "quote": "what are sometimes called urban canyons", "explain": "urban **canyons**." },
+        { "id": "l08-6", "n": 6, "answer": ["elderly", "older", "old"], "quote": "elderly people are most at risk", "explain": "**elderly** people." },
+        { "id": "l08-7", "n": 7, "answer": ["ozone"], "quote": "ground-level ozone", "explain": "ground-level **ozone**." },
+        { "id": "l08-8", "n": 8, "answer": ["grey", "gray"], "quote": "coating streets in a light grey material", "explain": "light **grey** (Amerikan yazımı gray de kabul)." },
+        { "id": "l08-9", "n": 9, "answer": ["rainwater", "rain"], "quote": "but also absorb rainwater", "explain": "**rainwater**." },
+        { "id": "l08-10", "n": 10, "answer": ["2", "two"], "quote": "temperatures along them fell by around 2 degrees", "explain": "yaklaşık **2** derece." }
+      ]
+    }
+  ]
+}

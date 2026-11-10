@@ -1,7 +1,7 @@
 // Bugün ekranı: geri sayım, seri, günlük görevler
 import { h, daysUntil, keyToDate } from '../util.js';
 import { state, getDay } from '../store.js';
-import { studyPhase, goalMinutes, todayTasks, streakInfo } from '../planner.js';
+import { studyPhase, goalMinutes, todayTasks, streakInfo, latestBands, SKILLS, SKILL_TR } from '../planner.js';
 import { fmtBand } from '../scoring.js';
 import { install } from '../app.js';
 
@@ -26,7 +26,7 @@ function installCard() {
 
 export async function render() {
   const p = state.profile;
-  const [day, tasks, st] = await Promise.all([getDay(), todayTasks(), streakInfo()]);
+  const [day, tasks, st, bands] = await Promise.all([getDay(), todayTasks(), streakInfo(), latestBands()]);
   const left = daysUntil(p.examDate);
   const phase = studyPhase(p);
   const goal = goalMinutes(p);
@@ -64,9 +64,9 @@ export async function render() {
       h('div', { class: 'row spread' }, h('h3', null, 'Dönem: ' + phase.name), h('span', { class: 'pill primary' }, 'Plan')),
       h('p', { class: 'small muted', style: { margin: 0 } }, phase.focus)),
 
-    h('div', { class: 'card locked', style: { marginTop: '12px' } },
-      h('h3', null, 'Yakında'),
-      h('p', { class: 'small muted', style: { margin: 0 } }, 'Aşama 2: Reading, Listening, Hata Defteri ve seviye tespiti. Seviye tespitinden sonra görevlerin zayıf noktalarına göre otomatik oluşacak.')));
+    h('div', { class: 'card', style: { marginTop: '12px' } },
+      h('div', { class: 'row spread' }, h('h3', null, 'Tahmini bandların'), h('a', { class: 'small', href: '#/me' }, 'Ayrıntı ›')),
+      h('div', { class: 'kpis kpis4' }, SKILLS.map((s) => h('div', { class: 'kpi' }, h('b', { class: bands[s] != null && bands[s] < p.targetMin ? 'txt-bad' : '' }, fmtBand(bands[s])), h('span', null, SKILL_TR[s]))))));
 
   if (install.prompt) root.insertBefore(installCard(), root.children[2]);
   document.addEventListener('installable', () => {

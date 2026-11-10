@@ -1,0 +1,47 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Common sense suggests that the more options people have, the better off they will be. A shopper faced with forty kinds of jam is more likely to find exactly the one she wants than a shopper offered only four. Economists have traditionally shared this view, assuming that additional choices can never make a rational person worse off, since he or she is always free to ignore them." },
+    { "key": "B", "text": "In 2000, a study by the psychologists Sheena Iyengar and Mark Lepper challenged this assumption. In a supermarket in California, they set up a tasting stand that displayed either six or twenty-four varieties of jam. The larger display attracted more visitors, but only about 3% of those who stopped at it went on to buy a jar, compared with around 30% of visitors to the smaller display. The researchers concluded that too much choice could lead to 'choice overload', a state in which people find decisions so difficult that they avoid making them altogether." },
+    { "key": "C", "text": "The jam study became one of the most widely quoted findings in popular psychology, and the idea was developed further by Barry Schwartz in his book The Paradox of Choice. Schwartz argued that an abundance of options not only discourages decisions but also reduces satisfaction with the decisions that are made. When there are many alternatives, he suggested, it is easy to imagine that one of the rejected options would have been better, and this feeling of regret spoils the pleasure of the choice. In my view, this second claim is the more interesting of the two, because it concerns how people feel rather than simply what they do." },
+    { "key": "D", "text": "In recent years, however, the choice overload effect has proved surprisingly difficult to reproduce. In 2010, the psychologist Benjamin Scheibehenne and his colleagues combined the results of fifty experiments on the subject and found that, on average, the size of the effect was close to zero. Some studies found that more choice reduced purchases; others found that it increased them. It would be wrong to conclude from this that the original finding was false. A more reasonable interpretation is that choice overload occurs only under particular conditions." },
+    { "key": "E", "text": "Later research has attempted to identify those conditions. A review published in 2015 by Alexander Chernev and colleagues concluded that overload is most likely when decisions are complex, when the options are difficult to compare, when people are uncertain about their own preferences and when they are under time pressure. A person who knows exactly what kind of coffee he likes will not be troubled by a menu of fifty drinks; a first-time buyer of a mortgage, faced with dozens of products with different conditions, may well be." },
+    { "key": "F", "text": "These findings have practical consequences. Some retailers have reduced the number of products they stock, and several governments have simplified the choices offered to citizens, for example by reducing the number of pension plans available or by placing employees in a default plan unless they choose otherwise. Such policies are generally sensible, but they carry a risk: the people who design the reduced set of options may not share the priorities of those who must choose from it. Choice itself is not the problem; poorly organised choice is." }
+  ],
+  "groups": [
+    {
+      "type": "ynng", "label": "Yes/No/Not Given",
+      "instructions": "Do the following statements agree with the views of the writer? Choose **YES** if the statement agrees with the views of the writer, **NO** if the statement contradicts the views of the writer, **NOT GIVEN** if it is impossible to say what the writer thinks about this.",
+      "tip": "Y/N/NG yazarın **görüşünü** sorar. \"In my view\", \"It would be wrong\", \"generally sensible\" gibi değerlendirme ifadelerini ara.",
+      "questions": [
+        { "id": "r02-1", "n": 1, "prompt": "Schwartz's claim about satisfaction is more interesting than his claim about decision-making.", "answer": "YES", "quote": "In my view, this second claim is the more interesting of the two", "explain": "Yazar açıkça \"In my view\" diyerek ikinci iddiayı (memnuniyet) daha ilginç bulduğunu söylüyor." },
+        { "id": "r02-2", "n": 2, "prompt": "The failure to reproduce the jam study shows that its findings were incorrect.", "answer": "NO", "quote": "It would be wrong to conclude from this that the original finding was false.", "explain": "Yazar bu sonuca varmanın **yanlış** olacağını söylüyor." },
+        { "id": "r02-3", "n": 3, "prompt": "The jam study was carried out with too few participants.", "answer": "NOT GIVEN", "quote": "", "explain": "Katılımcı sayısı veya bunun yeterli olup olmadığı hakkında yazarın bir görüşü yok." },
+        { "id": "r02-4", "n": 4, "prompt": "Policies that reduce the number of options are usually reasonable.", "answer": "YES", "quote": "Such policies are generally sensible", "explain": "\"usually reasonable\" = **generally sensible**." },
+        { "id": "r02-5", "n": 5, "prompt": "The main problem for consumers is the number of choices available.", "answer": "NO", "quote": "Choice itself is not the problem; poorly organised choice is.", "explain": "Yazara göre sorun seçenek sayısı değil, seçeneklerin **kötü düzenlenmesi**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching features",
+      "instructions": "Match each finding or idea with the correct researcher(s), **A–D**.",
+      "tip": "Önce metindeki tüm isimlerin altını çiz (zihninde). Sonra her ismin etrafındaki 2-3 cümleyi oku.",
+      "options": [{ "key": "A", "text": "Iyengar and Lepper" }, { "key": "B", "text": "Barry Schwartz" }, { "key": "C", "text": "Scheibehenne and colleagues" }, { "key": "D", "text": "Chernev and colleagues" }],
+      "questions": [
+        { "id": "r02-6", "n": 6, "prompt": "found that the overall effect of choice overload was very small", "answer": "C", "quote": "found that, on average, the size of the effect was close to zero", "explain": "\"very small\" = **close to zero**; 50 deneyin birleştirilmesi." },
+        { "id": "r02-7", "n": 7, "prompt": "identified situations in which too many options are most likely to cause problems", "answer": "D", "quote": "concluded that overload is most likely when decisions are complex", "explain": "Chernev hangi **koşullarda** aşırı yüklenme olduğunu sıralıyor." },
+        { "id": "r02-8", "n": 8, "prompt": "suggested that people may regret options they did not choose", "answer": "B", "quote": "it is easy to imagine that one of the rejected options would have been better", "explain": "\"options they did not choose\" = **rejected options**; \"regret\" metinde de geçiyor." },
+        { "id": "r02-9", "n": 9, "prompt": "compared the behaviour of shoppers presented with different numbers of products", "answer": "A", "quote": "displayed either six or twenty-four varieties of jam", "explain": "Reçel deneyi: 6 ve 24 çeşit." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r02-10", "n": 10, "prompt": "What happened at the larger jam display?", "options": ["It attracted fewer people than the smaller one.", "A smaller proportion of visitors bought jam.", "Visitors spent longer tasting the jam.", "More jars were sold in total."], "answer": "B", "quote": "only about 3% of those who stopped at it went on to buy a jar", "explain": "Büyük stant **daha çok** ziyaretçi çekti (A yanlış) ama yalnızca %3'ü satın aldı. Toplam satış (D) verilmemiş." },
+        { "id": "r02-11", "n": 11, "prompt": "The example of the coffee drinker shows that", "options": ["choice overload depends on how well people know what they want.", "restaurants should offer fewer drinks.", "experienced customers make faster decisions.", "people prefer simple products."], "answer": "A", "quote": "A person who knows exactly what kind of coffee he likes will not be troubled by a menu of fifty drinks", "explain": "Ne istediğini bilen kişi etkilenmiyor: aşırı yüklenme **tercihlerden emin olmaya** bağlı." },
+        { "id": "r02-12", "n": 12, "prompt": "Which of the following is NOT mentioned as a condition for choice overload?", "options": ["time pressure", "complex decisions", "high prices", "uncertain preferences"], "answer": "C", "quote": "when people are uncertain about their own preferences and when they are under time pressure", "explain": "Karmaşık kararlar, karşılaştırılması zor seçenekler, belirsiz tercihler ve zaman baskısı sayılıyor; **fiyat** yok." },
+        { "id": "r02-13", "n": 13, "prompt": "What risk does the writer mention regarding simplified choices?", "options": ["Citizens may lose trust in the government.", "The options selected by designers may not suit everyone.", "Retailers may increase their prices.", "People may stop making decisions."], "answer": "B", "quote": "the people who design the reduced set of options may not share the priorities of those who must choose from it", "explain": "Seçenekleri belirleyenlerin öncelikleri, seçmek zorunda olanlarınkiyle **örtüşmeyebilir**." }
+      ]
+    }
+  ]
+}

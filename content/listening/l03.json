@@ -1,0 +1,71 @@
+{
+  "section": 3,
+  "context": "You will hear two university students, Maya and Leo, discussing a research project on food waste.",
+  "speakers": { "L": { "name": "Leo", "accent": "en-US", "gender": "m" }, "M": { "name": "Maya", "accent": "en-GB", "gender": "f" } },
+  "script": [
+    { "s": "L", "t": "Hi Maya. Have you got a few minutes to talk about our project on food waste? The proposal's due on Friday." },
+    { "s": "M", "t": "Sure. I've been thinking about how we collect the data. I know we said we'd use a questionnaire, but I'm not sure students will tell us honestly how much food they throw away." },
+    { "s": "L", "t": "That's true. People tend to underestimate it. What about weighing the waste instead?" },
+    { "s": "M", "t": "That's what I was going to suggest. If the canteen manager agrees, we could weigh what's left on the plates at lunchtime for two weeks." },
+    { "s": "L", "t": "Two weeks seems long. Couldn't we do one?" },
+    { "s": "M", "t": "Our tutor said that one week wouldn't be enough to see any pattern, because menus change from day to day. So I think we need two." },
+    { "s": "L", "t": "Fair enough. And we could still do a short questionnaire to find out why people leave food." },
+    { "s": "M", "t": "Yes, that would give us the reasons, not just the amounts. Now, about the literature review. I've found three sources so far." },
+    { "s": "L", "t": "Go on." },
+    { "s": "M", "t": "The first is a government report from 2019. It's got lots of national statistics, but it's quite general; it doesn't say much about universities." },
+    { "s": "L", "t": "We could still use it in the introduction to show the scale of the problem." },
+    { "s": "M", "t": "Exactly. The second is a journal article by Hansen about a university in Denmark. It's very relevant, but the sample was small, only about two hundred students." },
+    { "s": "L", "t": "That's still useful, as long as we mention the limitation. What's the third?" },
+    { "s": "M", "t": "A book by Clarke. It's really well written, but it was published in 1998, so a lot of the data is out of date." },
+    { "s": "L", "t": "Hmm. I'd only use it for the theory, then, not the figures." },
+    { "s": "M", "t": "Agreed. Now, how should we divide the work? I'm happy to contact the canteen manager, since I know her a bit already." },
+    { "s": "L", "t": "Great. Then I'll design the questionnaire. I did something similar last year." },
+    { "s": "M", "t": "And what about analysing the data? Neither of us is very confident with statistics." },
+    { "s": "L", "t": "Why don't we ask Dr Okafor for help? She runs a statistics workshop on Wednesdays." },
+    { "s": "M", "t": "Good idea. One more thing: what do you think the biggest challenge will be?" },
+    { "s": "M", "t": "Honestly, for me it'll be getting enough students to complete the questionnaire. Response rates are always low at the end of term." },
+    { "s": "L", "t": "And for me, it's time. Weighing the waste every day is going to take a lot of effort, and we've both got exams coming." }
+  ],
+  "groups": [
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "tip": "Section 3'te bir konuşmacı fikir önerir, diğeri itiraz edebilir. Cevap genellikle **anlaşmaya varılan** noktadır.",
+      "questions": [
+        { "id": "l03-1", "n": 1, "prompt": "Why does Maya want to weigh food waste rather than rely only on a questionnaire?", "options": ["Students may not report their waste accurately.", "Questionnaires take too long to analyse.", "The canteen manager asked them to."], "answer": "A", "quote": "I'm not sure students will tell us honestly how much food they throw away", "explain": "Öğrenciler israfı **dürüstçe/doğru** bildirmeyebilir (underestimate)." },
+        { "id": "l03-2", "n": 2, "prompt": "Why do they decide to collect data for two weeks?", "options": ["The canteen is closed on some days.", "Menus vary from day to day.", "Leo has more free time in the second week."], "answer": "B", "trap": "paraphrase", "quote": "because menus change from day to day", "explain": "\"vary\" = **change**. Leo bir hafta önerdi ama hoca menülerin değiştiğini söyledi." },
+        { "id": "l03-3", "n": 3, "prompt": "What will the questionnaire be used for?", "options": ["to measure the amount of waste", "to find out why students leave food", "to compare different canteens"], "answer": "B", "quote": "to find out why people leave food", "explain": "Anket **nedenleri** bulmak için; miktar tartılarak ölçülecek." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching",
+      "instructions": "What do the students say about each source? Choose the correct letter, **A–E**.",
+      "options": [{ "key": "A", "text": "useful for the introduction" }, { "key": "B", "text": "relevant but based on a small sample" }, { "key": "C", "text": "only useful for the theory" }, { "key": "D", "text": "too difficult to understand" }, { "key": "E", "text": "not relevant to the project" }],
+      "questions": [
+        { "id": "l03-4", "n": 4, "prompt": "the government report", "answer": "A", "trap": "distractor", "quote": "We could still use it in the introduction to show the scale of the problem.", "explain": "Rapor üniversitelerle ilgili az şey söylüyor (E tuzağı) ama **girişte** kullanılacak." },
+        { "id": "l03-5", "n": 5, "prompt": "Hansen's article", "answer": "B", "quote": "It's very relevant, but the sample was small, only about two hundred students.", "explain": "İlgili ama **örneklem küçük** (200 öğrenci)." },
+        { "id": "l03-6", "n": 6, "prompt": "Clarke's book", "answer": "C", "quote": "I'd only use it for the theory, then, not the figures.", "explain": "Veriler eski; sadece **teori** için." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching",
+      "instructions": "Who will do each task? Choose the correct letter, **A–C**.",
+      "options": [{ "key": "A", "text": "Maya" }, { "key": "B", "text": "Leo" }, { "key": "C", "text": "Dr Okafor" }],
+      "questions": [
+        { "id": "l03-7", "n": 7, "prompt": "contact the canteen manager", "answer": "A", "quote": "I'm happy to contact the canteen manager", "explain": "Maya müdürü tanıyor; o arayacak." },
+        { "id": "l03-8", "n": 8, "prompt": "design the questionnaire", "answer": "B", "quote": "Then I'll design the questionnaire.", "explain": "Leo geçen yıl benzerini yapmış." }
+      ]
+    },
+    {
+      "type": "multi",
+      "instructions": "Choose **TWO** letters, **A–E**.",
+      "prompt": "Which **TWO** challenges do the students mention?",
+      "options": ["getting enough people to respond", "a lack of time", "the cost of equipment", "the canteen manager refusing", "losing their data"],
+      "answers": ["A", "B"],
+      "questions": [
+        { "id": "l03-9", "n": 9, "quote": "getting enough students to complete the questionnaire", "explain": "Maya: yeterli yanıt almak (**A**)." },
+        { "id": "l03-10", "n": 10, "quote": "And for me, it's time.", "explain": "Leo: **zaman** (B)." }
+      ]
+    }
+  ]
+}

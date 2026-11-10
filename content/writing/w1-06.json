@@ -1,0 +1,24 @@
+{
+  "prompt": "The maps below show the village of Ashford in 1995 and today.",
+  "tip": "Harita: değişim dili (was replaced by, was converted into, was extended, a new … was built) ve konum dili (to the north of, on the east side, across the river). Overview: köy daha kentsel hâle geldi mi?",
+  "chart": { "type": "map", "title": "The village of Ashford", "notes": "Kuzeydeki tarım arazisi konut sitesine dönüştü; okul genişletildi; dükkanların yerine süpermarket geldi; nehrin üzerine köprü yapıldı; süpermarketin güneyine otopark eklendi; evler aynı kaldı.", "maps": [
+    { "label": "1995", "items": [
+      { "x": 10, "y": 18, "w": 130, "h": 48, "kind": "green", "label": "Farmland" },
+      { "x": 165, "y": 5, "w": 25, "h": 150, "kind": "water", "label": "River" },
+      { "x": 5, "y": 75, "w": 160, "h": 12, "kind": "road", "label": "Main Road" },
+      { "x": 15, "y": 100, "w": 40, "h": 40, "kind": "building", "label": "School" },
+      { "x": 75, "y": 100, "w": 35, "h": 22, "kind": "building", "label": "Shops" },
+      { "x": 120, "y": 100, "w": 35, "h": 45, "kind": "building", "label": "Houses" } ] },
+    { "label": "Today", "items": [
+      { "x": 10, "y": 18, "w": 130, "h": 48, "kind": "building", "label": "Housing estate" },
+      { "x": 165, "y": 5, "w": 25, "h": 150, "kind": "water", "label": "River" },
+      { "x": 5, "y": 75, "w": 160, "h": 12, "kind": "road", "label": "Main Road" },
+      { "x": 160, "y": 75, "w": 36, "h": 12, "kind": "road", "label": "Bridge" },
+      { "x": 10, "y": 100, "w": 58, "h": 40, "kind": "building", "label": "School (extended)" },
+      { "x": 75, "y": 100, "w": 35, "h": 22, "kind": "building", "label": "Supermarket" },
+      { "x": 75, "y": 128, "w": 35, "h": 20, "kind": "road", "label": "Car park" },
+      { "x": 120, "y": 100, "w": 35, "h": 45, "kind": "building", "label": "Houses" } ] } ] },
+  "modelBand": "8",
+  "model": "The maps illustrate the changes that have taken place in the village of Ashford between 1995 and the present day.\nOverall, Ashford has become considerably more developed, with a large area of farmland being replaced by housing and new facilities being added for residents and drivers. The basic layout of the village, however, with the main road running from west to east, has remained the same.\nThe most significant change has occurred to the north of the main road, where the farmland that existed in 1995 has been converted into a housing estate. The main road has also been extended eastwards by means of a new bridge across the river, which now connects the village to the land on the other side.\nSouth of the main road, the school in the south-west has been considerably enlarged, and the row of shops has been replaced by a supermarket. A car park has been built directly behind the supermarket, presumably to serve its customers. The houses in the south-east of the village are the only feature that appears to have remained unchanged.",
+  "modelNotes": ["Present perfect edilgen: has been converted, has been replaced, has been built.", "Konum dili: to the north of, in the south-west, eastwards, across the river.", "Overview hem değişimi hem değişmeyeni (yol düzeni) veriyor."]
+}

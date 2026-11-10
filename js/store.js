@@ -17,7 +17,8 @@ export const DEFAULT_SETTINGS = {
   accent: 'en-GB',      // en-GB | en-US | en-AU
   rate: 0.95,
   newPerDay: 15,
-  maxReviews: 150
+  maxReviews: 150,
+  speechMode: 'both'   // both | stt | rec (Speaking: kayıt + yazıya dökme)
 };
 
 export const state = { profile: null, settings: { ...DEFAULT_SETTINGS } };
@@ -31,9 +32,11 @@ export async function saveSettings(s) { state.settings = s; await setKV('setting
 
 // ---------- Günlük kayıt ----------
 export async function getDay(key = todayKey()) {
-  return (await db.get('days', key)) || { date: key, seconds: 0, reviews: 0, newCards: 0, lessons: [], quizzes: 0 };
+  const d = (await db.get('days', key)) || { date: key, seconds: 0, reviews: 0, newCards: 0, lessons: [], quizzes: 0 };
+  d.done = d.done || [];
+  return d;
 }
-// patch: { seconds, reviews, newCards, lesson, quizzes }
+// patch: { seconds, reviews, newCards, lesson, quizzes, done: 'reading' | 'listening' | 'writing' | 'speaking' | 'mistakes' }
 export async function logDay(patch) {
   const d = await getDay();
   d.seconds += patch.seconds || 0;
@@ -41,6 +44,7 @@ export async function logDay(patch) {
   d.newCards += patch.newCards || 0;
   d.quizzes += patch.quizzes || 0;
   if (patch.lesson && !d.lessons.includes(patch.lesson)) d.lessons.push(patch.lesson);
+  if (patch.done && !d.done.includes(patch.done)) d.done.push(patch.done);
   await db.put('days', d);
   return d;
 }

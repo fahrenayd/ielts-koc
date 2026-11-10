@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "vocab": [
     { "id": "education", "file": "vocab/education.json", "title": "Education", "tr": "Eğitim", "icon": "🎓" },
     { "id": "environment", "file": "vocab/environment.json", "title": "Environment", "tr": "Çevre", "icon": "🌍" },
@@ -12,5 +12,54 @@
     { "id": "articles", "file": "grammar/articles.json", "title": "Articles: a / an / the / ∅", "tr": "Article kullanımı", "icon": "🅰️" },
     { "id": "perfect-past", "file": "grammar/perfect-past.json", "title": "Present Perfect vs Past Simple", "tr": "Present Perfect mi, Past Simple mı?", "icon": "⏳" },
     { "id": "make-do", "file": "grammar/make-do.json", "title": "Make vs Do & common collocations", "tr": "Make / Do ve sık hatalar", "icon": "🔧" }
+  ],
+  "reading": [
+    { "id": "r01", "file": "reading/r01.json", "title": "The Bees of the City", "topic": "Environment", "level": "Orta", "questions": 13, "icon": "🐝" },
+    { "id": "r02", "file": "reading/r02.json", "title": "Too Much Choice?", "topic": "Psychology", "level": "Orta-zor", "questions": 13, "icon": "🧠" },
+    { "id": "r03", "file": "reading/r03.json", "title": "The Secret of Roman Concrete", "topic": "History & Science", "level": "Zor", "questions": 14, "icon": "🏛️" },
+    { "id": "r04", "file": "reading/r04.json", "title": "Sleep and the Learning Brain", "topic": "Health", "level": "Orta", "questions": 13, "icon": "😴" },
+    { "id": "r05", "file": "reading/r05.json", "title": "Farming Upwards", "topic": "Food & Technology", "level": "Orta", "questions": 13, "icon": "🥬" },
+    { "id": "r06", "file": "reading/r06.json", "title": "Why Languages Die", "topic": "Culture & Society", "level": "Zor", "questions": 14, "icon": "🗣️" },
+    { "id": "r07", "file": "reading/r07.json", "title": "The Desert Locust", "topic": "Nature", "level": "Orta", "questions": 13, "icon": "🦗" },
+    { "id": "r08", "file": "reading/r08.json", "title": "Measuring Time at Sea", "topic": "History", "level": "Orta-zor", "questions": 13, "icon": "⛵" }
+  ],
+  "listening": [
+    { "id": "l01", "file": "listening/l01.json", "title": "Booking a holiday cottage", "section": 1, "questions": 10 },
+    { "id": "l02", "file": "listening/l02.json", "title": "Greenfield Park", "section": 2, "questions": 10 },
+    { "id": "l03", "file": "listening/l03.json", "title": "A project on food waste", "section": 3, "questions": 10 },
+    { "id": "l04", "file": "listening/l04.json", "title": "The history of the bicycle", "section": 4, "questions": 10 },
+    { "id": "l05", "file": "listening/l05.json", "title": "Enrolling on a Spanish course", "section": 1, "questions": 10 },
+    { "id": "l06", "file": "listening/l06.json", "title": "The Harbourside Festival", "section": 2, "questions": 10 },
+    { "id": "l07", "file": "listening/l07.json", "title": "Feedback on a presentation", "section": 3, "questions": 10 },
+    { "id": "l08", "file": "listening/l08.json", "title": "Urban heat islands", "section": 4, "questions": 10 }
+  ],
+  "placement": [
+    { "id": "r00", "file": "placement/r00.json", "title": "The Return of the Night Train" },
+    { "id": "l00", "file": "placement/l00.json", "title": "Riverside Sports Centre", "section": 2 }
+  ],
+  "writing": [
+    { "id": "w1-01", "file": "writing/w1-01.json", "task": 1, "kind": "line", "title": "Home internet access", "model": true },
+    { "id": "w1-02", "file": "writing/w1-02.json", "task": 1, "kind": "bar", "title": "Leisure time by age group", "model": true },
+    { "id": "w1-03", "file": "writing/w1-03.json", "task": 1, "kind": "pie", "title": "Electricity sources", "model": true },
+    { "id": "w1-04", "file": "writing/w1-04.json", "task": 1, "kind": "table", "title": "International students", "model": true },
+    { "id": "w1-05", "file": "writing/w1-05.json", "task": 1, "kind": "process", "title": "Paper recycling", "model": true },
+    { "id": "w1-06", "file": "writing/w1-06.json", "task": 1, "kind": "map", "title": "The village of Ashford", "model": true },
+    { "id": "w2-01", "file": "writing/w2-01.json", "task": 2, "kind": "opinion", "title": "Smartphones in schools", "model": true },
+    { "id": "w2-02", "file": "writing/w2-02.json", "task": 2, "kind": "discussion", "title": "Prison and crime", "model": true },
+    { "id": "w2-03", "file": "writing/w2-03.json", "task": 2, "kind": "problem", "title": "Housing costs", "model": true },
+    { "id": "w2-04", "file": "writing/w2-04.json", "task": 2, "kind": "advdis", "title": "Working from home", "model": true },
+    { "id": "w2-05", "file": "writing/w2-05.json", "task": 2, "kind": "twopart", "title": "Imported products", "model": true },
+    { "id": "w2-06", "file": "writing/w2-06.json", "task": 2, "kind": "opinion", "title": "Public transport or roads" },
+    { "id": "w2-07", "file": "writing/w2-07.json", "task": 2, "kind": "discussion", "title": "Compulsory community service" },
+    { "id": "w2-08", "file": "writing/w2-08.json", "task": 2, "kind": "twopart", "title": "Fewer science students" },
+    { "id": "library", "file": "writing/library.json", "task": 0, "kind": "library", "title": "Kalıp kütüphanesi" }
+  ],
+  "speaking": [
+    { "id": "part1", "file": "speaking/part1.json", "title": "Part 1" },
+    { "id": "part2", "file": "speaking/part2.json", "title": "Part 2 & 3" }
+  ],
+  "mocks": [
+    { "id": "A", "title": "Deneme Sınavı A", "desc": "Listening S1–S4 (tatil evi, park, gıda israfı, bisiklet tarihi) · Reading: arılar, seçim psikolojisi, Roma betonu · Writing: internet erişimi + akıllı telefon yasağı", "listening": ["l01", "l02", "l03", "l04"], "reading": ["r01", "r02", "r03"], "writing": ["w1-01", "w2-01"] },
+    { "id": "B", "title": "Deneme Sınavı B", "desc": "Listening S1–S4 (İspanyolca kursu, festival, sunum geri bildirimi, ısı adaları) · Reading: uyku, dikey tarım, dillerin ölümü · Writing: boş zaman grafiği + suç ve hapis", "listening": ["l05", "l06", "l07", "l08"], "reading": ["r04", "r05", "r06"], "writing": ["w1-02", "w2-02"] }
   ]
 }

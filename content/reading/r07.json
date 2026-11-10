@@ -1,0 +1,52 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "The desert locust is perhaps the most destructive migratory pest in the world. For most of the time, it lives a quiet, solitary life in the deserts of North Africa, the Middle East and South-West Asia, an area covering some sixteen million square kilometres. Solitary locusts are green or brown, avoid one another and fly mainly at night. Under certain conditions, however, they undergo a remarkable transformation." },
+    { "key": "B", "text": "When unusually heavy rains fall in the desert, vegetation grows rapidly and locusts breed in large numbers. As the plants dry out again, the insects are forced together in the remaining patches of green. Experiments have shown that the repeated touching of the hind legs, caused by crowding, triggers a release of the chemical serotonin in the locust's nervous system. Within a few hours, the insects begin to seek each other out rather than avoid each other. Over the following generations, they change colour to yellow and black, develop larger muscles and become active during the day. This is known as the gregarious phase." },
+    { "key": "C", "text": "Gregarious locusts form bands of wingless young insects, called hoppers, which march across the ground, and later swarms of flying adults. A single swarm can cover several hundred square kilometres and contain tens of billions of insects. Each adult can eat roughly its own weight in fresh food, about two grams, every day, which means that a swarm of one square kilometre can consume as much food in a day as 35,000 people. Carried by the wind, swarms can travel up to 150 kilometres in a day." },
+    { "key": "D", "text": "Major outbreaks, known as plagues, have been recorded since ancient times. The most recent serious plague, between 1987 and 1989, affected more than forty countries. In 2019 and 2020, after cyclones brought heavy rain to the Arabian Peninsula, swarms spread across East Africa and South Asia. Kenya experienced its worst invasion for seventy years, and the United Nations warned that the food security of millions of people was at risk." },
+    { "key": "E", "text": "Control of locusts has relied mainly on chemical pesticides sprayed from vehicles or aircraft. These are effective but can harm other insects, birds and people, and they are expensive to apply over large areas. A biological alternative, based on a fungus that infects and kills locusts but is harmless to most other animals, has been available since the late 1990s. It acts more slowly than chemical pesticides, taking up to two weeks to kill the insects, which has limited its use during emergencies." },
+    { "key": "F", "text": "Most experts agree that the most effective strategy is prevention. The Food and Agriculture Organization of the United Nations runs a monitoring system that combines satellite data on rainfall and vegetation with reports from field teams in affected countries. When conditions favour breeding, teams can treat small groups of locusts before they become swarms. This approach is far cheaper than fighting a plague: the response to the 2003-2005 outbreak in West Africa cost an estimated 570 million dollars, whereas the annual cost of prevention is a small fraction of that." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r07-1", "n": 1, "prompt": "Solitary desert locusts are active mostly during the night.", "answer": "TRUE", "quote": "fly mainly at night", "explain": "\"mostly\" = **mainly**." },
+        { "id": "r07-2", "n": 2, "prompt": "Heavy rain reduces the number of locusts in the desert.", "answer": "FALSE", "quote": "locusts breed in large numbers", "explain": "Yağmur bitki örtüsünü artırır ve çekirgeler **çok sayıda ürer**." },
+        { "id": "r07-3", "n": 3, "prompt": "Crowding causes a chemical change in a locust's nervous system.", "answer": "TRUE", "quote": "triggers a release of the chemical serotonin in the locust's nervous system", "explain": "Kalabalıktan kaynaklanan dokunma serotonin salgılatıyor." },
+        { "id": "r07-4", "n": 4, "prompt": "Gregarious locusts live longer than solitary locusts.", "answer": "NOT GIVEN", "quote": "", "explain": "Yaşam süresi hakkında hiçbir bilgi yok." },
+        { "id": "r07-5", "n": 5, "prompt": "The 2019–2020 invasion was the worst ever recorded in Kenya.", "answer": "FALSE", "quote": "Kenya experienced its worst invasion for seventy years", "explain": "\"worst for seventy years\" = son 70 yılın en kötüsü; yani daha önce eşit veya daha kötüsü yaşanmış. \"ever\" ile çelişir." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "endings", "label": "Sentence endings",
+      "instructions": "Complete each sentence with the correct ending, **A–F**, below.",
+      "options": [
+        { "key": "A", "text": "move across the land in groups." },
+        { "key": "B", "text": "eats as much in a day as thousands of people." },
+        { "key": "C", "text": "can damage wildlife and human health." },
+        { "key": "D", "text": "takes longer to work than chemical methods." },
+        { "key": "E", "text": "are carried long distances by satellites." },
+        { "key": "F", "text": "is only effective in dry conditions." }
+      ],
+      "questions": [
+        { "id": "r07-6", "n": 6, "prompt": "Young locusts that cannot yet fly", "answer": "A", "quote": "called hoppers, which march across the ground", "explain": "\"cannot yet fly\" = **wingless**; \"march across the ground\" = move across the land." },
+        { "id": "r07-7", "n": 7, "prompt": "A swarm covering one square kilometre", "answer": "B", "quote": "can consume as much food in a day as 35,000 people", "explain": "35.000 kişi = **thousands of people**." },
+        { "id": "r07-8", "n": 8, "prompt": "Chemical pesticides", "answer": "C", "quote": "can harm other insects, birds and people", "explain": "\"wildlife\" = insects, birds; \"human health\" = people." },
+        { "id": "r07-9", "n": 9, "prompt": "The fungus-based treatment", "answer": "D", "quote": "It acts more slowly than chemical pesticides", "explain": "Kimyasallardan **daha yavaş** etki ediyor (2 haftaya kadar)." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r07-10", "n": 10, "prompt": "What first makes locusts begin to seek each other out?", "options": ["a change in colour", "physical contact between insects", "the growth of larger muscles", "a shortage of water"], "answer": "B", "quote": "the repeated touching of the hind legs, caused by crowding", "explain": "Renk ve kas değişimi **sonraki nesillerde** oluyor; ilk tetikleyici **dokunma**." },
+        { "id": "r07-11", "n": 11, "prompt": "How far can a swarm travel in one day?", "options": ["up to 15 km", "up to 100 km", "up to 150 km", "several hundred km"], "answer": "C", "quote": "swarms can travel up to 150 kilometres in a day", "explain": "\"several hundred\" sürünün **kapladığı alan** (km²) — çeldirici." },
+        { "id": "r07-12", "n": 12, "prompt": "What caused the 2019–2020 outbreak?", "options": ["a failure of the monitoring system", "heavy rain brought by cyclones", "a shortage of pesticides", "the plague of 1987–1989"], "answer": "B", "quote": "after cyclones brought heavy rain to the Arabian Peninsula", "explain": "Kasırgaların getirdiği yoğun yağmur." },
+        { "id": "r07-13", "n": 13, "prompt": "What is the main point of paragraph F?", "options": ["Satellites have replaced field teams.", "Preventing swarms is cheaper than fighting plagues.", "West Africa suffers most from locusts.", "More money should be spent on pesticides."], "answer": "B", "quote": "This approach is far cheaper than fighting a plague", "explain": "Paragrafın ana fikri: **önleme** en etkili ve en ucuz strateji." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "section": 1,
+  "context": "You will hear a man phoning a holiday company to book a cottage.",
+  "speakers": { "A": { "name": "Sarah (agent)", "accent": "en-GB", "gender": "f" }, "B": { "name": "David (caller)", "accent": "en-AU", "gender": "m" } },
+  "script": [
+    { "s": "A", "t": "Good afternoon, Lakeside Holiday Cottages, Sarah speaking. How can I help you?" },
+    { "s": "B", "t": "Hi, I'd like to book a cottage for a week in August, if you've got anything available." },
+    { "s": "A", "t": "Certainly. Could I take your name first?" },
+    { "s": "B", "t": "Yes, it's David Pearce. That's P-E-A-R-C-E." },
+    { "s": "A", "t": "Thank you, Mr Pearce. And how many people will be staying?" },
+    { "s": "B", "t": "There'll be four adults and two children. Actually, no, sorry, my sister's not coming now, so three adults and two children." },
+    { "s": "A", "t": "So five people altogether. Which dates were you thinking of?" },
+    { "s": "B", "t": "We'd like to arrive on Saturday the 14th of August and leave on the 21st." },
+    { "s": "A", "t": "Let me check. Yes, Rose Cottage is free that week. It has three bedrooms and a garden that leads down to the lake." },
+    { "s": "B", "t": "That sounds lovely. How much is it for the week?" },
+    { "s": "A", "t": "In August it's 840 pounds for the week. That includes bed linen and towels, but there's an extra charge of 30 pounds if you'd like us to provide firewood." },
+    { "s": "B", "t": "I don't think we'll need firewood in August. Is there parking?" },
+    { "s": "A", "t": "Yes, there's space for two cars right next to the cottage." },
+    { "s": "B", "t": "Great. And is there a shop nearby? We'd rather not drive every time we need milk." },
+    { "s": "A", "t": "There's a small shop in the village, about ten minutes' walk away. It's next to the post office, and it's open every day except Sunday." },
+    { "s": "B", "t": "That's fine. What time can we arrive on the Saturday?" },
+    { "s": "A", "t": "Check-in is from four o'clock, and on the day you leave we ask guests to be out by ten in the morning." },
+    { "s": "B", "t": "OK. And do you allow dogs? We've got quite a small one." },
+    { "s": "A", "t": "Yes, Rose Cottage is dog-friendly, but we do ask for a refundable deposit of 50 pounds." },
+    { "s": "B", "t": "No problem. How do I pay?" },
+    { "s": "A", "t": "We take a deposit of 200 pounds now to secure the booking, and the rest is due four weeks before you arrive. I can send you a link by email." },
+    { "s": "B", "t": "Perfect, thanks very much." }
+  ],
+  "groups": [
+    {
+      "type": "gap", "subtype": "form", "maxWords": 1, "number": true,
+      "instructions": "Complete the form below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+      "tip": "Section 1'de isimler harf harf söylenir; yazımı dikkatle not et. Konuşmacının kendini düzelttiği yerlere dikkat (\"Actually, no…\").",
+      "text": "# Lakeside Holiday Cottages – Booking form\nName: David {{1}}\nNumber of people: {{2}}\nArrival date: Saturday {{3}} August\nCottage name: {{4}} Cottage\nPrice for the week: £{{5}}\nOptional extra: £30 for {{6}}\nCheck-in time: from {{7}} pm",
+      "questions": [
+        { "id": "l01-1", "n": 1, "answer": ["Pearce"], "quote": "That's P-E-A-R-C-E.", "explain": "Harf harf söylenen soyad: **Pearce**. Yazım hatası cevabı yanlış yapar." },
+        { "id": "l01-2", "n": 2, "answer": ["5", "five"], "trap": "corrected", "quote": "So five people altogether.", "explain": "Önce 4 yetişkin + 2 çocuk (6) dedi, sonra **düzeltti**: 3 yetişkin + 2 çocuk = **5**." },
+        { "id": "l01-3", "n": 3, "answer": ["14", "14th"], "trap": "distractor", "quote": "We'd like to arrive on Saturday the 14th of August and leave on the 21st.", "explain": "Varış **14**, ayrılış 21 (çeldirici)." },
+        { "id": "l01-4", "n": 4, "answer": ["Rose"], "quote": "Rose Cottage is free that week", "explain": "**Rose** Cottage." },
+        { "id": "l01-5", "n": 5, "answer": ["840"], "trap": "distractor", "quote": "In August it's 840 pounds for the week.", "explain": "Haftalık fiyat **840**; 30 odun, 50 köpek, 200 kapora — hepsi çeldirici sayılar." },
+        { "id": "l01-6", "n": 6, "answer": ["firewood"], "quote": "there's an extra charge of 30 pounds if you'd like us to provide firewood", "explain": "Ekstra £30: **firewood** (yakacak odun)." },
+        { "id": "l01-7", "n": 7, "answer": ["4", "four"], "trap": "distractor", "quote": "Check-in is from four o'clock", "explain": "Giriş **4**'ten itibaren; 10 çıkış saati." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l01-8", "n": 8, "prompt": "Where is the village shop?", "options": ["next to the post office", "beside the lake", "opposite the car park"], "answer": "A", "quote": "It's next to the post office", "explain": "Dükkan **postanenin yanında**." },
+        { "id": "l01-9", "n": 9, "prompt": "How much is the deposit for a dog?", "options": ["£30", "£50", "£200"], "answer": "B", "trap": "distractor", "quote": "we do ask for a refundable deposit of 50 pounds", "explain": "Köpek depozitosu **£50**; £200 rezervasyon kaporası." },
+        { "id": "l01-10", "n": 10, "prompt": "When must the remaining payment be made?", "options": ["on arrival", "two weeks before arrival", "four weeks before arrival"], "answer": "C", "quote": "the rest is due four weeks before you arrive", "explain": "Kalan tutar varıştan **dört hafta önce**." }
+      ]
+    }
+  ]
+}

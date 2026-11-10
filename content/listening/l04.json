@@ -1,0 +1,36 @@
+{
+  "section": 4,
+  "context": "You will hear part of a lecture about the history of the bicycle.",
+  "speakers": { "A": { "name": "Lecturer", "accent": "en-AU", "gender": "f" } },
+  "script": [
+    { "s": "A", "t": "Good morning. Today I'm going to talk about the history of the bicycle, a machine that has had a far greater influence on society than most people realise." },
+    { "s": "A", "t": "The earliest ancestor of the bicycle was built in 1817 by Karl Drais, a German inventor. It had two wheels but no pedals; riders pushed themselves along with their feet. Interestingly, Drais seems to have been motivated partly by a shortage of horses, which followed a series of failed harvests." },
+    { "s": "A", "t": "Pedals were added in the 1860s in France, attached directly to the front wheel. Because the pedals turned the wheel directly, a larger front wheel meant a higher speed, and this led to the famous high-wheeler, often called the penny-farthing in Britain." },
+    { "s": "A", "t": "These machines were fast, but they were also dangerous; falls from such a height were common, and riding them was mainly a sport for young, wealthy men." },
+    { "s": "A", "t": "The real breakthrough came in the 1880s with the so-called safety bicycle. It had two wheels of equal size and a chain that transferred power to the rear wheel. Soon afterwards, the invention of the air-filled tyre by John Dunlop made riding far more comfortable." },
+    { "s": "A", "t": "The social effects were enormous. For the first time, ordinary working people had a cheap form of personal transport. Historians have even suggested that the bicycle increased genetic diversity in rural areas, as young people could now meet partners from neighbouring villages." },
+    { "s": "A", "t": "The bicycle was also important for women. It gave them a new kind of independence, and it encouraged changes in fashion, as long skirts were replaced by more practical clothing." },
+    { "s": "A", "t": "In the twentieth century, cycling declined in many countries as cars became affordable. In the Netherlands, though, the trend was reversed in the 1970s, partly because of protests about the number of children killed in road accidents. The government invested heavily in separate cycle paths, and today more than a quarter of all journeys there are made by bike." },
+    { "s": "A", "t": "Finally, let's consider the present. Electric bicycles now account for a growing share of sales in Europe, and they are particularly popular with older riders and with people who live in hilly areas." }
+  ],
+  "groups": [
+    {
+      "type": "gap", "subtype": "note", "maxWords": 1,
+      "instructions": "Complete the notes below. Write **ONE WORD ONLY** for each answer.",
+      "tip": "Section 4'te sorular konuşmanın sırasını izler. Notları önceden oku: her boşluğun kelime türünü (isim, sıfat) tahmin et.",
+      "text": "# The history of the bicycle\n1817: Drais's machine had no {{1}}\nDrais may have been motivated by a shortage of {{2}}\n1860s: pedals were attached to the {{3}} wheel\nHigh-wheelers were mostly ridden by young, {{4}} men\n1880s: the safety bicycle used a {{5}} to drive the rear wheel\nDunlop invented the air-filled {{6}}\nBicycles may have increased genetic {{7}} in the countryside\nFor women, bicycles led to changes in {{8}}\nNetherlands, 1970s: protests about road deaths of {{9}}\nElectric bikes are popular in {{10}} areas",
+      "questions": [
+        { "id": "l04-1", "n": 1, "answer": ["pedals"], "quote": "It had two wheels but no pedals", "explain": "**pedals** (çoğul)." },
+        { "id": "l04-2", "n": 2, "answer": ["horses"], "quote": "motivated partly by a shortage of horses", "explain": "At kıtlığı: **horses**." },
+        { "id": "l04-3", "n": 3, "answer": ["front"], "quote": "attached directly to the front wheel", "explain": "**front** wheel." },
+        { "id": "l04-4", "n": 4, "answer": ["wealthy"], "quote": "mainly a sport for young, wealthy men", "explain": "**wealthy** (zengin)." },
+        { "id": "l04-5", "n": 5, "answer": ["chain"], "quote": "a chain that transferred power to the rear wheel", "explain": "**chain** (zincir)." },
+        { "id": "l04-6", "n": 6, "answer": ["tyre", "tire"], "quote": "the invention of the air-filled tyre by John Dunlop", "explain": "**tyre** (Amerikan yazımı tire de kabul)." },
+        { "id": "l04-7", "n": 7, "answer": ["diversity"], "quote": "increased genetic diversity in rural areas", "explain": "genetic **diversity**; \"countryside\" = rural areas." },
+        { "id": "l04-8", "n": 8, "answer": ["fashion", "clothing"], "quote": "it encouraged changes in fashion", "explain": "changes in **fashion**." },
+        { "id": "l04-9", "n": 9, "answer": ["children"], "quote": "protests about the number of children killed in road accidents", "explain": "**children**." },
+        { "id": "l04-10", "n": 10, "answer": ["hilly"], "quote": "people who live in hilly areas", "explain": "**hilly** (tepelik). Yaşlı sürücüler de sayılıyor ama boşluk bir **bölge** sıfatı istiyor." }
+      ]
+    }
+  ]
+}

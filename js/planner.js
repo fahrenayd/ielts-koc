@@ -109,7 +109,7 @@ export function lastNDays(days, n = 14) {
 }
 
 // ---------- Günlük görevler ----------
-export async function todayTasks() {
+async function vocabTasks() {
   const [q, day, idx, lessonState] = await Promise.all([buildQueue(), getDay(), loadIndex(), getKV('lessons', {})]);
   const tasks = [];
   tasks.push({
@@ -137,4 +137,67 @@ export async function todayTasks() {
     if (weakest) tasks.push({ id: 'grammar', icon: '🧩', title: 'Gramer tekrarı', sub: weakest.tr, done: day.quizzes > 0, href: '#/grammar/' + weakest.id });
   }
   return tasks;
+}
+
+// ---------- Aşama 2+: bandlar, soru tipi başarısı, beceri planı ----------
+export const SKILLS = ['listening', 'reading', 'writing', 'speaking'];
+export const SKILL_TR = { listening: 'Listening', reading: 'Reading', writing: 'Writing', speaking: 'Speaking' };
+const SKILL_LINK = { listening: '#/listening', reading: '#/reading', writing: '#/writing', speaking: '#/speaking' };
+const SKILL_ICON = { listening: '🎧', reading: '📖', writing: '✍️', speaking: '🗣️' };
+
+// Her beceri için son 3 bandın ortalaması (.5'e yuvarlanır); yoksa null
+export async function latestBands() {
+  const rows = (await db.all('results')).filter((r) => r.band != null && SKILLS.includes(r.module)).sort((a, b) => a.date.localeCompare(b.date));
+  const out = {};
+  for (const s of SKILLS) {
+    const last = rows.filter((r) => r.module === s).slice(-3);
+    out[s] = last.length ? Math.round((last.reduce((a, r) => a + r.band, 0) / last.length) * 2) / 2 : null;
+  }
+  return out;
+}
+
+export async function typeAccuracy() {
+  const acc = {};
+  for (const r of await db.all('results')) {
+    for (const [t, [c, n]] of Object.entries(r.byType || {})) {
+      acc[t] = acc[t] || { type: t, c: 0, n: 0, module: r.module };
+      acc[t].c += c; acc[t].n += n;
+    }
+  }
+  return Object.values(acc).map((x) => ({ ...x, pct: x.c / x.n })).sort((a, b) => a.pct - b.pct);
+}
+
+// Zayıftan güçlüye beceri sırası (ölçülmemiş beceri en önce gelir)
+export function weaknessOrder(bands) {
+  return SKILLS.slice().sort((a, b) => (bands[a] ?? 0) - (bands[b] ?? 0));
+}
+
+// Haftalık ritim: en zayıf beceri haftada 3 kez, ikinci 2 kez, diğerleri 1'er kez
+export function weeklyPlan(bands, profile) {
+  const [w1, w2, w3, w4] = weaknessOrder(bands);
+  const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+  const skills = [w1, w2, w1, w3, w2, 'writing', w1 === 'writing' ? w4 : w1];
+  const detail = {
+    listening: 'Listening: 1 bölüm sınav modunda + yanlışların transkriptini oku',
+    reading: 'Reading: 1 pasaj (pratikte zayıf soru tipleri, haftada bir süreli)',
+    writing: 'Writing: 1 Task (hafta sonu Task 2) + Claude değerlendirmesi',
+    speaking: 'Speaking: 1 cue card + Part 3 soruları, kaydını dinle'
+  };
+  return days.map((d, i) => ({
+    day: d, skill: skills[i],
+    text: `${detail[skills[i]]} · Kelime tekrarı${i === 6 ? ' · Hata Defteri' : ''}`,
+    minutes: i >= 5 ? profile.weekendMinutes : profile.weekdayMinutes
+  }));
+}
+
+export async function todayTasks() {
+  const [tasks, day, bands, placement, mistakes] = await Promise.all([vocabTasks(), getDay(), latestBands(), getKV('placement', null), db.all('mistakes')]);
+  const out = [];
+  if (!placement) out.push({ id: 'placement', icon: '🧭', title: 'Seviye tespiti (≈35 dk)', sub: 'Planın buna göre kişiselleşir', done: false, href: '#/placement' });
+  const plan = weeklyPlan(bands, state.profile);
+  const today = plan[(new Date().getDay() + 6) % 7];
+  out.push({ id: 'skill', icon: SKILL_ICON[today.skill], title: `${SKILL_TR[today.skill]} pratiği`, sub: today.text.split(' · ')[0].replace(/^\w+: /, ''), done: day.done.includes(today.skill), href: SKILL_LINK[today.skill] });
+  out.push(...tasks);
+  if (mistakes.length) out.push({ id: 'mistakes', icon: '📕', title: 'Hata Defteri tekrarı', sub: `${mistakes.length} soru bekliyor`, done: day.done.includes('mistakes'), href: '#/mistakes' });
+  return out;
 }

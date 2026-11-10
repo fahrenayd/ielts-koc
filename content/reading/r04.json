@@ -1,0 +1,48 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "For most of history, sleep was regarded as a passive state, a period in which the body and brain simply rested. Since the middle of the twentieth century, however, scientists have shown that the sleeping brain is remarkably active, and that one of its most important tasks is the processing of memories formed during the day." },
+    { "key": "B", "text": "Sleep is not a single, uniform state. Over the course of a night, the brain passes through a cycle of stages roughly every ninety minutes. In deep, or slow-wave, sleep, which dominates the first half of the night, electrical activity in the brain slows down and becomes highly synchronised. Rapid eye movement (REM) sleep, during which most vivid dreams occur, becomes longer and more frequent towards the morning. Each of these stages appears to contribute to memory in a different way." },
+    { "key": "C", "text": "Deep sleep seems to be particularly important for memories of facts and events. During this stage, the hippocampus, a region of the brain that stores new information temporarily, repeatedly 'replays' recent experiences. Recordings from rats that had learned to run through a maze showed the same patterns of brain activity during sleep as during the task itself, but at a speed several times faster. Researchers believe this replay helps transfer information to the cortex, where it can be stored for the long term." },
+    { "key": "D", "text": "REM sleep, by contrast, has been linked to creativity and problem-solving. In a well-known experiment at the University of Lübeck in Germany, volunteers were given a mathematical task that could be solved much faster by using a hidden rule. Those who slept for eight hours before returning to the task were more than twice as likely to discover the rule as those who had stayed awake for the same length of time. The researchers suggested that sleep had allowed the brain to reorganise the information and notice a pattern that had not been obvious." },
+    { "key": "E", "text": "The implications for students are clear. Studying late into the night before an exam may reduce the amount of sleep, and therefore the amount of memory processing, that takes place. One study of university students found that those who slept less than six hours a night achieved lower grades than those who slept more, even after differences in study time had been taken into account. Short daytime naps may also help: in several experiments, a nap of sixty to ninety minutes improved performance on memory tests almost as much as a full night's sleep." },
+    { "key": "F", "text": "Teenagers face a particular difficulty. During adolescence, the body's internal clock shifts so that young people naturally feel sleepy later in the evening and wake later in the morning. Early school start times therefore force many teenagers to get up before their brains are ready. When a number of schools in the United States moved their start times from around 7.30 to 8.30 am, students slept on average forty-five minutes longer, and attendance and grades improved. Despite such findings, most schools have been reluctant to change, often because of the cost of reorganising transport." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r04-1", "n": 1, "prompt": "Scientists have known for centuries that the brain is active during sleep.", "answer": "FALSE", "quote": "Since the middle of the twentieth century, however, scientists have shown that the sleeping brain is remarkably active", "explain": "Bu bilgi **20. yüzyılın ortasından beri** biliniyor; öncesinde uyku pasif sanılıyordu." },
+        { "id": "r04-2", "n": 2, "prompt": "Deep sleep is more common in the second half of the night.", "answer": "FALSE", "quote": "which dominates the first half of the night", "explain": "Derin uyku gecenin **ilk yarısında** baskın." },
+        { "id": "r04-3", "n": 3, "prompt": "Most dreams take place during REM sleep.", "answer": "TRUE", "quote": "during which most vivid dreams occur", "explain": "\"take place\" = **occur**." },
+        { "id": "r04-4", "n": 4, "prompt": "The rats in the maze study performed better after sleeping.", "answer": "NOT GIVEN", "quote": "Recordings from rats that had learned to run through a maze showed the same patterns of brain activity during sleep", "explain": "Yalnızca uykudaki beyin aktivitesi anlatılıyor; uyku sonrası **performans** hakkında bilgi yok." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–F**.",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }, { "key": "F", "text": "" }],
+      "questions": [
+        { "id": "r04-5", "n": 5, "prompt": "an explanation of why later school start times might be resisted", "answer": "F", "quote": "often because of the cost of reorganising transport", "explain": "\"resisted\" = **reluctant to change**; neden: ulaşımın yeniden düzenlenmesinin maliyeti." },
+        { "id": "r04-6", "n": 6, "prompt": "a description of how sleep changes over one night", "answer": "B", "quote": "the brain passes through a cycle of stages roughly every ninety minutes", "explain": "Gece boyunca evrelerin döngüsü anlatılıyor." },
+        { "id": "r04-7", "n": 7, "prompt": "the result of an experiment involving a hidden rule", "answer": "D", "quote": "were more than twice as likely to discover the rule", "explain": "Lübeck deneyi." },
+        { "id": "r04-8", "n": 8, "prompt": "a reference to the effect of short periods of sleep during the day", "answer": "E", "quote": "a nap of sixty to ninety minutes improved performance on memory tests", "explain": "\"short periods of sleep during the day\" = **daytime naps**." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion (kelime listesi)",
+      "instructions": "Complete the summary using the list of words, **A–I**, below.",
+      "tip": "Listede metindeki kelimelerin eş anlamlıları olabilir. Gramer olarak boşluğa uyan seçenekleri önce ele.",
+      "bank": [{ "key": "A", "text": "replays" }, { "key": "B", "text": "quickly" }, { "key": "C", "text": "long-term" }, { "key": "D", "text": "lower" }, { "key": "E", "text": "sleepy" }, { "key": "F", "text": "slowly" }, { "key": "G", "text": "temporary" }, { "key": "H", "text": "higher" }, { "key": "I", "text": "forgets" }],
+      "text": "# Sleep and memory\nDuring deep sleep, the hippocampus {{9}} recent experiences.\nIn rats, this activity happened much more {{10}} than when the animals were awake.\nScientists think the process moves information to the cortex for {{11}} storage.\nStudents who slept less than six hours achieved {{12}} grades, even when study time was taken into account.\nTeenagers' internal clocks make them feel {{13}} later in the evening.",
+      "questions": [
+        { "id": "r04-9", "n": 9, "answer": "A", "quote": "repeatedly 'replays' recent experiences", "explain": "Hipokampus son deneyimleri **replays** (yeniden oynatır). \"forgets\" tam tersi." },
+        { "id": "r04-10", "n": 10, "answer": "B", "quote": "but at a speed several times faster", "explain": "\"several times faster\" = much more **quickly**." },
+        { "id": "r04-11", "n": 11, "answer": "C", "quote": "where it can be stored for the long term", "explain": "Korteks **uzun süreli** depolama yeri; hipokampus geçici (temporary — çeldirici)." },
+        { "id": "r04-12", "n": 12, "answer": "D", "quote": "achieved lower grades than those who slept more", "explain": "Az uyuyanların notları **daha düşük**." },
+        { "id": "r04-13", "n": 13, "answer": "E", "quote": "young people naturally feel sleepy later in the evening", "explain": "feel **sleepy** later in the evening." }
+      ]
+    }
+  ]
+}

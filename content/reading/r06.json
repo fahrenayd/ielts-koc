@@ -1,0 +1,54 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Of the roughly 7,000 languages spoken in the world today, around 40% are considered endangered, and linguists estimate that one language disappears, on average, every few months. The pattern is extremely uneven. Just twenty-three languages, including Mandarin, Spanish, English and Hindi, are spoken by more than half of the world's population, while thousands of others have fewer than a thousand speakers each." },
+    { "key": "B", "text": "Languages rarely die because their speakers die. Far more often, communities gradually shift to a different language, usually one associated with economic opportunity, education or political power. Parents who believe that their children's future depends on mastering a national or global language may stop speaking their own language at home. Within two or three generations, the old language may be known only by elderly people. Linguists generally regard a language as endangered once children no longer learn it as their first language, even if thousands of adults still speak it." },
+    { "key": "C", "text": "Some people argue that this process is natural and even beneficial, since a common language makes communication and trade easier. I find this argument unconvincing. There is no evidence that speaking a minority language prevents anyone from learning a national language as well; in much of the world, multilingualism is normal. What is lost when a language dies is not merely a set of words but a store of knowledge. Indigenous languages often contain detailed vocabularies for local plants, animals and environmental conditions, some of which have never been recorded by scientists." },
+    { "key": "D", "text": "Efforts to revive endangered languages have had mixed results. The most famous success is Hebrew, which had not been used as an everyday spoken language for many centuries before it was revived in the late nineteenth and early twentieth centuries; it now has around nine million speakers. Welsh has also recovered: after a long decline, the number of speakers has stabilised, helped by its use in schools and on television. In New Zealand, Māori 'language nests', pre-schools in which young children are taught entirely in Māori, have been copied in several other countries." },
+    { "key": "E", "text": "Other projects have struggled. Teaching a language in school for an hour a week rarely produces fluent speakers if the language is not also used at home and in the community. Technology offers new possibilities: dictionaries and courses can be distributed through smartphone apps, and recordings of the last fluent speakers can be preserved. Yet it would be a mistake to think that technology alone can save a language. A language survives only if people choose to speak it in their daily lives, and that depends above all on whether they feel proud of it." }
+  ],
+  "groups": [
+    {
+      "type": "ynng", "label": "Yes/No/Not Given",
+      "instructions": "Do the following statements agree with the views of the writer? Choose **YES**, **NO** or **NOT GIVEN**.",
+      "tip": "\"I find…\", \"it would be a mistake…\" gibi ifadeler yazarın görüşünü gösterir. \"Some people argue\" ise başkalarının görüşüdür.",
+      "questions": [
+        { "id": "r06-1", "n": 1, "prompt": "The argument that language loss is beneficial is persuasive.", "answer": "NO", "quote": "I find this argument unconvincing.", "explain": "\"persuasive\" ↔ **unconvincing**. Faydalı olduğu görüşü \"some people\"a ait; yazar katılmıyor." },
+        { "id": "r06-2", "n": 2, "prompt": "Speaking a minority language makes it harder to learn a national language.", "answer": "NO", "quote": "There is no evidence that speaking a minority language prevents anyone from learning a national language as well", "explain": "Yazar buna dair **kanıt olmadığını** söylüyor." },
+        { "id": "r06-3", "n": 3, "prompt": "Indigenous languages may contain information not yet known to science.", "answer": "YES", "quote": "some of which have never been recorded by scientists", "explain": "\"not yet known to science\" = **never been recorded by scientists**." },
+        { "id": "r06-4", "n": 4, "prompt": "Governments should pay for the recording of endangered languages.", "answer": "NOT GIVEN", "quote": "", "explain": "Kayıtlardan bahsediliyor ama **kimin ödemesi gerektiği** hakkında yazarın görüşü yok." },
+        { "id": "r06-5", "n": 5, "prompt": "Pride in a language is an important factor in its survival.", "answer": "YES", "quote": "that depends above all on whether they feel proud of it", "explain": "\"above all\" = en önemli faktör; \"pride\" = **feel proud**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "endings", "label": "Sentence endings",
+      "instructions": "Complete each sentence with the correct ending, **A–F**, below.",
+      "tip": "Önce gramer olarak uyan sonları belirle, sonra anlamı metinle kontrol et. İki son kullanılmayacak.",
+      "options": [
+        { "key": "A", "text": "one of a small number of major languages." },
+        { "key": "B", "text": "children stop learning it as a first language." },
+        { "key": "C", "text": "returned to everyday use after a long absence." },
+        { "key": "D", "text": "the language is not spoken outside the classroom." },
+        { "key": "E", "text": "it is taught only by elderly speakers." },
+        { "key": "F", "text": "has no written form." }
+      ],
+      "questions": [
+        { "id": "r06-6", "n": 6, "prompt": "Most of the world's population speaks", "answer": "A", "quote": "are spoken by more than half of the world's population", "explain": "Sadece 23 dil nüfusun yarısından fazlası tarafından konuşuluyor = **a small number of major languages**." },
+        { "id": "r06-7", "n": 7, "prompt": "Linguists consider a language endangered when", "answer": "B", "quote": "once children no longer learn it as their first language", "explain": "\"when\" = **once**." },
+        { "id": "r06-8", "n": 8, "prompt": "Hebrew is an example of a language that", "answer": "C", "quote": "had not been used as an everyday spoken language for many centuries before it was revived", "explain": "Yüzyıllarca günlük kullanılmayıp yeniden canlandırıldı." },
+        { "id": "r06-9", "n": 9, "prompt": "Short weekly school lessons are unlikely to succeed if", "answer": "D", "quote": "if the language is not also used at home and in the community", "explain": "Evde ve toplumda kullanılmazsa = **outside the classroom**." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "short", "label": "Short-answer questions", "maxWords": 3, "number": true,
+      "instructions": "Answer the questions below. Choose **NO MORE THAN THREE WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r06-10", "n": 10, "prompt": "Approximately what percentage of the world's languages are endangered? ___", "answer": ["40%", "around 40%", "40 percent", "forty percent", "40 per cent"], "quote": "around 40% are considered endangered", "explain": "**40%** (yaklaşık)." },
+        { "id": "r06-11", "n": 11, "prompt": "Apart from education and political power, what is often associated with the language a community shifts to? ___", "answer": ["economic opportunity"], "quote": "usually one associated with economic opportunity, education or political power", "explain": "Üç neden: **economic opportunity**, education, political power." },
+        { "id": "r06-12", "n": 12, "prompt": "How many speakers does Hebrew have today? ___", "answer": ["nine million", "9 million", "around nine million", "9,000,000"], "quote": "it now has around nine million speakers", "explain": "Yaklaşık **dokuz milyon**." },
+        { "id": "r06-13", "n": 13, "prompt": "Apart from schools, where has Welsh been used to help it recover? ___", "answer": ["television", "on television", "TV", "on TV"], "quote": "helped by its use in schools and on television", "explain": "Okullar ve **televizyon**." },
+        { "id": "r06-14", "n": 14, "prompt": "What are the Māori pre-schools called? ___", "answer": ["language nests"], "quote": "Māori 'language nests'", "explain": "**language nests**." }
+      ]
+    }
+  ]
+}

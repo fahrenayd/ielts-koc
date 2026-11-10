@@ -1,16 +1,11 @@
 // IELTS Koç — service worker (internetsiz çalışma)
 // İçerik veya kod değiştiğinde VERSION'u artır: telefon yeni sürümü indirir.
-const VERSION = '1.0.0';
+const VERSION = '2.0.0';
 const CACHE = 'ielts-koc-' + VERSION;
 
 const APP_FILES = [
-  './', './index.html', './manifest.webmanifest', './css/app.css',
-  './icons/icon-192.png', './icons/icon-512.png',
-  './js/app.js', './js/util.js', './js/db.js', './js/store.js', './js/content.js',
-  './js/srs.js', './js/scoring.js', './js/planner.js', './js/tts.js',
-  './js/screens/onboarding.js', './js/screens/today.js', './js/screens/practice.js',
-  './js/screens/vocab.js', './js/screens/grammar.js', './js/screens/mock.js',
-  './js/screens/me.js', './js/screens/settings.js',
+  './', './index.html', './manifest.webmanifest',
+  './css/app.css', './icons/icon-192.png', './icons/icon-512.png', './js/app.js', './js/charts.js', './js/content.js', './js/db.js', './js/eval.js', './js/planner.js', './js/qengine.js', './js/recorder.js', './js/results.js', './js/scoring.js', './js/screens/grammar.js', './js/screens/listening.js', './js/screens/me.js', './js/screens/mistakes.js', './js/screens/mock.js', './js/screens/onboarding.js', './js/screens/placement.js', './js/screens/practice.js', './js/screens/reading.js', './js/screens/settings.js', './js/screens/speaking.js', './js/screens/today.js', './js/screens/vocab.js', './js/screens/writing.js', './js/srs.js', './js/store.js', './js/tts.js', './js/util.js',
   './content/index.json'
 ];
 

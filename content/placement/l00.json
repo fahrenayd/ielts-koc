@@ -1,0 +1,51 @@
+{
+  "section": 2,
+  "context": "You will hear the manager of a sports centre talking to a group of new members.",
+  "speakers": { "A": { "name": "Helen (manager)", "accent": "en-GB", "gender": "f" } },
+  "script": [
+    { "s": "A", "t": "Good morning, everyone, and welcome to Riverside Sports Centre. My name's Helen and I'm the centre manager. I'm going to give you a quick introduction before you have a look around." },
+    { "s": "A", "t": "The centre first opened in 1998, but last year it was completely rebuilt, and the new building opened in March." },
+    { "s": "A", "t": "We're open from half past six in the morning until ten at night on weekdays. At weekends we open a little later, at eight, and we close at six in the evening." },
+    { "s": "A", "t": "Now, membership. Our standard membership costs thirty-two pounds a month. Students pay twenty-five pounds, but you'll need to show a valid student card when you join. Oh, and I should mention that the joining fee, which used to be fifteen pounds, has now been removed altogether." },
+    { "s": "A", "t": "Let me tell you about the facilities. The swimming pool is on the ground floor, and next to it is the café, which serves hot food until three o'clock. The gym is upstairs, on the first floor, along with two studios for classes such as yoga and dance." },
+    { "s": "A", "t": "A lot of people ask about parking. The car park at the front is quite small, so if you're coming by car, please use the larger one behind the tennis courts. It's free for members for up to three hours." },
+    { "s": "A", "t": "If you'd like to book a class, the easiest way is through our app. You can also book at reception, but classes fill up quickly, so we don't recommend booking by phone." },
+    { "s": "A", "t": "Finally, we're looking for volunteers to help with our junior football club on Saturday mornings. You don't need any coaching experience, but you will need to complete a short safety course, which we'll provide free of charge." },
+    { "s": "A", "t": "Right, if you'd like to follow me, we'll start with the pool." }
+  ],
+  "groups": [
+    {
+      "type": "gap", "subtype": "note", "maxWords": 1, "number": true,
+      "instructions": "Complete the notes below. Write **ONE WORD AND/OR A NUMBER** for each answer.",
+      "tip": "Sayılar ve tarihler için dikkat: konuşmacı önce bir bilgi verip sonra düzeltebilir veya iki sayı söyleyebilir.",
+      "text": "# Riverside Sports Centre\nNew building opened in: {{1}}\nWeekend closing time: {{2}} pm\nStandard membership: £{{3}} per month\nStudents must show a valid {{4}} card\nThe joining fee used to be £{{5}}\nCafé serves hot food until {{6}} o'clock",
+      "questions": [
+        { "id": "l00-1", "n": 1, "answer": ["March"], "trap": "distractor", "quote": "the new building opened in March", "explain": "1998 ilk açılış yılı (çeldirici); yeni bina **March**'ta açıldı." },
+        { "id": "l00-2", "n": 2, "answer": ["6", "six"], "trap": "distractor", "quote": "we close at six in the evening", "explain": "Hafta sonu sabah 8'de açılıp akşam **6**'da kapanıyor; 8 açılış saati." },
+        { "id": "l00-3", "n": 3, "answer": ["32", "thirty-two"], "trap": "distractor", "quote": "Our standard membership costs thirty-two pounds a month.", "explain": "Standart üyelik **32**; 25 öğrenci fiyatı." },
+        { "id": "l00-4", "n": 4, "answer": ["student"], "quote": "you'll need to show a valid student card when you join", "explain": "Öğrenciler geçerli bir **student** kartı göstermeli." },
+        { "id": "l00-5", "n": 5, "answer": ["15", "fifteen"], "quote": "the joining fee, which used to be fifteen pounds", "explain": "\"used to be fifteen pounds\": eskiden **15** sterlindi, artık kaldırıldı." },
+        { "id": "l00-6", "n": 6, "answer": ["3", "three"], "quote": "which serves hot food until three o'clock", "explain": "Kafe sıcak yemeği saat **3**'e kadar veriyor." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l00-7", "n": 7, "prompt": "Where should members who come by car park?", "options": ["at the front of the building", "behind the tennis courts", "in the street next to the café"], "answer": "B", "trap": "distractor", "quote": "please use the larger one behind the tennis courts", "explain": "Öndeki otopark küçük olduğu için **tenis kortlarının arkasındaki** büyük otopark öneriliyor." },
+        { "id": "l00-8", "n": 8, "prompt": "What does Helen recommend for booking classes?", "options": ["using the app", "phoning the centre", "booking a week in advance"], "answer": "A", "quote": "the easiest way is through our app", "explain": "En kolay yol **uygulama**; telefonla rezervasyon önerilmiyor." }
+      ]
+    },
+    {
+      "type": "multi",
+      "instructions": "Choose **TWO** letters, **A–E**.",
+      "prompt": "Which **TWO** things are true about the volunteer role?",
+      "options": ["It takes place on Sunday mornings.", "Volunteers need coaching experience.", "Volunteers must complete a safety course.", "The training is free.", "Volunteers receive free membership."],
+      "answers": ["C", "D"],
+      "questions": [
+        { "id": "l00-9", "n": 9, "quote": "you will need to complete a short safety course, which we'll provide free of charge", "explain": "Güvenlik kursu zorunlu (**C**) ve **ücretsiz** veriliyor (**D**). Kulüp cumartesi; koçluk deneyimi gerekmiyor." },
+        { "id": "l00-10", "n": 10, "explain": "İki cevap da aynı cümlede: zorunlu kurs + ücretsiz eğitim." }
+      ]
+    }
+  ]
+}

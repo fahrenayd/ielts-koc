@@ -1,0 +1,67 @@
+{
+  "section": 3,
+  "context": "You will hear a student, Sam, talking to his tutor about a draft presentation on community energy schemes.",
+  "speakers": { "T": { "name": "Dr Lewis (tutor)", "accent": "en-GB", "gender": "f" }, "S": { "name": "Sam", "accent": "en-AU", "gender": "m" } },
+  "script": [
+    { "s": "T", "t": "Come in, Sam. Thanks for sending me the draft of your presentation on community energy schemes. I've had a look, and overall it's a good start." },
+    { "s": "S", "t": "Thanks. I wasn't sure whether I'd chosen the right focus." },
+    { "s": "T", "t": "I think focusing on small community schemes rather than national policy was a sensible choice. It keeps the topic manageable in fifteen minutes." },
+    { "s": "S", "t": "That's what I thought. Although I was worried it might seem a bit narrow." },
+    { "s": "T", "t": "Not at all. Let's go through the sections. Your introduction is very clear; you explain what a community scheme is and why it matters. I wouldn't change it." },
+    { "s": "S", "t": "Great." },
+    { "s": "T", "t": "The case study of the wind turbine in Scotland is interesting, but at the moment you only give two or three facts about it. You need to say more about how it was funded and what the local people thought." },
+    { "s": "S", "t": "OK, I can find more on that." },
+    { "s": "T", "t": "Then there's the section on solar panels on schools. The content's fine, but you've used slides that are just full of text. Some photos or a simple chart would help the audience a lot." },
+    { "s": "S", "t": "Right, I'll redo those." },
+    { "s": "T", "t": "Your section on the problems these schemes face is actually the most interesting part, but it comes right at the end, when people are getting tired. I'd put it straight after the introduction." },
+    { "s": "S", "t": "Before the case studies?" },
+    { "s": "T", "t": "Yes. It gives the audience a reason to care about the solutions." },
+    { "s": "S", "t": "That makes sense. What about the conclusion?" },
+    { "s": "T", "t": "It's a bit long. You repeat everything you've already said. Two or three sentences would be enough." },
+    { "s": "S", "t": "OK. Is there anything else I should do before the presentation?" },
+    { "s": "T", "t": "Two things. First, practise it out loud with a timer; people almost always run over. And second, prepare for questions about cost, because the audience will definitely ask." },
+    { "s": "S", "t": "Should I give out a handout?" },
+    { "s": "T", "t": "I wouldn't bother; just put your references on the final slide." }
+  ],
+  "groups": [
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l07-1", "n": 1, "prompt": "What does the tutor think of Sam's choice of focus?", "options": ["It is too narrow.", "It is suitable for the time available.", "It should include national policy."], "answer": "B", "trap": "distractor", "quote": "It keeps the topic manageable in fifteen minutes.", "explain": "\"too narrow\" Sam'in endişesi (çeldirici); hoca \"Not at all\" diyor." },
+        { "id": "l07-2", "n": 2, "prompt": "How long will Sam's presentation be?", "options": ["ten minutes", "fifteen minutes", "twenty minutes"], "answer": "B", "quote": "It keeps the topic manageable in fifteen minutes.", "explain": "**15 dakika**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching",
+      "instructions": "What does the tutor say about each section of the presentation? Choose the correct letter, **A–F**.",
+      "tip": "Hoca her bölüm için bir yorum yapacak. Seçenekleri önceden eş anlamlılarıyla düşün: \"shortened\" = too long, \"moved\" = put it after…",
+      "options": [{ "key": "A", "text": "should be kept as it is" }, { "key": "B", "text": "needs more information" }, { "key": "C", "text": "needs more visual material" }, { "key": "D", "text": "should be moved" }, { "key": "E", "text": "should be shortened" }, { "key": "F", "text": "should be removed" }],
+      "questions": [
+        { "id": "l07-3", "n": 3, "prompt": "introduction", "answer": "A", "quote": "I wouldn't change it.", "explain": "\"kept as it is\" = **I wouldn't change it**." },
+        { "id": "l07-4", "n": 4, "prompt": "wind turbine case study", "answer": "B", "quote": "You need to say more about how it was funded and what the local people thought.", "explain": "\"more information\" = **say more about**." },
+        { "id": "l07-5", "n": 5, "prompt": "solar panels section", "answer": "C", "quote": "Some photos or a simple chart would help the audience a lot.", "explain": "Görsel: **photos or a simple chart**." },
+        { "id": "l07-6", "n": 6, "prompt": "problems section", "answer": "D", "quote": "I'd put it straight after the introduction.", "explain": "Girişten hemen sonraya **taşınmalı**." },
+        { "id": "l07-7", "n": 7, "prompt": "conclusion", "answer": "E", "quote": "Two or three sentences would be enough.", "explain": "\"a bit long\" → **kısaltılmalı**." }
+      ]
+    },
+    {
+      "type": "multi",
+      "instructions": "Choose **TWO** letters, **A–E**.",
+      "prompt": "Which **TWO** things does the tutor advise Sam to do?",
+      "options": ["practise with a timer", "prepare a handout", "prepare for questions about cost", "add more case studies", "reduce the number of slides"],
+      "answers": ["A", "C"],
+      "questions": [
+        { "id": "l07-8", "n": 8, "quote": "First, practise it out loud with a timer", "explain": "1) Zamanlayıcıyla prova (**A**)." },
+        { "id": "l07-9", "n": 9, "quote": "prepare for questions about cost", "explain": "2) **Maliyet** sorularına hazırlan (C). Broşür (B) önerilmiyor." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B** or **C**.",
+      "questions": [
+        { "id": "l07-10", "n": 10, "prompt": "Where should Sam put his references?", "options": ["in a handout", "on the final slide", "on every slide"], "answer": "B", "quote": "just put your references on the final slide", "explain": "**Son slaytta**." }
+      ]
+    }
+  ]
+}

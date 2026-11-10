@@ -1,0 +1,54 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "By 2050, the world's population is expected to approach ten billion, and around two-thirds of those people will live in cities. Feeding them will require more food than has ever been produced, at a time when good agricultural land is being lost to urban expansion, soil erosion and drought. One proposed solution is to bring farming into the city itself, growing crops indoors in stacked layers under artificial light. The idea, known as vertical farming, was popularised in the late 1990s by Dickson Despommier, a professor at Columbia University, who imagined farms occupying entire skyscrapers." },
+    { "key": "B", "text": "Today's vertical farms are usually less dramatic: most occupy converted warehouses or purpose-built sheds. Plants are grown without soil, either with their roots in a nutrient-rich water solution, a method known as hydroponics, or suspended in air and sprayed with a fine mist, a technique called aeroponics. Temperature, humidity and light are controlled by computers, and because the environment is sealed, pesticides are rarely needed. Supporters claim that a vertical farm can use up to 95% less water than a conventional field, since the water is collected and reused." },
+    { "key": "C", "text": "The advantages are considerable. Crops can be grown all year round regardless of the weather, and because the farms are located close to consumers, food can be delivered within hours of harvest, reducing waste and transport costs. Yields per square metre of floor space can be many times higher than in open fields, partly because several layers of crops are stacked on top of each other and partly because harvests can follow one another without interruption." },
+    { "key": "D", "text": "The greatest weakness of vertical farming is energy. Sunlight is free; LED lighting is not. Although LEDs have become far more efficient over the past two decades, lighting and climate control still account for the largest share of a vertical farm's operating costs. This is why most farms concentrate on leafy greens such as lettuce and herbs, which grow quickly, are mostly edible and sell at a high price. Staple crops such as wheat and rice, which require a great deal of light and produce relatively little food per plant, are not commercially viable indoors. One estimate suggests that a loaf of bread made from wheat grown in a vertical farm would cost around 20 dollars." },
+    { "key": "E", "text": "The industry has also experienced financial difficulties. After a period of rapid investment, several well-known companies in Europe and the United States closed or cut back operations between 2022 and 2023, when a sharp rise in energy prices made their electricity bills unaffordable. Analysts now argue that the future of vertical farming lies not in replacing traditional agriculture but in supplementing it, particularly in places with expensive land, harsh climates or limited water, such as Singapore and the countries of the Persian Gulf." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "headings", "label": "Matching headings",
+      "instructions": "The passage has five paragraphs, **A–E**. Choose the correct heading for each paragraph from the list below.",
+      "tip": "Önce kendi kafanda her paragrafa 3-4 kelimelik başlık koy, sonra listeyle karşılaştır.",
+      "options": [
+        { "key": "i", "text": "The origins of a new approach to food production" },
+        { "key": "ii", "text": "How the growing system works" },
+        { "key": "iii", "text": "Benefits for producers and consumers" },
+        { "key": "iv", "text": "A problem of power and cost" },
+        { "key": "v", "text": "Setbacks and a more realistic role" },
+        { "key": "vi", "text": "Government support for urban farms" },
+        { "key": "vii", "text": "The nutritional value of indoor crops" }
+      ],
+      "questions": [
+        { "id": "r05-1", "n": 1, "prompt": "Paragraph A", "answer": "i", "quote": "The idea, known as vertical farming, was popularised in the late 1990s by Dickson Despommier", "explain": "Problemin ve fikrin ortaya çıkışı (origins)." },
+        { "id": "r05-2", "n": 2, "prompt": "Paragraph B", "answer": "ii", "quote": "Plants are grown without soil", "explain": "Hydroponics, aeroponics, bilgisayar kontrolü: sistemin **nasıl çalıştığı**." },
+        { "id": "r05-3", "n": 3, "prompt": "Paragraph C", "answer": "iii", "quote": "The advantages are considerable.", "explain": "Tüketiciler (taze ürün) ve üreticiler (yüksek verim) için avantajlar." },
+        { "id": "r05-4", "n": 4, "prompt": "Paragraph D", "answer": "iv", "quote": "The greatest weakness of vertical farming is energy.", "explain": "\"power\" = energy; maliyet: LED ve iklim kontrolü." },
+        { "id": "r05-5", "n": 5, "prompt": "Paragraph E", "answer": "v", "quote": "the future of vertical farming lies not in replacing traditional agriculture but in supplementing it", "explain": "Şirket kapanmaları (setbacks) ve daha gerçekçi bir rol (supplementing)." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "table", "label": "Table/notes completion", "maxWords": 1, "number": true,
+      "instructions": "Complete the notes below. Choose **ONE WORD AND/OR A NUMBER** from the passage for each answer.",
+      "text": "# Vertical farming: key facts\nGrowing method with roots in a water solution: {{6}}\nGrowing method using a fine mist: {{7}}\nPossible water saving: up to {{8}}%\nCrops most farms grow: leafy greens such as lettuce and {{9}}\nEstimated price of a loaf made from vertical-farm wheat: ${{10}}",
+      "questions": [
+        { "id": "r05-6", "n": 6, "answer": ["hydroponics"], "quote": "a method known as hydroponics", "explain": "Kökler besin çözeltisinde: **hydroponics**." },
+        { "id": "r05-7", "n": 7, "answer": ["aeroponics"], "quote": "a technique called aeroponics", "explain": "İnce sis püskürtme: **aeroponics**. Yazım önemli!" },
+        { "id": "r05-8", "n": 8, "answer": ["95", "95%"], "quote": "up to 95% less water", "explain": "% işareti tabloda zaten var; **95** yazman yeterli." },
+        { "id": "r05-9", "n": 9, "answer": ["herbs"], "quote": "leafy greens such as lettuce and herbs", "explain": "lettuce and **herbs**." },
+        { "id": "r05-10", "n": 10, "answer": ["20", "twenty"], "quote": "would cost around 20 dollars", "explain": "$ işareti tabloda var: **20**." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r05-11", "n": 11, "prompt": "Who was Dickson Despommier?", "options": ["the owner of the first vertical farm", "an academic who promoted the idea", "an architect who designed farm skyscrapers", "a critic of urban agriculture"], "answer": "B", "quote": "was popularised in the late 1990s by Dickson Despommier, a professor at Columbia University", "explain": "\"academic\" = **professor**; \"promoted\" = **popularised**. Gökdelenleri **hayal etti**, tasarlamadı (C)." },
+        { "id": "r05-12", "n": 12, "prompt": "Why do vertical farms rarely need pesticides?", "options": ["Their crops are naturally resistant to insects.", "The growing environment is closed.", "Computers detect insects early.", "The plants are grown without soil."], "answer": "B", "quote": "because the environment is sealed, pesticides are rarely needed", "explain": "\"closed\" = **sealed**. Topraksız yetiştirme (D) doğru bir bilgi ama ilaç gerekmemesinin **nedeni** değil." },
+        { "id": "r05-13", "n": 13, "prompt": "What caused several companies to close in 2022–2023?", "options": ["falling demand for leafy greens", "competition from traditional farms", "higher electricity costs", "a lack of suitable buildings"], "answer": "C", "quote": "a sharp rise in energy prices made their electricity bills unaffordable", "explain": "Enerji fiyatlarındaki keskin artış = **higher electricity costs**." }
+      ]
+    }
+  ]
+}

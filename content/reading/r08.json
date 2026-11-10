@@ -1,0 +1,44 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "For centuries, sailors faced a problem that cost thousands of lives: they could not reliably determine their longitude, their position east or west. Latitude, the distance north or south of the equator, was relatively easy to calculate by measuring the height of the sun at midday or of certain stars at night. Longitude was another matter. Ships that miscalculated it could run onto rocks or spend weeks searching for land while their crews died of thirst and disease." },
+    { "key": "B", "text": "In principle, the solution was known. Because the Earth turns through 360 degrees every twenty-four hours, each hour of difference between local time and the time at a fixed reference point corresponds to fifteen degrees of longitude. A navigator who knew the time at his home port and could determine local time from the sun could therefore calculate his position. The difficulty was keeping accurate time at sea. The pendulum clocks of the seventeenth century were useless on a moving ship, and even a small error accumulated over a long voyage: a clock that lost just one minute a day could place a ship more than a hundred kilometres off course after a month." },
+    { "key": "C", "text": "The scale of the problem was demonstrated in 1707, when four British warships ran aground off the Isles of Scilly, south-west of England, with the loss of around 1,500 sailors. In 1714, the British Parliament passed the Longitude Act, offering a prize of 20,000 pounds, an enormous sum at the time, to anyone who could find a practical method of determining longitude to within half a degree. A committee known as the Board of Longitude was established to judge the proposals." },
+    { "key": "D", "text": "Many of the leading scientists of the day believed that the answer lay in astronomy. By measuring the position of the moon in relation to particular stars and comparing it with published tables, a navigator could in theory work out the time at a reference point. This 'lunar distance' method was eventually made to work, but it required precise instruments, clear skies and complex calculations that could take several hours." },
+    { "key": "E", "text": "The alternative came from an unlikely source. John Harrison, a carpenter from the north of England with no formal education, spent more than forty years building a series of marine clocks. His first three were large and heavy, but his fourth, completed in 1759, resembled an oversized pocket watch and was just thirteen centimetres across. On a voyage to Jamaica in 1761-62, it lost only five seconds in eighty-one days. Despite this, the Board of Longitude was reluctant to award him the full prize, partly because some of its members favoured the astronomical method, and Harrison received most of the money only in 1773, after the king himself intervened." },
+    { "key": "F", "text": "The marine chronometer, as Harrison's invention became known, remained expensive for decades, and many ships continued to rely on lunar distances until well into the nineteenth century. By the 1850s, however, chronometers had become cheap enough to be carried by most ocean-going vessels. Today, satellite navigation has made both methods unnecessary for everyday use, although some navies still train officers to find their position using traditional techniques in case electronic systems fail." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r08-1", "n": 1, "prompt": "Latitude was more difficult to calculate than longitude.", "answer": "FALSE", "quote": "was relatively easy to calculate by measuring the height of the sun at midday", "explain": "Enlem **görece kolaydı**; zor olan boylamdı." },
+        { "id": "r08-2", "n": 2, "prompt": "One hour of time difference is equal to fifteen degrees of longitude.", "answer": "TRUE", "quote": "each hour of difference between local time and the time at a fixed reference point corresponds to fifteen degrees of longitude", "explain": "\"is equal to\" = **corresponds to**." },
+        { "id": "r08-3", "n": 3, "prompt": "The warships lost off the Isles of Scilly had no clocks on board.", "answer": "NOT GIVEN", "quote": "four British warships ran aground off the Isles of Scilly", "explain": "Gemilerde saat olup olmadığı hakkında bilgi yok." },
+        { "id": "r08-4", "n": 4, "prompt": "The lunar distance method was never successfully used.", "answer": "FALSE", "quote": "This 'lunar distance' method was eventually made to work", "explain": "Yöntem **sonunda işe yarar hâle getirildi**; 19. yüzyıla kadar da kullanıldı." },
+        { "id": "r08-5", "n": 5, "prompt": "Harrison was trained as a clockmaker.", "answer": "FALSE", "quote": "a carpenter from the north of England with no formal education", "explain": "Harrison bir **marangoz** ve resmi eğitimi yok." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "short", "label": "Short-answer questions", "maxWords": 2, "number": true,
+      "instructions": "Answer the questions below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r08-6", "n": 6, "prompt": "What type of clock was useless on a moving ship? ___", "answer": ["pendulum clocks", "pendulum clock", "pendulum"], "quote": "The pendulum clocks of the seventeenth century were useless on a moving ship", "explain": "**pendulum clocks**." },
+        { "id": "r08-7", "n": 7, "prompt": "In which year was the Longitude Act passed? ___", "answer": ["1714"], "quote": "In 1714, the British Parliament passed the Longitude Act", "explain": "1707 kaza yılı (çeldirici); yasa **1714**." },
+        { "id": "r08-8", "n": 8, "prompt": "How wide was Harrison's fourth clock? ___", "answer": ["13 centimetres", "thirteen centimetres", "13 cm", "13cm", "13 centimeters"], "quote": "was just thirteen centimetres across", "explain": "\"across\" = genişlik: **13 cm**." },
+        { "id": "r08-9", "n": 9, "prompt": "Who helped Harrison to receive most of the prize money? ___", "answer": ["the king", "king"], "quote": "after the king himself intervened", "explain": "**The king**." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r08-10", "n": 10, "prompt": "According to paragraph B, a clock that lost one minute a day could, after a month, put a ship", "options": ["fifteen degrees off course.", "more than 100 km off course.", "half a degree off course.", "a day behind schedule."], "answer": "B", "quote": "could place a ship more than a hundred kilometres off course after a month", "explain": "Metin: **more than a hundred kilometres**." },
+        { "id": "r08-11", "n": 11, "prompt": "Why was the Board of Longitude unwilling to pay Harrison the full prize?", "options": ["His clock was too large.", "Some members preferred an astronomical solution.", "His voyage results were inaccurate.", "The prize money had already been spent."], "answer": "B", "quote": "partly because some of its members favoured the astronomical method", "explain": "\"preferred\" = **favoured**." },
+        { "id": "r08-12", "n": 12, "prompt": "What was a disadvantage of the lunar distance method?", "options": ["It only worked near the coast.", "It required long calculations.", "It was rejected by the Board.", "It depended on an accurate clock."], "answer": "B", "quote": "complex calculations that could take several hours", "explain": "Saatlerce süren karmaşık hesaplar = **long calculations**." },
+        { "id": "r08-13", "n": 13, "prompt": "What does the writer say about navigation today?", "options": ["Chronometers are still used on most ships.", "Some navies still teach traditional methods.", "Satellite systems often fail.", "Lunar tables are no longer published."], "answer": "B", "quote": "some navies still train officers to find their position using traditional techniques", "explain": "\"teach\" = **train officers**. Uydu sistemlerinin **sık** arızalandığı (C) söylenmiyor; \"in case\" = ihtimale karşı." }
+      ]
+    }
+  ]
+}
