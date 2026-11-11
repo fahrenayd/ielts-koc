@@ -16,7 +16,7 @@ import * as writing from './screens/writing.js';
 import * as speaking from './screens/speaking.js';
 import * as placement from './screens/placement.js';
 
-export const APP_VERSION = '2.1.0 · Pofi';
+export const APP_VERSION = '2.2.0 · Vurgulama';
 
 // rota → [ekran fonksiyonu, sekme, alt menü görünsün mü]
 const routes = [

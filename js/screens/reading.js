@@ -4,6 +4,7 @@ import { db } from '../db.js';
 import { listItems, loadItem } from '../content.js';
 import { renderGroups, grade, unanswered, markGroups, lockGroups, feedbackEl, typeName, TYPE_TIP } from '../qengine.js';
 import { mascot } from '../mascot.js';
+import { createHighlighter } from '../highlighter.js';
 import { saveOutcome, renderResults, estimateBand } from '../results.js';
 import { fmtBand } from '../scoring.js';
 
@@ -116,8 +117,12 @@ export function runReading({ items, mode = 'practice', minutes = 0, title = 'Rea
     h('button', { type: 'button', class: 'on', onclick: (e) => setView('text', e) }, 'Metin'),
     h('button', { type: 'button', onclick: (e) => setView('q', e) }, 'Sorular'));
   const root = h('div', { class: 'runner reading-runner' });
+  const hl = createHighlighter();
+  hl.attach(passageEl);
+  onLeave(() => hl.detach());
 
   function setView(v, e) {
+    if (v === 'q') hl.bar.classList.add('hidden');
     view = v;
     viewSeg.querySelectorAll('button').forEach((b, i) => b.classList.toggle('on', (i === 0) === (v === 'text')));
     root.classList.toggle('show-q', v === 'q');
@@ -129,7 +134,9 @@ export function runReading({ items, mode = 'practice', minutes = 0, title = 'Rea
     passageEl.replaceChildren(
       h('h2', { class: 'ptitle' }, p.title),
       p.subtitle ? h('p', { class: 'muted small' }, p.subtitle) : null,
-      p.paragraphs.map((x) => h('p', { class: 'para' }, x.key ? h('b', { class: 'pkey' }, x.key) : null, h('span', { html: md(x.text) }))));
+      p.paragraphs.map((x, k) => h('p', { class: 'para' }, x.key ? h('b', { class: 'pkey' }, x.key) : null, hl.paragraph(i, k, x.text))),
+      h('p', { class: 'small muted hl-hint' }, '🖍 İpucu: Metinde bir kısmı seçince vurgulayabilir veya not ekleyebilirsin. Vurguya dokununca not/kaldır seçenekleri çıkar.'),
+      h('button', { type: 'button', class: 'btn sm ghost', style: { marginTop: '6px' }, onclick: () => hl.clearPassage(i) }, '🧽 Bu pasajdaki vurguları temizle'));
     qEl.replaceChildren(...p.groups.map((g) => {
       const box = renderGroups([g], answers, { exam: mode !== 'practice' });
       if (mode === 'practice') {
@@ -156,6 +163,7 @@ export function runReading({ items, mode = 'practice', minutes = 0, title = 'Rea
     }
     finished = true;
     timer && timer.stop();
+    hl.detach();
     onDone(grade(allGroups, answers), answers);
   }
 
@@ -164,6 +172,7 @@ export function runReading({ items, mode = 'practice', minutes = 0, title = 'Rea
       h('div', { class: 'row spread' }, h('b', { class: 'runtitle' }, title), minutes ? timerEl : h('span', { class: 'pill' }, mode === 'practice' ? 'Pratik' : '')),
       tabs, viewSeg),
     h('div', { class: 'split' }, passageEl, qEl),
+    hl.bar,
     h('div', { class: 'bottom-bar' }, h('button', { class: 'btn primary block', onclick: () => submit(false) }, mode === 'practice' ? 'Bitir ve sonucu gör' : submitLabel)));
   showPassage(0);
 

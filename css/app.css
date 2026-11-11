@@ -341,3 +341,18 @@ select.gap { display: inline-block; width: auto; min-width: 84px; min-height: 40
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 99px; padding: 8px 14px; font: inherit; font-size: .85rem; cursor: pointer; min-height: 38px; }
 .chip.on { background: var(--primary); color: var(--primary-ink); border-color: var(--primary); }
+
+/* ================= Vurgulama ================= */
+.passage { -webkit-user-select: text; user-select: text; }
+mark.hl { background: var(--mark); color: inherit; border-radius: 3px; padding: 1px 0; cursor: pointer; box-shadow: 0 0 0 1px rgba(200, 160, 0, .35); }
+mark.hl.has-note::after { content: '📝'; font-size: .7em; vertical-align: super; margin-left: 1px; }
+.hl-hint { margin: 8px 0 0; }
+.hl-bar {
+  position: fixed; left: 50%; transform: translateX(-50%); z-index: 20; bottom: calc(var(--tabbar-h) + 20px + env(safe-area-inset-bottom));
+  width: min(560px, calc(100% - 24px)); display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  background: #17202b; color: #fff; border-radius: 16px; padding: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+}
+body.no-tabbar .hl-bar { bottom: calc(84px + env(safe-area-inset-bottom)); }
+.hl-btn { flex: 1 1 0; min-width: 0; font-size: .9rem; min-height: 44px; border: 0; border-radius: 10px; background: #2b3a4d; color: #fff; font: inherit; font-weight: 650; cursor: pointer; padding: 0 10px; white-space: nowrap; }
+.hl-btn.ghost { flex: none; width: 44px; background: transparent; }
+.hl-note { flex-basis: 100%; font-size: .9rem; background: #243142; border-radius: 10px; padding: 8px 10px; }
