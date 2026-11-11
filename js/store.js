@@ -14,6 +14,7 @@ export const DEFAULT_PROFILE = {
 
 export const DEFAULT_SETTINGS = {
   theme: 'system',      // system | light | dark
+  palette: 'royal',     // royal | emerald | classic
   accent: 'en-GB',      // en-GB | en-US | en-AU
   rate: 0.95,
   newPerDay: 15,

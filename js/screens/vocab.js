@@ -20,34 +20,62 @@ export async function renderHome() {
       h('div', { class: 'row spread' },
         h('div', null, h('div', { class: 'big-num' }, total), h('div', { class: 'small muted' }, `kart bugün · ${q.dueCount} tekrar + ${q.newCount} yeni`)),
         h('div', { style: { fontSize: '2.4rem' } }, '🗂️')),
-      h('a', { class: 'btn block', href: '#/vocab/review', style: { marginTop: '14px', background: '#fff', color: '#1f3a5f' }, disabled: !total },
+      h('a', { class: 'btn block', href: '#/vocab/review', class: 'btn block hero-btn', style: { marginTop: '14px' }, disabled: !total },
         total ? 'Çalışmaya başla' : 'Bugünlük bitti ✓')),
     h('div', { class: 'kpis', style: { marginTop: '12px' } },
       h('div', { class: 'kpi' }, h('b', null, stats.learned), h('span', null, 'öğrenilen')),
       h('div', { class: 'kpi' }, h('b', null, stats.mature), h('span', null, 'kalıcı (21+ g)')),
       h('div', { class: 'kpi' }, h('b', null, stats.total), h('span', null, 'toplam'))),
 
-    h('h2', null, 'Konu setleri'),
-    h('div', { class: 'card' }, idx.vocab.map((t) => {
-      const pt = stats.perTopic[t.id];
-      return h('a', { class: 'list-item', href: '#/vocab/topic/' + t.id },
-        h('span', { class: 'emoji' }, t.icon),
-        h('span', { class: 'grow' },
-          h('div', { class: 'row spread' }, h('b', null, t.tr), off.includes(t.id) ? h('span', { class: 'pill' }, 'kapalı') : null),
-          h('div', { class: 'small muted' }, `${t.title} · ${pt.learned}/${pt.total}`),
-          h('div', { class: 'bar', style: { marginTop: '6px' } }, h('i', { style: { width: Math.round((pt.learned / pt.total) * 100) + '%' } }))),
-        h('span', { class: 'chev' }, '›'));
-    })),
+    vocabTabs(idx, stats, off, lessons));
+}
 
-    h('h2', null, 'Gramer — Türk öğrencilere özel'),
-    h('div', { class: 'card' }, idx.grammar.map((g) => {
-      const best = lessons[g.id]?.best;
-      return h('a', { class: 'list-item', href: '#/grammar/' + g.id },
-        h('span', { class: 'emoji' }, g.icon),
-        h('span', { class: 'grow' }, h('b', null, g.tr), h('div', { class: 'small muted' }, g.title)),
-        best != null ? h('span', { class: 'pill ' + (best >= 80 ? 'good' : 'warn') }, `%${best}`) : h('span', { class: 'pill' }, 'yeni'),
-        h('span', { class: 'chev' }, '›'));
-    })));
+// Sekmeler: Konular | Kelime türleri | Gramer (son seçilen sekme hatırlanır)
+let lastTab = 'type';
+function vocabTabs(idx, stats, off, lessons) {
+  const topicRow = (t) => {
+    const pt = stats.perTopic[t.id];
+    return h('a', { class: 'list-item', href: '#/vocab/topic/' + t.id },
+      h('span', { class: 'emoji' }, t.icon),
+      h('span', { class: 'grow' },
+        h('div', { class: 'row spread' }, h('b', null, t.tr), off.includes(t.id) ? h('span', { class: 'pill' }, 'kapalı') : null),
+        h('div', { class: 'small muted' }, `${t.desc || t.title} · ${pt.learned}/${pt.total}`),
+        h('div', { class: 'bar', style: { marginTop: '6px' } }, h('i', { style: { width: Math.round((pt.learned / pt.total) * 100) + '%' } }))),
+      h('span', { class: 'chev' }, '›'));
+  };
+  const types = idx.vocab.filter((t) => t.group === 'type');
+  const topics = idx.vocab.filter((t) => t.group !== 'type');
+  const count = (list) => list.reduce((a, t) => a + stats.perTopic[t.id].total, 0);
+  const panels = {
+    type: () => [
+      h('p', { class: 'small muted', style: { margin: '4px 0 10px' } }, `IELTS'te en çok puan getiren ${count(types)} akademik kelime, türüne göre. Bağlaçlarda kullanım notları (virgül, ardından ne gelir) da var.`),
+      h('div', { class: 'card' }, types.map(topicRow))],
+    topics: () => [
+      h('p', { class: 'small muted', style: { margin: '4px 0 10px' } }, `Writing ve Speaking'de sık çıkan konular: ${count(topics)} kelime.`),
+      h('div', { class: 'card' }, topics.map(topicRow))],
+    grammar: () => [
+      h('p', { class: 'small muted', style: { margin: '4px 0 10px' } }, 'Türk öğrencilerin en sık yaptığı hatalar, kısa ders + quiz.'),
+      h('div', { class: 'card' }, idx.grammar.map((g) => {
+        const best = lessons[g.id]?.best;
+        return h('a', { class: 'list-item', href: '#/grammar/' + g.id },
+          h('span', { class: 'emoji' }, g.icon),
+          h('span', { class: 'grow' }, h('b', null, g.tr), h('div', { class: 'small muted' }, g.title)),
+          best != null ? h('span', { class: 'pill ' + (best >= 80 ? 'good' : 'warn') }, `%${best}`) : h('span', { class: 'pill' }, 'yeni'),
+          h('span', { class: 'chev' }, '›'));
+      }))]
+  };
+  const body = h('div');
+  const seg = h('div', { class: 'seg vocab-tabs' });
+  const show = (k) => {
+    lastTab = k;
+    seg.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.k === k));
+    body.replaceChildren(...panels[k]());
+  };
+  for (const [k, label] of [['type', '🔤 Türler'], ['topics', '🌍 Konular'], ['grammar', '🧩 Gramer']]) {
+    seg.append(h('button', { type: 'button', 'data-k': k, onclick: () => show(k) }, label));
+  }
+  show(lastTab);
+  return h('div', { style: { marginTop: '18px' } }, seg, body);
 }
 
 // ---------- Konu detayı ----------

@@ -55,7 +55,9 @@ export function render() {
 
     h('h2', null, 'Görünüm'),
     h('div', { class: 'card' },
-      seg([['system', 'Sistem'], ['light', 'Açık'], ['dark', 'Koyu']], s.theme, async (v) => { await update({ theme: v }); applyTheme(); })),
+      seg([['system', 'Sistem'], ['light', 'Açık'], ['dark', 'Koyu']], s.theme, async (v) => { await update({ theme: v }); applyTheme(); }),
+      h('div', { class: 'small muted', style: { margin: '12px 0 6px' } }, 'Renk teması'),
+      palettePicker(s.palette || 'royal')),
 
     h('h2', null, 'Ses (telaffuz & Listening)'),
     h('div', { class: 'card' },
@@ -113,4 +115,23 @@ export function render() {
       } }, 'Tüm verileri sil')),
 
     h('p', { class: 'small muted center', style: { marginTop: '20px' } }, `IELTS Koç ${APP_VERSION}`));
+}
+
+// Renk teması seçici (renk örnekleriyle)
+function palettePicker(current) {
+  const options = [
+    ['royal', 'Gece Mavisi & Altın', ['#0b1433', '#1c2766', '#c9a24d']],
+    ['emerald', 'Zümrüt & Altın', ['#04281f', '#0e5a45', '#c9a24d']],
+    ['classic', 'Klasik', ['#1f3a5f', '#2b5cd6', '#f5b041']]
+  ];
+  const wrap = h('div', { class: 'palette-pick' });
+  for (const [key, label, colors] of options) {
+    wrap.append(h('button', { type: 'button', class: key === current ? 'on' : '', onclick: async (e) => {
+      wrap.querySelectorAll('button').forEach((b) => b.classList.remove('on'));
+      e.currentTarget.classList.add('on');
+      await update({ palette: key });
+      applyTheme();
+    } }, h('div', { class: 'sw' }, colors.map((c) => h('i', { style: { background: c } }))), label));
+  }
+  return wrap;
 }

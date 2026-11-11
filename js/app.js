@@ -16,7 +16,7 @@ import * as writing from './screens/writing.js';
 import * as speaking from './screens/speaking.js';
 import * as placement from './screens/placement.js';
 
-export const APP_VERSION = '2.2.0 · Vurgulama';
+export const APP_VERSION = '2.3.0 · Elit tema';
 
 // rota → [ekran fonksiyonu, sekme, alt menü görünsün mü]
 const routes = [
@@ -88,7 +88,10 @@ export function applyTheme() {
   if (t === 'system') delete document.documentElement.dataset.theme;
   else document.documentElement.dataset.theme = t;
   const dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#18222e' : '#1f3a5f');
+  const pal = state.settings.palette || 'royal';
+  if (pal === 'classic') delete document.documentElement.dataset.palette; else document.documentElement.dataset.palette = pal;
+  const bar = { royal: ['#0b1433', '#090d1b'], emerald: ['#04281f', '#06110d'], classic: ['#1f3a5f', '#18222e'] }[pal] || ['#1f3a5f', '#18222e'];
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? bar[1] : bar[0]);
 }
 
 // ---------- Ana ekrana yükleme ----------

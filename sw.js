@@ -1,6 +1,6 @@
 // IELTS Koç — service worker (internetsiz çalışma)
 // İçerik veya kod değiştiğinde VERSION'u artır: telefon yeni sürümü indirir.
-const VERSION = '2.2.0';
+const VERSION = '2.3.0';
 const CACHE = 'ielts-koc-' + VERSION;
 
 const APP_FILES = [

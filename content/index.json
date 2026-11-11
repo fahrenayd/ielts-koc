@@ -6,7 +6,13 @@
     { "id": "technology", "file": "vocab/technology.json", "title": "Technology", "tr": "Teknoloji", "icon": "💻" },
     { "id": "health", "file": "vocab/health.json", "title": "Health", "tr": "Sağlık", "icon": "🩺" },
     { "id": "urbanisation", "file": "vocab/urbanisation.json", "title": "Urbanisation", "tr": "Şehirleşme", "icon": "🏙️" },
-    { "id": "work", "file": "vocab/work.json", "title": "Work & Economy", "tr": "İş & Ekonomi", "icon": "💼" }
+    { "id": "work", "file": "vocab/work.json", "title": "Work & Economy", "tr": "İş & Ekonomi", "icon": "💼" },
+    { "id": "ess-verbs", "file": "vocab/ess-verbs.json", "group": "type", "title": "Academic verbs", "tr": "Fiiller", "icon": "⚡", "desc": "analyse, enhance, undermine…" },
+    { "id": "ess-nouns", "file": "vocab/ess-nouns.json", "group": "type", "title": "Academic nouns", "tr": "İsimler", "icon": "🧱", "desc": "approach, consequence, disparity…" },
+    { "id": "ess-adjectives", "file": "vocab/ess-adjectives.json", "group": "type", "title": "Academic adjectives", "tr": "Sıfatlar", "icon": "🎨", "desc": "crucial, detrimental, viable…" },
+    { "id": "ess-adverbs", "file": "vocab/ess-adverbs.json", "group": "type", "title": "Academic adverbs", "tr": "Zarflar", "icon": "🎚️", "desc": "considerably, arguably, respectively…" },
+    { "id": "ess-linkers", "file": "vocab/ess-linkers.json", "group": "type", "title": "Linking words", "tr": "Bağlaçlar & bağlayıcılar", "icon": "🔗", "desc": "however, whereas, despite, hence…" },
+    { "id": "ess-graphs", "file": "vocab/ess-graphs.json", "group": "type", "title": "Task 1 graph language", "tr": "Grafik dili (Task 1)", "icon": "📈", "desc": "surge, plummet, level off, account for…" }
   ],
   "grammar": [
     { "id": "articles", "file": "grammar/articles.json", "title": "Articles: a / an / the / ∅", "tr": "Article kullanımı", "icon": "🅰️" },
