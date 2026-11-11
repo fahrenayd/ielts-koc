@@ -1,0 +1,51 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Between about 1000 BC and 1200 AD, the ancestors of the Polynesian peoples settled almost every habitable island in a vast triangle of the Pacific Ocean, from Hawaii in the north to New Zealand in the south-west and Easter Island in the east. They did so without metal tools, written charts or magnetic compasses, sailing double-hulled canoes across thousands of kilometres of open sea. For a long time, many European scholars refused to believe that these voyages had been deliberate." },
+    { "key": "B", "text": "In the 1950s, the New Zealand historian Andrew Sharp argued that the islands had been settled by accident, by canoes blown off course by storms. His view was challenged in 1976, when a reconstructed voyaging canoe called Hōkūleʻa sailed from Hawaii to Tahiti, a distance of over 4,000 kilometres, using only traditional navigation methods. The navigator on that voyage, Mau Piailug, came from Micronesia, one of the few places where such knowledge had survived." },
+    { "key": "C", "text": "Traditional navigators relied above all on the stars. They memorised the points on the horizon where dozens of stars rose and set, which formed a kind of 'star compass'. By steering towards a rising star until it climbed too high, and then switching to the next star that rose at the same point, a navigator could maintain a steady course throughout the night." },
+    { "key": "D", "text": "During the day, and when clouds hid the stars, other signs were used. Navigators could identify the direction of the main ocean swells, which can remain constant for days, by the movement of the canoe beneath them; some were said to lie down in the hull to feel them more precisely. As they approached land, they watched for birds such as terns and noddies, which fly out to sea to feed in the morning and return to land in the evening. Clouds that formed over islands and changes in the colour of the sea also indicated land beyond the horizon." },
+    { "key": "E", "text": "This knowledge was passed down orally, often within families, through years of training. Much of it disappeared after contact with Europeans, as colonial governments and missionaries discouraged traditional practices and modern ships replaced canoes. Since the voyage of Hōkūleʻa, however, there has been a remarkable revival, and a new generation of Pacific navigators has completed voyages around the world without instruments." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r12-1", "n": 1, "prompt": "Polynesian settlers used metal tools to build their canoes.", "answer": "FALSE", "quote": "They did so without metal tools", "explain": "**Metal alet olmadan** yaptılar." },
+        { "id": "r12-2", "n": 2, "prompt": "Andrew Sharp believed the islands were settled unintentionally.", "answer": "TRUE", "quote": "argued that the islands had been settled by accident", "explain": "\"unintentionally\" = **by accident**." },
+        { "id": "r12-3", "n": 3, "prompt": "The 1976 voyage took longer than expected.", "answer": "NOT GIVEN", "quote": "", "explain": "Yolculuğun süresi veya beklentiler hakkında bilgi yok." },
+        { "id": "r12-4", "n": 4, "prompt": "Mau Piailug learned navigation in Hawaii.", "answer": "FALSE", "quote": "The navigator on that voyage, Mau Piailug, came from Micronesia", "explain": "Piailug **Mikronezya**'dandı; bilgi orada korunmuştu." },
+        { "id": "r12-5", "n": 5, "prompt": "Ocean swells can keep the same direction for several days.", "answer": "TRUE", "quote": "which can remain constant for days", "explain": "\"keep the same direction\" = **remain constant**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "endings", "label": "Sentence endings",
+      "instructions": "Complete each sentence with the correct ending, **A–F**.",
+      "options": [
+        { "key": "A", "text": "showed that long planned voyages were possible." },
+        { "key": "B", "text": "helped navigators keep a steady direction at night." },
+        { "key": "C", "text": "suggested that land was nearby." },
+        { "key": "D", "text": "was usually taught within families over many years." },
+        { "key": "E", "text": "was recorded in detailed written charts." },
+        { "key": "F", "text": "proved that the islands were settled by accident." }
+      ],
+      "questions": [
+        { "id": "r12-6", "n": 6, "prompt": "The voyage of Hōkūleʻa", "answer": "A", "quote": "using only traditional navigation methods", "explain": "Hawaii–Tahiti yolculuğu kazara değil **planlı** yolculukların mümkün olduğunu gösterdi; F tam tersi." },
+        { "id": "r12-7", "n": 7, "prompt": "The 'star compass'", "answer": "B", "quote": "a navigator could maintain a steady course throughout the night", "explain": "\"keep a steady direction\" = **maintain a steady course**." },
+        { "id": "r12-8", "n": 8, "prompt": "The behaviour of birds such as terns", "answer": "C", "quote": "which fly out to sea to feed in the morning and return to land in the evening", "explain": "Kuşlar akşam karaya döner → kara yakın." },
+        { "id": "r12-9", "n": 9, "prompt": "Navigation knowledge", "answer": "D", "quote": "This knowledge was passed down orally, often within families, through years of training.", "explain": "Sözlü olarak, aile içinde, yıllarca. E yanlış: yazılı harita yoktu." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r12-10", "n": 10, "prompt": "What did a navigator do when a rising star climbed too high?", "options": ["He stopped sailing until morning.", "He steered by a different star rising at the same point.", "He followed the ocean swell instead.", "He turned the canoe around."], "answer": "B", "quote": "switching to the next star that rose at the same point", "explain": "Aynı noktadan doğan **bir sonraki yıldıza** geçiyordu." },
+        { "id": "r12-11", "n": 11, "prompt": "Why did some navigators lie down in the canoe?", "options": ["to rest during long voyages", "to sense the swells more accurately", "to hide from storms", "to watch the stars"], "answer": "B", "quote": "some were said to lie down in the hull to feel them more precisely", "explain": "Dalgaları **daha hassas hissetmek** için." },
+        { "id": "r12-12", "n": 12, "prompt": "Which of the following is NOT mentioned as a sign of land?", "options": ["clouds", "the colour of the sea", "floating wood", "birds"], "answer": "C", "quote": "Clouds that formed over islands and changes in the colour of the sea also indicated land", "explain": "Bulutlar, deniz rengi ve kuşlar sayılıyor; **yüzen tahta** yok." },
+        { "id": "r12-13", "n": 13, "prompt": "What does the writer say happened after the voyage of Hōkūleʻa?", "options": ["Modern ships replaced canoes.", "Traditional navigation became popular again.", "Missionaries discouraged voyaging.", "Instruments were added to canoes."], "answer": "B", "quote": "there has been a remarkable revival", "explain": "\"popular again\" = **revival**. A ve C Avrupalılarla temastan sonra oldu (önce)." }
+      ]
+    }
+  ]
+}

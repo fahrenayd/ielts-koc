@@ -1,0 +1,45 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Many people still believe that the tongue is divided into separate zones for different tastes, with sweetness detected at the tip and bitterness at the back. This 'tongue map' appeared in textbooks for most of the twentieth century, but it is wrong. It originated in a 1901 study by the German scientist David Hänig, who found only slight differences in sensitivity across the tongue; a later translation exaggerated his findings. In fact, receptors for all basic tastes are found in taste buds across the whole tongue." },
+    { "key": "B", "text": "Scientists now generally recognise five basic tastes: sweet, sour, salty, bitter and umami. Umami, a savoury taste associated with foods such as meat, cheese and mushrooms, was first identified in 1908 by the Japanese chemist Kikunae Ikeda, who traced the distinctive flavour of a seaweed soup to a substance called glutamate. Western scientists remained sceptical for decades, and umami was widely accepted only after receptors for glutamate were discovered on the tongue in the early 2000s." },
+    { "key": "C", "text": "Each basic taste appears to have evolved for a reason. Sweetness signals energy-rich foods, saltiness helps maintain the body's balance of minerals, and umami indicates protein. Bitterness, by contrast, acts as a warning: many poisonous plants taste bitter, and humans have around 25 different bitter receptors, far more than for any other taste. Children are especially sensitive to bitter flavours, which may explain why many dislike vegetables such as broccoli." },
+    { "key": "D", "text": "What we call 'flavour', however, depends far more on smell than on taste. When we chew, aromas travel from the back of the mouth to the nose, and the brain combines these signals with information from the tongue. This is why food seems tasteless when we have a cold. Experts estimate that as much as 80% of flavour comes from smell. Sight and sound also play a role: in one experiment, people rated crisps as fresher and crunchier when the sound of their chewing was made louder through headphones." },
+    { "key": "E", "text": "Taste also changes with age. The number of taste buds declines after about the age of fifty, and the sense of smell weakens too, which can reduce appetite in elderly people and lead to poor nutrition. Some care homes now add stronger herbs and spices to meals to make food more appealing to residents." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r16-1", "n": 1, "prompt": "Different areas of the tongue detect completely different tastes.", "answer": "FALSE", "quote": "receptors for all basic tastes are found in taste buds across the whole tongue", "explain": "Tüm tatların alıcıları dilin **her yerinde**; 'dil haritası' yanlış." },
+        { "id": "r16-2", "n": 2, "prompt": "Hänig's original findings were misrepresented in a translation.", "answer": "TRUE", "quote": "a later translation exaggerated his findings", "explain": "\"misrepresented\" ≈ **exaggerated**." },
+        { "id": "r16-3", "n": 3, "prompt": "Ikeda later opened a factory producing glutamate.", "answer": "NOT GIVEN", "quote": "", "explain": "Ikeda'nın fabrika açtığına dair bilgi yok (gerçekte bu doğru olsa bile metinde yok — kendi bilgini kullanma!)." },
+        { "id": "r16-4", "n": 4, "prompt": "Umami was quickly accepted by scientists in Europe and America.", "answer": "FALSE", "quote": "Western scientists remained sceptical for decades", "explain": "Batılı bilim insanları **onlarca yıl** şüpheci kaldı." },
+        { "id": "r16-5", "n": 5, "prompt": "Humans have more receptors for bitterness than for any other taste.", "answer": "TRUE", "quote": "far more than for any other taste", "explain": "~25 acı alıcısı, diğerlerinden **çok daha fazla**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching",
+      "instructions": "Match each taste with what it signals, according to the passage. Choose the correct letter, **A–E**.",
+      "options": [{ "key": "A", "text": "a possible danger" }, { "key": "B", "text": "food that provides energy" }, { "key": "C", "text": "the presence of protein" }, { "key": "D", "text": "the need to balance minerals" }, { "key": "E", "text": "food that has gone bad" }],
+      "questions": [
+        { "id": "r16-6", "n": 6, "prompt": "sweet", "answer": "B", "quote": "Sweetness signals energy-rich foods", "explain": "energy-rich foods." },
+        { "id": "r16-7", "n": 7, "prompt": "bitter", "answer": "A", "quote": "Bitterness, by contrast, acts as a warning", "explain": "warning = **danger**." },
+        { "id": "r16-8", "n": 8, "prompt": "umami", "answer": "C", "quote": "umami indicates protein", "explain": "**protein**." },
+        { "id": "r16-9", "n": 9, "prompt": "salty", "answer": "D", "quote": "saltiness helps maintain the body's balance of minerals", "explain": "mineral dengesi. E (bozuk yiyecek) metinde yok." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion", "maxWords": 1, "number": true,
+      "instructions": "Complete the summary below. Choose **ONE WORD AND/OR A NUMBER** from the passage for each answer.",
+      "text": "# Flavour and the senses\nFlavour depends mainly on {{10}} rather than taste; up to {{11}}% of flavour may come from it.\nIn one experiment, crisps seemed fresher when chewing sounds were louder in people's {{12}}.\nAfter about fifty, people have fewer taste buds, which can reduce {{13}} in older people.",
+      "questions": [
+        { "id": "r16-10", "n": 10, "answer": ["smell"], "quote": "depends far more on smell than on taste", "explain": "**smell**." },
+        { "id": "r16-11", "n": 11, "answer": ["80"], "quote": "as much as 80% of flavour comes from smell", "explain": "% işareti metinde var: **80**." },
+        { "id": "r16-12", "n": 12, "answer": ["headphones"], "quote": "made louder through headphones", "explain": "**headphones**." },
+        { "id": "r16-13", "n": 13, "answer": ["appetite"], "quote": "which can reduce appetite in elderly people", "explain": "**appetite** (iştah)." }
+      ]
+    }
+  ]
+}

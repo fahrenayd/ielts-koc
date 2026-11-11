@@ -1,0 +1,44 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "When offices around the world closed in 2020, millions of employees began working from home almost overnight. Many organisations expected productivity to collapse. Instead, early surveys suggested that most workers felt they were achieving as much as before, or more. The question that has occupied economists since then is whether those feelings reflected reality." },
+    { "key": "B", "text": "One of the most influential studies was carried out years before the pandemic. In 2013, the Stanford economist Nicholas Bloom ran an experiment with a Chinese travel company, randomly assigning call-centre staff either to work from home or to remain in the office. Those at home were 13% more productive, mainly because they took fewer breaks and sick days and worked in a quieter environment. However, about half of them chose to return to the office when given the option, citing loneliness." },
+    { "key": "C", "text": "Later research produced more mixed results. A 2023 study by Natalia Emanuel and Emma Harrington of software engineers at a large American company found that working remotely reduced the amount of feedback junior employees received from more experienced colleagues. In the short term, output was unaffected, but the researchers warned that the long-term development of young staff could suffer. In my view, this is the most serious weakness of fully remote work, and one that is easily overlooked because it does not appear in productivity figures." },
+    { "key": "D", "text": "Other studies have focused on creativity. Research led by Melanie Brucks, comparing pairs of people who brainstormed ideas either in person or by video call, found that the video groups generated fewer creative ideas, possibly because staring at a screen narrows attention. It would be wrong, though, to conclude that remote meetings are always inferior; the same study found no difference when the groups had to choose the best idea." },
+    { "key": "E", "text": "Most companies have now settled on hybrid arrangements, typically with two or three days a week in the office. A 2024 study by Bloom of a large technology firm found that hybrid workers were just as productive as office workers and considerably less likely to resign. Hybrid working, I believe, offers the most sensible compromise for most organisations, although the right balance will vary between jobs." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "features", "label": "Matching features",
+      "instructions": "Match each finding with the correct researcher(s), **A–C**. You may use any letter more than once.",
+      "options": [{ "key": "A", "text": "Nicholas Bloom" }, { "key": "B", "text": "Emanuel and Harrington" }, { "key": "C", "text": "Melanie Brucks" }],
+      "questions": [
+        { "id": "r18-1", "n": 1, "prompt": "Remote workers were more productive partly because they had fewer interruptions.", "answer": "A", "quote": "they took fewer breaks and sick days and worked in a quieter environment", "explain": "2013 çağrı merkezi deneyi." },
+        { "id": "r18-2", "n": 2, "prompt": "Less experienced employees received less guidance when working remotely.", "answer": "B", "quote": "reduced the amount of feedback junior employees received", "explain": "\"less experienced\" = **junior**; guidance = feedback." },
+        { "id": "r18-3", "n": 3, "prompt": "People produced fewer original ideas when communicating by video.", "answer": "C", "quote": "the video groups generated fewer creative ideas", "explain": "\"original\" = **creative**." },
+        { "id": "r18-4", "n": 4, "prompt": "Staff who worked partly from home were less likely to leave their jobs.", "answer": "A", "quote": "considerably less likely to resign", "explain": "2024 hibrit çalışması da **Bloom**'a ait — aynı harf iki kez kullanılabilir." }
+      ]
+    },
+    {
+      "type": "ynng", "label": "Yes/No/Not Given",
+      "instructions": "Do the following statements agree with the views of the writer? Choose **YES**, **NO** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r18-5", "n": 5, "prompt": "The lack of feedback for junior staff is the biggest problem with fully remote work.", "answer": "YES", "quote": "In my view, this is the most serious weakness of fully remote work", "explain": "\"biggest problem\" = **most serious weakness**." },
+        { "id": "r18-6", "n": 6, "prompt": "Video meetings are worse than face-to-face meetings in every situation.", "answer": "NO", "quote": "It would be wrong, though, to conclude that remote meetings are always inferior", "explain": "Yazar \"her zaman daha kötü\" sonucunun **yanlış** olacağını söylüyor." },
+        { "id": "r18-7", "n": 7, "prompt": "Hybrid working is the best option for most companies.", "answer": "YES", "quote": "Hybrid working, I believe, offers the most sensible compromise for most organisations", "explain": "\"I believe\" + most sensible compromise." },
+        { "id": "r18-8", "n": 8, "prompt": "Governments should give tax benefits to companies that allow remote work.", "answer": "NOT GIVEN", "quote": "", "explain": "Hükümet veya vergi hakkında bir görüş yok." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r18-9", "n": 9, "prompt": "What did early surveys during the pandemic suggest?", "options": ["Productivity had collapsed.", "Most workers felt as productive as before or more.", "Managers preferred remote work.", "Workers wanted to return to offices."], "answer": "B", "quote": "most workers felt they were achieving as much as before, or more", "explain": "A: şirketlerin **beklentisiydi**, sonuç değil." },
+        { "id": "r18-10", "n": 10, "prompt": "Why did many workers in Bloom's 2013 study return to the office?", "options": ["They were less productive at home.", "They felt lonely.", "The company required it.", "They wanted promotion."], "answer": "B", "quote": "citing loneliness", "explain": "**Yalnızlık** nedeniyle." },
+        { "id": "r18-11", "n": 11, "prompt": "Why does the writer think the problem in paragraph C is 'easily overlooked'?", "options": ["Junior staff rarely complain.", "It is not shown in productivity measurements.", "Few companies employ software engineers.", "The study was very small."], "answer": "B", "quote": "it does not appear in productivity figures", "explain": "Verimlilik rakamlarında **görünmediği** için gözden kaçıyor." },
+        { "id": "r18-12", "n": 12, "prompt": "What might explain the result of Brucks's study?", "options": ["Video calls are often interrupted.", "Looking at a screen may narrow attention.", "People are shy on camera.", "The groups were too large."], "answer": "B", "quote": "possibly because staring at a screen narrows attention", "explain": "Ekrana bakmak dikkati **daraltıyor** olabilir." },
+        { "id": "r18-13", "n": 13, "prompt": "What is a typical hybrid arrangement, according to the passage?", "options": ["one day a week in the office", "two or three days a week in the office", "four days a week in the office", "working from home only in winter"], "answer": "B", "quote": "typically with two or three days a week in the office", "explain": "**İki-üç gün** ofiste." }
+      ]
+    }
+  ]
+}

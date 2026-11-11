@@ -1,0 +1,7 @@
+{ "paragraphs": [ { "key": "", "text": "The first modern Olympic Games were held in Athens in 1896, with around 240 athletes from 14 countries, all of them men. Women first competed four years later in Paris, in sports such as tennis and golf. The Games have been cancelled three times, in 1916, 1940 and 1944, all because of world wars. The 2020 Tokyo Games were postponed for a year because of the COVID-19 pandemic and were held in 2021 largely without spectators." } ],
+  "groups": [ { "type": "tfng", "instructions": "Choose **TRUE**, **FALSE** or **NOT GIVEN**.", "tip": "Benzer ama farklı anlamlı fiillere dikkat: cancel (iptal) ≠ postpone (ertele).",
+    "questions": [
+      { "id": "d03-1", "n": 1, "prompt": "Women took part in the 1896 Games.", "answer": "FALSE", "quote": "all of them men", "explain": "1896'da sporcuların **hepsi erkekti**." },
+      { "id": "d03-2", "n": 2, "prompt": "The 1900 Games included women's tennis.", "answer": "TRUE", "quote": "Women first competed four years later in Paris, in sports such as tennis and golf.", "explain": "1896 + 4 = 1900, Paris, tenis dahil." },
+      { "id": "d03-3", "n": 3, "prompt": "The Tokyo Games were cancelled.", "answer": "FALSE", "quote": "were postponed for a year", "explain": "İptal edilmedi, **ertelendi**." },
+      { "id": "d03-4", "n": 4, "prompt": "The Tokyo Games made a financial loss.", "answer": "NOT GIVEN", "quote": "", "explain": "Mali sonuçlar hakkında bilgi yok." } ] } ] }

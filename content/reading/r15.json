@@ -1,0 +1,43 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "For much of the twentieth century, parents in many countries were advised not to raise their children with two languages. Bilingualism, it was claimed, would confuse young children, delay their speech and harm their performance at school. Some early studies appeared to support this view, finding that bilingual children scored lower on intelligence tests. These studies, however, had serious flaws: they often compared children from poor immigrant families with wealthier monolingual children, and the tests were frequently given in the children's weaker language." },
+    { "key": "B", "text": "A turning point came in 1962, when the Canadian researchers Elizabeth Peal and Wallace Lambert compared bilingual and monolingual children from similar social backgrounds in Montreal. They found that the bilingual children performed better on a range of tests, particularly those requiring mental flexibility. Since then, the idea that bilingualism harms children has largely been abandoned. I believe this is one of the clearest examples of how poor research can shape public policy for decades." },
+    { "key": "C", "text": "It is true that bilingual children may know fewer words in each of their languages than monolingual children of the same age. When the vocabulary of both languages is counted together, however, they usually know as many words or more. Mixing languages within a sentence, which worries many parents, is not a sign of confusion; it is a normal feature of bilingual speech and is also common among bilingual adults." },
+    { "key": "D", "text": "More controversial is the claim that bilingualism provides a general cognitive advantage. Researchers such as Ellen Bialystok have argued that constantly switching between languages trains the brain's executive functions, the processes that control attention and help people ignore distractions. Some studies have even suggested that lifelong bilingualism may delay the onset of dementia by several years. Other researchers have failed to reproduce these effects in large studies, and the debate continues. In my opinion, the evidence for a major advantage is weaker than popular articles suggest." },
+    { "key": "E", "text": "Whatever the outcome of this debate, the practical benefits are clear. Speaking more than one language opens up opportunities for work, travel and friendship, and allows children of immigrant families to maintain a connection with their grandparents and their cultural heritage. The most important factor in raising a bilingual child, studies agree, is sufficient exposure: children need to hear and use each language regularly and in meaningful situations." }
+  ],
+  "groups": [
+    {
+      "type": "ynng", "label": "Yes/No/Not Given",
+      "instructions": "Do the following statements agree with the views of the writer? Choose **YES**, **NO** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r15-1", "n": 1, "prompt": "Early studies showing negative effects of bilingualism were reliable.", "answer": "NO", "quote": "These studies, however, had serious flaws", "explain": "Yazar bu çalışmaların **ciddi kusurları** olduğunu söylüyor." },
+        { "id": "r15-2", "n": 2, "prompt": "The belief that bilingualism harms children shows how flawed research can influence policy.", "answer": "YES", "quote": "I believe this is one of the clearest examples of how poor research can shape public policy for decades.", "explain": "\"I believe\" = yazarın görüşü." },
+        { "id": "r15-3", "n": 3, "prompt": "Children who mix languages are confused.", "answer": "NO", "quote": "is not a sign of confusion", "explain": "Dil karıştırmak **karışıklık belirtisi değil**." },
+        { "id": "r15-4", "n": 4, "prompt": "The evidence for a large cognitive advantage has been exaggerated in the media.", "answer": "YES", "quote": "the evidence for a major advantage is weaker than popular articles suggest", "explain": "\"exaggerated in the media\" = **weaker than popular articles suggest**." },
+        { "id": "r15-5", "n": 5, "prompt": "Schools should teach all subjects in two languages.", "answer": "NOT GIVEN", "quote": "", "explain": "Okullarda iki dilde eğitim hakkında yazarın görüşü yok." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r15-6", "n": 6, "prompt": "What was one problem with the early studies?", "options": ["They used too few children.", "They compared children from different social backgrounds.", "They were carried out only in Canada.", "They tested adults instead of children."], "answer": "B", "quote": "they often compared children from poor immigrant families with wealthier monolingual children", "explain": "Farklı sosyal çevreden çocuklar karşılaştırılmış." },
+        { "id": "r15-7", "n": 7, "prompt": "What did Peal and Lambert find?", "options": ["Bilingual children had smaller vocabularies.", "Bilingual children did better on tests of mental flexibility.", "There was no difference between the groups.", "Bilingual children had delayed speech."], "answer": "B", "quote": "particularly those requiring mental flexibility", "explain": "Özellikle **zihinsel esneklik** testlerinde daha iyiydiler." },
+        { "id": "r15-8", "n": 8, "prompt": "What is said about bilingual children's vocabulary?", "options": ["It is smaller in total.", "It is similar or larger when both languages are counted.", "It develops more slowly in both languages.", "It is mostly in the stronger language."], "answer": "B", "quote": "they usually know as many words or more", "explain": "İki dil birlikte sayılınca **eşit veya daha fazla**." },
+        { "id": "r15-9", "n": 9, "prompt": "According to Bialystok, bilingualism", "options": ["prevents dementia completely.", "strengthens the brain's control of attention.", "makes language switching harder.", "has no measurable effect."], "answer": "B", "quote": "trains the brain's executive functions, the processes that control attention", "explain": "Dikkat kontrolü (executive functions) **güçlenir**. Demansı tamamen önlemez, \"geciktirebilir\" deniyor." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "sentence", "label": "Sentence completion", "maxWords": 2,
+      "instructions": "Complete the sentences below. Choose **NO MORE THAN TWO WORDS** from the passage for each answer.",
+      "questions": [
+        { "id": "r15-10", "n": 10, "prompt": "Early tests were often given in the children's ___.", "answer": ["weaker language"], "quote": "the tests were frequently given in the children's weaker language", "explain": "**weaker language**." },
+        { "id": "r15-11", "n": 11, "prompt": "Peal and Lambert's study took place in ___.", "answer": ["Montreal"], "quote": "from similar social backgrounds in Montreal", "explain": "**Montreal**." },
+        { "id": "r15-12", "n": 12, "prompt": "Bilingualism may help children of immigrants keep a link with their grandparents and their ___.", "answer": ["cultural heritage", "heritage"], "quote": "maintain a connection with their grandparents and their cultural heritage", "explain": "**cultural heritage**." },
+        { "id": "r15-13", "n": 13, "prompt": "The key factor in raising a bilingual child is enough ___.", "answer": ["exposure", "sufficient exposure"], "quote": "The most important factor in raising a bilingual child, studies agree, is sufficient exposure", "explain": "\"enough\" = sufficient → **exposure**." }
+      ]
+    }
+  ]
+}

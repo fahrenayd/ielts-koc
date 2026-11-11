@@ -1,0 +1,12 @@
+{ "paragraphs": [
+    { "key": "A", "text": "Sleep researchers have long known that teenagers' body clocks shift later during puberty, making it difficult for them to fall asleep before 11 pm." },
+    { "key": "B", "text": "When schools begin at 8 am or earlier, many teenagers are therefore chronically short of sleep. Surveys suggest that most get less than the recommended eight to ten hours on school nights." },
+    { "key": "C", "text": "The consequences go beyond tiredness in class. Lack of sleep has been linked to poorer mental health, more car accidents among young drivers and lower exam results." },
+    { "key": "D", "text": "Despite this, changing school hours is difficult. Bus timetables, parents' working hours and after-school sports all depend on the existing schedule." } ],
+  "groups": [ { "type": "match", "subtype": "headings", "instructions": "Choose the correct heading for each paragraph from the list below.", "tip": "Paragrafın ilk cümlesi çoğu zaman ana fikri verir.",
+    "options": [ { "key": "i", "text": "Practical barriers to reform" }, { "key": "ii", "text": "A biological change" }, { "key": "iii", "text": "Serious wider effects" }, { "key": "iv", "text": "Not enough rest on school nights" }, { "key": "v", "text": "The benefits of sport" } ],
+    "questions": [
+      { "id": "d08-1", "n": 1, "prompt": "Paragraph A", "answer": "ii", "quote": "teenagers' body clocks shift later during puberty", "explain": "Ergenlikte biyolojik saat kayması." },
+      { "id": "d08-2", "n": 2, "prompt": "Paragraph B", "answer": "iv", "quote": "most get less than the recommended eight to ten hours on school nights", "explain": "Okul gecelerinde yetersiz uyku." },
+      { "id": "d08-3", "n": 3, "prompt": "Paragraph C", "answer": "iii", "quote": "The consequences go beyond tiredness in class.", "explain": "Sınıftaki yorgunluğun ötesinde: ruh sağlığı, kazalar, notlar." },
+      { "id": "d08-4", "n": 4, "prompt": "Paragraph D", "answer": "i", "quote": "Despite this, changing school hours is difficult.", "explain": "Pratik engeller. v çeldirici: spor sadece örnek olarak geçiyor." } ] } ] }

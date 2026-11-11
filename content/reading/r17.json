@@ -1,0 +1,52 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "The glaciers of the Himalayas and the neighbouring mountain ranges contain more ice than anywhere on Earth outside the polar regions, which is why the area is sometimes called the 'Third Pole'. Meltwater from these glaciers feeds ten of Asia's largest rivers, including the Indus, the Ganges and the Yangtze, and some 1.9 billion people depend on these river basins for drinking water, farming and electricity." },
+    { "key": "B", "text": "Glaciers act as natural water towers. They store precipitation as ice during the winter and release it gradually during the warm, dry months, when water is most needed for irrigation. In the upper Indus basin, which includes parts of Pakistan, India and China, meltwater from snow and ice makes up more than half of the river's flow. Further east, where the summer monsoon brings heavy rain, glaciers contribute a much smaller share." },
+    { "key": "C", "text": "Since the 1970s, most Himalayan glaciers have been shrinking, and the rate of loss has increased. A 2019 study using declassified spy-satellite images found that the glaciers lost twice as much ice per year between 2000 and 2016 as between 1975 and 2000. Even if global warming were limited to 1.5 degrees Celsius, scientists estimate that at least a third of the region's ice would disappear by the end of the century." },
+    { "key": "D", "text": "In the short term, faster melting actually increases the amount of water flowing into rivers. Researchers expect this flow to reach a peak, sometimes called 'peak water', around the middle of the century in many basins, after which supplies during the dry season will decline as the glaciers become smaller. Communities that have expanded their farming during the period of high flow may then face serious shortages." },
+    { "key": "E", "text": "Melting also creates immediate dangers. As glaciers retreat, meltwater collects in lakes held back by loose rock and ice. If these natural dams collapse, they can release a sudden flood capable of destroying villages, roads and hydroelectric plants many kilometres downstream. Several thousand such lakes have formed in the region, and some governments have begun to lower their water levels artificially and install early-warning systems." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "headings", "label": "Matching headings",
+      "instructions": "Choose the correct heading for each paragraph, **A–E**, from the list below.",
+      "options": [
+        { "key": "i", "text": "A temporary increase before a decline" },
+        { "key": "ii", "text": "An accelerating loss of ice" },
+        { "key": "iii", "text": "A vital source for a huge population" },
+        { "key": "iv", "text": "A sudden and local threat" },
+        { "key": "v", "text": "How glaciers regulate river flow" },
+        { "key": "vi", "text": "Plans to build new dams" },
+        { "key": "vii", "text": "The history of mountain exploration" }
+      ],
+      "questions": [
+        { "id": "r17-1", "n": 1, "prompt": "Paragraph A", "answer": "iii", "quote": "some 1.9 billion people depend on these river basins", "explain": "1,9 milyar insan = **huge population**." },
+        { "id": "r17-2", "n": 2, "prompt": "Paragraph B", "answer": "v", "quote": "They store precipitation as ice during the winter and release it gradually", "explain": "Su kulesi: depola ve yavaşça bırak = **regulate river flow**." },
+        { "id": "r17-3", "n": 3, "prompt": "Paragraph C", "answer": "ii", "quote": "the rate of loss has increased", "explain": "\"accelerating\" = rate increased; iki kat buz kaybı." },
+        { "id": "r17-4", "n": 4, "prompt": "Paragraph D", "answer": "i", "quote": "In the short term, faster melting actually increases the amount of water flowing into rivers.", "explain": "Önce artış (peak water), sonra **düşüş**." },
+        { "id": "r17-5", "n": 5, "prompt": "Paragraph E", "answer": "iv", "quote": "they can release a sudden flood", "explain": "Ani sel = **sudden threat**. vi çeldirici: doğal setler var, yeni baraj planı yok." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "short", "label": "Short-answer questions", "maxWords": 3, "number": true,
+      "instructions": "Answer the questions below. Choose **NO MORE THAN THREE WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r17-6", "n": 6, "prompt": "What name is sometimes given to the region? ___", "answer": ["the Third Pole", "Third Pole"], "quote": "the 'Third Pole'", "explain": "**the Third Pole**." },
+        { "id": "r17-7", "n": 7, "prompt": "For which activity is water most needed in the warm, dry months? ___", "answer": ["irrigation"], "quote": "when water is most needed for irrigation", "explain": "**irrigation** (sulama)." },
+        { "id": "r17-8", "n": 8, "prompt": "What kind of images did the 2019 study use? ___", "answer": ["spy-satellite images", "declassified spy-satellite images", "spy satellite images"], "quote": "declassified spy-satellite images", "explain": "**declassified spy-satellite images** (3 kelime; tireli kelime 1 sayılır)." },
+        { "id": "r17-9", "n": 9, "prompt": "What term describes the highest point of river flow from melting? ___", "answer": ["peak water"], "quote": "sometimes called 'peak water'", "explain": "**peak water**." }
+      ]
+    },
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r17-10", "n": 10, "prompt": "Glacier meltwater is equally important to all rivers in the region.", "answer": "FALSE", "quote": "glaciers contribute a much smaller share", "explain": "Doğuda muson yağmuru nedeniyle buzul katkısı **çok daha küçük**." },
+        { "id": "r17-11", "n": 11, "prompt": "Ice loss between 2000 and 2016 was double the rate of the previous period.", "answer": "TRUE", "quote": "lost twice as much ice per year between 2000 and 2016 as between 1975 and 2000", "explain": "\"double\" = **twice as much**." },
+        { "id": "r17-12", "n": 12, "prompt": "Limiting warming to 1.5°C would prevent any further loss of ice.", "answer": "FALSE", "quote": "at least a third of the region's ice would disappear by the end of the century", "explain": "1,5°C'de bile buzun en az **üçte biri** yok olacak." },
+        { "id": "r17-13", "n": 13, "prompt": "Floods from glacial lakes have killed more people than any other natural disaster in the region.", "answer": "NOT GIVEN", "quote": "", "explain": "Diğer afetlerle **karşılaştırma yok**." }
+      ]
+    }
+  ]
+}

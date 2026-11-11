@@ -4,6 +4,7 @@ import { state, getDay } from '../store.js';
 import { studyPhase, goalMinutes, todayTasks, streakInfo, latestBands, SKILLS, SKILL_TR } from '../planner.js';
 import { fmtBand } from '../scoring.js';
 import { install } from '../app.js';
+import { mascot } from '../mascot.js';
 
 function greeting() {
   const hr = new Date().getHours();
@@ -24,6 +25,15 @@ function installCard() {
   return card;
 }
 
+// Pofi'nin günlük mesajı: duruma göre ruh hali
+function pofiGreeting(done, total, streak, mins, goal) {
+  if (total && done === total) return ['celebrate', 'Bugünkü tüm görevler tamam! 🎉 Yarın görüşürüz — serini koru.'];
+  if (mins >= goal) return ['happy', `Günlük hedefin olan ${goal} dakikayı tamamladın! İstersen bir görev daha yapalım.`];
+  if (streak >= 3) return ['happy', `🔥 ${streak} günlük serin var! Bugün de bozmayalım: ilk görevle başla.`];
+  if (done > 0 && mins > 0) return ['neutral', `Güzel başlangıç! ${total - done} görev kaldı.`];
+  return ['think', 'Bugün ne çalışacağımı planladım. **İlk görevden** başlayalım mı? Küçük adımlar büyük band farkı yaratır.'];
+}
+
 export async function render() {
   const p = state.profile;
   const [day, tasks, st, bands] = await Promise.all([getDay(), todayTasks(), streakInfo(), latestBands()]);
@@ -38,6 +48,7 @@ export async function render() {
   const root = h('div', null,
     h('p', { class: 'muted', style: { margin: '4px 0 0' } }, greeting() + ' 👋'),
     h('h1', null, 'Bugünkü planın'),
+    h('div', { class: 'card', style: { marginTop: '10px' } }, mascot(...pofiGreeting(doneCount, tasks.length, st.streak, mins, goal))),
 
     h('div', { class: 'card hero', style: { marginTop: '12px' } },
       h('div', { class: 'row spread' },

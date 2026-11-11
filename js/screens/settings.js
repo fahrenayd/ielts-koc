@@ -67,6 +67,12 @@ export function render() {
       h('button', { class: 'btn ghost block', onclick: () => speak('Urbanisation has placed enormous pressure on public infrastructure.', { accent: state.settings.accent, rate: state.settings.rate }) }, '🔊 Sesi dene'),
       voiceNote),
 
+    h('h2', null, 'Maskot'),
+    h('div', { class: 'card' },
+      h('label', { class: 'row spread', style: { cursor: 'pointer' } },
+        h('span', null, h('b', null, '🦊 Pofi geri bildirim versin'), h('div', { class: 'small muted' }, 'Kapatırsan açıklamalar maskotsuz gösterilir.')),
+        h('input', { type: 'checkbox', checked: s.mascot !== false, onchange: (e) => update({ mascot: e.target.checked }) }))),
+
     h('h2', null, 'Speaking (mikrofon)'),
     h('div', { class: 'card' },
       seg([['both', 'Kayıt + metin'], ['stt', 'Sadece metin'], ['rec', 'Sadece kayıt']], s.speechMode || 'both', (v) => update({ speechMode: v })),

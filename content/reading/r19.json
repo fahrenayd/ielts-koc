@@ -1,0 +1,45 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Writing appears to have been invented independently at least three, and possibly four, times in human history: in Mesopotamia, in China, in Mesoamerica and perhaps in Egypt. The earliest known system developed in the Sumerian cities of southern Mesopotamia, in what is now Iraq, around 3200 BC. Surprisingly, it was not created to record stories, laws or religious texts, but to keep accounts." },
+    { "key": "B", "text": "For several thousand years before writing appeared, people in the region had used small clay tokens of different shapes to represent quantities of goods such as grain, oil and sheep. According to the archaeologist Denise Schmandt-Besserat, these tokens were eventually sealed inside hollow clay balls to guarantee transactions, and their shapes were pressed into the outside of the balls so that the contents could be checked without breaking them. In time, people realised that the marks alone were sufficient, and the tokens became unnecessary." },
+    { "key": "C", "text": "The early signs were pictures pressed or drawn into wet clay tablets with a reed. Over centuries, they became simplified into groups of wedge-shaped marks, a script now known as cuneiform, from the Latin word for 'wedge'. Crucially, scribes began to use some signs for their sound rather than their meaning, following what is known as the rebus principle. This allowed them to write names and, eventually, complete sentences of spoken language." },
+    { "key": "D", "text": "Learning cuneiform was difficult, since the system contained several hundred signs, and literacy was restricted to a small class of professional scribes who trained for years in special schools. Many of the surviving tablets are school exercises, complete with the mistakes of students. Yet the script proved remarkably durable: it was used for around 3,000 years to write more than a dozen languages, before being replaced by alphabetic scripts." },
+    { "key": "E", "text": "Knowledge of how to read cuneiform was lost for nearly two thousand years. It was recovered in the nineteenth century, largely thanks to a long inscription carved on a cliff at Behistun in Iran, which repeats the same text in three languages. Scholars working on the inscription, including the British officer Henry Rawlinson, had deciphered the script by the 1850s, opening up hundreds of thousands of tablets to modern study." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r19-1", "n": 1, "prompt": "Writing was invented in only one place and then spread around the world.", "answer": "FALSE", "quote": "Writing appears to have been invented independently at least three, and possibly four, times", "explain": "En az **üç kez bağımsız** olarak icat edildi." },
+        { "id": "r19-2", "n": 2, "prompt": "The first writing system was used mainly for record-keeping.", "answer": "TRUE", "quote": "it was not created to record stories, laws or religious texts, but to keep accounts", "explain": "\"record-keeping\" = **keep accounts**." },
+        { "id": "r19-3", "n": 3, "prompt": "Clay tokens were used in the region before writing existed.", "answer": "TRUE", "quote": "For several thousand years before writing appeared", "explain": "Yazıdan binlerce yıl **önce**." },
+        { "id": "r19-4", "n": 4, "prompt": "Most scribes were members of royal families.", "answer": "NOT GIVEN", "quote": "literacy was restricted to a small class of professional scribes", "explain": "Kâtiplerin küçük bir profesyonel sınıf olduğu söyleniyor; **kraliyet ailesinden** olup olmadıkları belirtilmiyor." },
+        { "id": "r19-5", "n": 5, "prompt": "Cuneiform was used to write only the Sumerian language.", "answer": "FALSE", "quote": "to write more than a dozen languages", "explain": "**Bir düzineden fazla** dil için kullanıldı." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–E**.",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }],
+      "questions": [
+        { "id": "r19-6", "n": 6, "prompt": "evidence of how students were taught", "answer": "D", "quote": "Many of the surviving tablets are school exercises, complete with the mistakes of students.", "explain": "Okul alıştırmaları ve öğrenci hataları." },
+        { "id": "r19-7", "n": 7, "prompt": "the origin of the name of a script", "answer": "C", "quote": "from the Latin word for 'wedge'", "explain": "cuneiform ← Latince 'kama'." },
+        { "id": "r19-8", "n": 8, "prompt": "a text that appears in more than one language", "answer": "E", "quote": "which repeats the same text in three languages", "explain": "Behistun yazıtı." },
+        { "id": "r19-9", "n": 9, "prompt": "a theory about how tokens led to written signs", "answer": "B", "quote": "people realised that the marks alone were sufficient", "explain": "Schmandt-Besserat'ın teorisi." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "note", "label": "Note completion", "maxWords": 1, "number": true,
+      "instructions": "Complete the notes below. Choose **ONE WORD AND/OR A NUMBER** from the passage for each answer.",
+      "text": "# The development of cuneiform\nSigns were made in wet clay using a {{10}}\nUsing signs for their sound followed the {{11}} principle\nThe system had several {{12}} signs\nThe script was deciphered by the {{13}}",
+      "questions": [
+        { "id": "r19-10", "n": 10, "answer": ["reed"], "quote": "drawn into wet clay tablets with a reed", "explain": "**reed** (kamış)." },
+        { "id": "r19-11", "n": 11, "answer": ["rebus"], "quote": "what is known as the rebus principle", "explain": "**rebus**." },
+        { "id": "r19-12", "n": 12, "answer": ["hundred"], "quote": "the system contained several hundred signs", "explain": "several **hundred** signs." },
+        { "id": "r19-13", "n": 13, "answer": ["1850s"], "quote": "had deciphered the script by the 1850s", "explain": "**1850s**." }
+      ]
+    }
+  ]
+}

@@ -2,14 +2,33 @@
 import { h, topbar, fmtTime, countdown, onLeave, ask, md } from '../util.js';
 import { db } from '../db.js';
 import { listItems, loadItem } from '../content.js';
-import { renderGroups, grade, unanswered, markGroups, lockGroups, feedbackEl } from '../qengine.js';
+import { renderGroups, grade, unanswered, markGroups, lockGroups, feedbackEl, typeName, TYPE_TIP } from '../qengine.js';
+import { mascot } from '../mascot.js';
 import { saveOutcome, renderResults, estimateBand } from '../results.js';
 import { fmtBand } from '../scoring.js';
 
 const qCount = (it) => it.groups.reduce((a, g) => a + g.questions.length, 0);
 
+// Soru tipine göre kısa antrenmanlar
+function drillsSection(drills, best) {
+  const types = [...new Set(drills.map((d) => d.type))];
+  const listEl = h('div', { class: 'card' });
+  const show = (t) => listEl.replaceChildren(...drills.filter((d) => !t || d.type === t).map((d) => h('a', { class: 'list-item', href: '#/drill/' + d.id },
+    h('span', { class: 'grow' }, h('b', null, d.title), h('div', { class: 'small muted' }, `${typeName(d.type)} · ${d.questions} soru · ~4 dk`)),
+    best[d.id] != null ? h('span', { class: 'pill ' + (best[d.id] >= 0.75 ? 'good' : 'warn') }, `%${Math.round(best[d.id] * 100)}`) : h('span', { class: 'pill' }, 'yeni'),
+    h('span', { class: 'chev' }, '›'))));
+  const chips = h('div', { class: 'chips' }, h('button', { type: 'button', class: 'chip on', onclick: (e) => pickChip(e, null) }, 'Hepsi'),
+    types.map((t) => h('button', { type: 'button', class: 'chip', onclick: (e) => pickChip(e, t) }, typeName(t))));
+  function pickChip(e, t) { chips.querySelectorAll('.chip').forEach((c) => c.classList.remove('on')); e.currentTarget.classList.add('on'); show(t); }
+  show(null);
+  return h('div', null,
+    h('h2', null, '🎯 Soru tipi antrenmanı'),
+    h('p', { class: 'small muted' }, 'Kısa paragraflar, 4 soru, anında açıklama. Zayıf olduğun tipe yüklenmek için ideal. (Bandı etkilemez, soru tipi istatistiğine sayılır.)'),
+    chips, listEl);
+}
+
 export async function renderList() {
-  const [list, results] = await Promise.all([listItems('reading'), db.all('results')]);
+  const [list, drills, results] = await Promise.all([listItems('reading'), listItems('drills'), db.all('results')]);
   const best = {};
   for (const r of results) if (r.module === 'reading' && r.itemIds.length === 1 && r.mode !== 'placement') best[r.itemIds[0]] = Math.max(best[r.itemIds[0]] ?? -1, r.correct / r.total);
   return h('div', null,
@@ -17,13 +36,35 @@ export async function renderList() {
     h('div', { class: 'card small' },
       h('b', null, 'Gerçek sınav: '), '3 pasaj, 40 soru, 60 dakika (pasaj başına ~20 dk). Cevap kâğıdına aktarma süresi yok.',
       h('p', { class: 'muted', style: { margin: '6px 0 0' } }, '💡 Önce soruları oku, sonra metinde anahtar kelimelerin eş anlamlılarını ara. Sorular çoğunlukla metindeki sırayı izler (matching soruları hariç).')),
-    h('h2', null, 'Pasajlar'),
+    drillsSection(drills, best),
+    h('h2', null, `📄 Tam pasajlar (${list.length})`),
     h('div', { class: 'card' }, list.map((m) => h('a', { class: 'list-item', href: '#/reading/' + m.id },
       h('span', { class: 'emoji' }, m.icon || '📄'),
       h('span', { class: 'grow' }, h('b', null, m.title), h('div', { class: 'small muted' }, `${m.topic} · ${m.level} · ${m.questions} soru`)),
       best[m.id] != null ? h('span', { class: 'pill ' + (best[m.id] >= 0.75 ? 'good' : 'warn') }, `%${Math.round(best[m.id] * 100)}`) : h('span', { class: 'pill' }, 'yeni'),
       h('span', { class: 'chev' }, '›')))),
     externalCard());
+}
+
+export async function renderDrill(id) {
+  const [it, drills] = await Promise.all([loadItem('drills', id), listItems('drills')]);
+  const root = h('div');
+  const t0 = Date.now();
+  const idx = drills.findIndex((d) => d.id === id);
+  const next = drills.find((d, i) => i > idx && d.type === it.type) || drills[(idx + 1) % drills.length];
+  root.append(
+    h('div', { class: 'card', style: { marginBottom: '10px' } }, mascot('think', `**${typeName(it.type)}** antrenmanı. ${TYPE_TIP[it.type] || ''}`)),
+    runReading({
+      items: [it], mode: 'practice', title: `🎯 ${it.title}`,
+      onDone: async (res) => {
+        await saveOutcome({ module: 'reading', itemIds: [id], title: it.title, res, mode: 'drill', noBand: true, seconds: Math.min((Date.now() - t0) / 1000, 900) });
+        root.replaceChildren(renderResults({ title: it.title, module: 'reading', res, band: null, items: [it],
+          extra: h('a', { class: 'btn primary block', href: '#/drill/' + next.id, style: { margin: '12px 0' } }, `Sonraki antrenman: ${next.title} →`),
+          onRetry: () => location.reload() }));
+        window.scrollTo(0, 0);
+      }
+    }));
+  return root;
 }
 
 export function externalCard() {

@@ -1,0 +1,44 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Around 40% of what people do each day is not the result of conscious decisions but of habits, according to research by the psychologist Wendy Wood. We brush our teeth, check our phones and take the same route to work largely without thinking. This is not a weakness. Habits free the mind to concentrate on new or difficult problems; a person who had to deliberate over every small action would be exhausted by lunchtime." },
+    { "key": "B", "text": "Habits form through repetition in a stable context. When an action is repeatedly performed in the same situation and is followed by a reward, the brain gradually links the situation directly to the action. Eventually, the situation alone is enough to trigger the behaviour. The journalist Charles Duhigg popularised this process as a 'habit loop' consisting of a cue, a routine and a reward. In my view, his model is useful as a simple guide, although it makes habit formation sound more mechanical than it really is." },
+    { "key": "C", "text": "How long does it take to form a new habit? A widely repeated claim is that it takes 21 days. This figure appears to come from a 1960 book by a plastic surgeon, Maxwell Maltz, who observed that patients took about three weeks to get used to a change in their appearance; he was not studying habits at all. A 2009 study by Phillippa Lally at University College London followed volunteers trying to adopt simple behaviours, such as drinking water after breakfast. On average, it took 66 days for the behaviour to become automatic, but the range was enormous, from 18 to 254 days." },
+    { "key": "D", "text": "Lally's study also produced an encouraging finding: missing a single day did not seriously affect the process. This matters because many people abandon a new routine after one failure, believing that they have ruined their progress. It is far more important, I would argue, to return to the routine quickly than to maintain a perfect record." },
+    { "key": "E", "text": "Breaking bad habits is harder than forming good ones, because the link between cue and response remains in the brain even when we no longer act on it. Willpower alone is an unreliable solution. Wood's research suggests that successful people do not have more self-control than others; instead, they arrange their environment to avoid temptation. Someone who wants to eat less sugar, for example, is better off not keeping sweets at home than trying to resist them every evening. Changes of environment, such as moving house or starting a new job, also offer a valuable opportunity, since old cues disappear." }
+  ],
+  "groups": [
+    {
+      "type": "ynng", "label": "Yes/No/Not Given",
+      "instructions": "Do the following statements agree with the views of the writer? Choose **YES**, **NO** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r11-1", "n": 1, "prompt": "Relying on habits is a sign of mental weakness.", "answer": "NO", "quote": "This is not a weakness.", "explain": "Yazar açıkça \"bu bir zayıflık değil\" diyor." },
+        { "id": "r11-2", "n": 2, "prompt": "Duhigg's model is a helpful but simplified description of habit formation.", "answer": "YES", "quote": "his model is useful as a simple guide, although it makes habit formation sound more mechanical than it really is", "explain": "\"helpful\" = useful; \"simplified\" = more mechanical than it really is." },
+        { "id": "r11-3", "n": 3, "prompt": "Maltz's book is still the best guide to changing habits.", "answer": "NO", "quote": "he was not studying habits at all", "explain": "Yazar Maltz'ın alışkanlık üzerine çalışmadığını vurguluyor; kitabı rehber olarak önermiyor." },
+        { "id": "r11-4", "n": 4, "prompt": "Returning quickly to a routine after a failure is more important than never failing.", "answer": "YES", "quote": "It is far more important, I would argue, to return to the routine quickly than to maintain a perfect record.", "explain": "\"I would argue\" = yazarın görüşü; ifade birebir aynı." },
+        { "id": "r11-5", "n": 5, "prompt": "Habits formed in childhood are the hardest to break.", "answer": "NOT GIVEN", "quote": "", "explain": "Çocuklukta oluşan alışkanlıklar hakkında hiçbir şey söylenmiyor." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "features", "label": "Matching features",
+      "instructions": "Match each statement with the correct person, **A–D**.",
+      "options": [{ "key": "A", "text": "Wendy Wood" }, { "key": "B", "text": "Charles Duhigg" }, { "key": "C", "text": "Maxwell Maltz" }, { "key": "D", "text": "Phillippa Lally" }],
+      "questions": [
+        { "id": "r11-6", "n": 6, "prompt": "described habits as a cycle with three parts", "answer": "B", "quote": "a 'habit loop' consisting of a cue, a routine and a reward", "explain": "cue + routine + reward = üç parçalı döngü." },
+        { "id": "r11-7", "n": 7, "prompt": "found that people with good habits control their surroundings rather than relying on self-control", "answer": "A", "quote": "they arrange their environment to avoid temptation", "explain": "\"surroundings\" = **environment**." },
+        { "id": "r11-8", "n": 8, "prompt": "made an observation that was later misapplied to habit formation", "answer": "C", "quote": "he was not studying habits at all", "explain": "Maltz'ın 3 hafta gözlemi alışkanlıklarla ilgili değildi ama \"21 gün\" efsanesine dönüştü." },
+        { "id": "r11-9", "n": 9, "prompt": "measured how long it took volunteers to perform a behaviour automatically", "answer": "D", "quote": "it took 66 days for the behaviour to become automatic", "explain": "Lally'nin 2009 çalışması." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "short", "label": "Short-answer questions", "maxWords": 2, "number": true,
+      "instructions": "Answer the questions below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r11-10", "n": 10, "prompt": "What percentage of daily actions are habits, according to Wood? ___", "answer": ["40%", "around 40%", "40 percent"], "quote": "Around 40% of what people do each day", "explain": "**40%**." },
+        { "id": "r11-11", "n": 11, "prompt": "What follows an action and helps to turn it into a habit? ___", "answer": ["a reward", "reward"], "quote": "is followed by a reward", "explain": "Eylemden sonra gelen **ödül**." },
+        { "id": "r11-12", "n": 12, "prompt": "What was the longest time any volunteer needed to form a habit? ___", "answer": ["254 days", "254"], "quote": "from 18 to 254 days", "explain": "Aralık 18–**254** gün; 66 ortalama (çeldirici)." },
+        { "id": "r11-13", "n": 13, "prompt": "According to Wood, what is an unreliable way of breaking bad habits? ___", "answer": ["willpower", "willpower alone"], "quote": "Willpower alone is an unreliable solution.", "explain": "**Willpower** (irade gücü)." }
+      ]
+    }
+  ]
+}

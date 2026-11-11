@@ -3,6 +3,7 @@ import { h, md, mdEl, topbar, shuffle } from '../util.js';
 import { getKV, setKV } from '../db.js';
 import { logDay, makeTimer } from '../store.js';
 import { loadGrammar } from '../content.js';
+import { mascot, pick as pofiLine } from '../mascot.js';
 
 export async function renderLesson(id) {
   const [g, lessons] = await Promise.all([loadGrammar(id), getKV('lessons', {})]);
@@ -42,7 +43,7 @@ export async function renderQuiz(id) {
       if (ok) correct++; else wrongs.push(q);
       btn.classList.add(ok ? 'correct' : 'wrong');
       opts.children[q.answer].classList.add('correct');
-      fb.replaceChildren(h('div', { class: 'feedback ' + (ok ? 'ok' : 'no') }, h('b', null, ok ? 'Doğru! ' : 'Yanlış. '), h('span', { html: md(q.explain) })));
+      fb.replaceChildren(h('div', { class: 'feedback ' + (ok ? 'ok' : 'no') }, mascot(ok ? 'happy' : 'sad', ok ? pofiLine('correct') : pofiLine('wrong'), !ok ? h('div', { class: 'small' }, 'Doğru cevap: ', h('b', { class: 'txt-good' }, q.options[q.answer])) : null, h('div', { class: 'small fb-explain' }, h('b', null, '💡 Neden? '), h('span', { html: md(q.explain) })))));
       next.classList.remove('hidden');
     }
     root.replaceChildren(
@@ -64,7 +65,7 @@ export async function renderQuiz(id) {
       h('div', { class: 'card center' },
         h('div', { class: 'big-num' }, `%${pct}`),
         h('p', { class: 'muted' }, `${correct} / ${qs.length} doğru`),
-        h('p', null, pct >= 80 ? 'Bu konuyu iyi kavramışsın. Writing ve Speaking\'de bilinçli kullanmaya başla.' : 'Ders kısmını bir kez daha oku, sonra quiz\'i tekrar çöz. Hedef: %80+.')),
+        mascot(pct >= 80 ? 'celebrate' : pct >= 55 ? 'happy' : 'sad', pct >= 80 ? 'Bu konuyu iyi kavramışsın! Writing ve Speaking\'de bilinçli kullanmaya başla. 🎉' : 'Ders kısmını bir kez daha oku, sonra quiz\'i tekrar çöz. Hedef: %80+. Yapabilirsin! 💪')),
       wrongs.length ? h('div', null, h('h2', null, 'Yanlış yaptıkların'), wrongs.map((q) => h('div', { class: 'card' },
         mdEl('p', q.q), h('p', { class: 'right', style: { color: 'var(--good)', fontWeight: 600 } }, '✓ ' + q.options[q.answer]), mdEl('p', q.explain, 'small muted')))) : null,
       h('div', { class: 'row', style: { marginTop: '16px' } },

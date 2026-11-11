@@ -1,0 +1,45 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "For much of the twentieth century, street trees were valued mainly for their appearance. Today, researchers increasingly describe them as essential infrastructure, comparable to roads or drains. A growing number of studies has attempted to measure the services that trees provide to city dwellers, from cooling the air to improving mental health, and to express these benefits in financial terms." },
+    { "key": "B", "text": "The most obvious benefit is shade. On a hot summer afternoon, the surface of a shaded pavement can be more than 20 degrees Celsius cooler than one in direct sunlight. Trees also cool the surrounding air as water evaporates from their leaves. A study in the Australian city of Melbourne estimated that increasing tree cover by 10% could reduce daytime temperatures by around one degree, enough to lower the number of heat-related deaths during heatwaves." },
+    { "key": "C", "text": "Trees also help manage water. Their leaves intercept rainfall, and their roots allow water to soak into the ground rather than running off hard surfaces into overloaded drains. In New York, the city's 650,000 street trees are estimated to capture almost 900 million litres of stormwater each year. Their effect on air pollution is more complex. Leaves trap fine particles, but in narrow streets lined with tall buildings, dense trees can actually prevent polluted air from escaping, increasing concentrations at street level." },
+    { "key": "D", "text": "Perhaps the most surprising findings concern health and wellbeing. A frequently cited study published in 1984 found that hospital patients whose windows looked out on trees recovered from surgery more quickly and needed fewer painkillers than those who faced a brick wall. More recent research in Toronto suggested that having ten more trees in a city block improved residents' reported health as much as a significant increase in income." },
+    { "key": "E", "text": "Despite these benefits, urban tree cover is declining in many cities. Trees are removed to make way for new buildings, and those that remain often die young; the average street tree in some cities lives for less than twenty years, far shorter than the same species in a forest. Planners are responding by choosing species that tolerate heat and drought, giving roots more space beneath pavements and involving residents in caring for newly planted trees." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–E**.",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }],
+      "questions": [
+        { "id": "r14-1", "n": 1, "prompt": "a situation in which trees may make a problem worse", "answer": "C", "quote": "dense trees can actually prevent polluted air from escaping", "explain": "Dar sokaklarda ağaçlar kirli havayı **hapsedebilir**." },
+        { "id": "r14-2", "n": 2, "prompt": "a comparison between trees and other parts of a city's systems", "answer": "A", "quote": "comparable to roads or drains", "explain": "Ağaçlar yol ve kanalizasyonla karşılaştırılıyor." },
+        { "id": "r14-3", "n": 3, "prompt": "measures being taken to help trees survive", "answer": "E", "quote": "choosing species that tolerate heat and drought", "explain": "Dayanıklı türler, köklere alan, sakinlerin katılımı." },
+        { "id": "r14-4", "n": 4, "prompt": "a link between trees and the speed of patients' recovery", "answer": "D", "quote": "recovered from surgery more quickly", "explain": "1984 hastane çalışması." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion", "maxWords": 2, "number": true,
+      "instructions": "Complete the summary below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "text": "# How trees cool cities\nA shaded pavement can be over {{5}} degrees cooler than one in the sun.\nTrees also cool the air when water {{6}} from their leaves.\nIn Melbourne, a 10% increase in tree cover could cut daytime temperatures by about {{7}} degree.\nThis could reduce {{8}} deaths during heatwaves.",
+      "questions": [
+        { "id": "r14-5", "n": 5, "answer": ["20", "twenty"], "quote": "more than 20 degrees Celsius cooler", "explain": "**20** derece." },
+        { "id": "r14-6", "n": 6, "answer": ["evaporates"], "quote": "as water evaporates from their leaves", "explain": "Fiil: **evaporates**." },
+        { "id": "r14-7", "n": 7, "answer": ["one", "1"], "quote": "could reduce daytime temperatures by around one degree", "explain": "yaklaşık **bir** derece; %10 çeldirici." },
+        { "id": "r14-8", "n": 8, "answer": ["heat-related"], "quote": "lower the number of heat-related deaths", "explain": "**heat-related** (tireli kelime tek kelime sayılır)." }
+      ]
+    },
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r14-9", "n": 9, "prompt": "Tree roots help water to enter the soil.", "answer": "TRUE", "quote": "their roots allow water to soak into the ground", "explain": "\"enter the soil\" = **soak into the ground**." },
+        { "id": "r14-10", "n": 10, "prompt": "New York has more street trees than any other city in the world.", "answer": "NOT GIVEN", "quote": "In New York, the city's 650,000 street trees", "explain": "Sayı veriliyor ama başka şehirlerle **karşılaştırma yok**." },
+        { "id": "r14-11", "n": 11, "prompt": "Trees always reduce air pollution at street level.", "answer": "FALSE", "quote": "increasing concentrations at street level", "explain": "Dar sokaklarda kirliliği **artırabilir**; \"always\" yanlış." },
+        { "id": "r14-12", "n": 12, "prompt": "The Toronto study found that more trees had an effect on health similar to higher income.", "answer": "TRUE", "quote": "improved residents' reported health as much as a significant increase in income", "explain": "\"similar to\" = **as much as**." },
+        { "id": "r14-13", "n": 13, "prompt": "Street trees generally live longer than trees of the same species in forests.", "answer": "FALSE", "quote": "far shorter than the same species in a forest", "explain": "Şehir ağaçları **çok daha kısa** yaşıyor." }
+      ]
+    }
+  ]
+}

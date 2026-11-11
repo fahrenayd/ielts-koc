@@ -1,0 +1,12 @@
+{ "paragraphs": [
+    { "key": "A", "text": "Supermarkets in wealthy countries throw away vast quantities of food that is still safe to eat, often because it has passed a 'best before' date or looks imperfect." },
+    { "key": "B", "text": "In 2016, France became the first country to ban large supermarkets from destroying unsold food. Instead, they must donate it to charities or use it for animal feed." },
+    { "key": "C", "text": "Households, however, are responsible for more waste than shops. In the UK, about 70% of food waste after the farm comes from homes, largely because people buy more than they need." },
+    { "key": "D", "text": "Apps that connect consumers with restaurants selling surplus meals at a discount have become popular, saving millions of meals a year in Europe alone." } ],
+  "groups": [ { "type": "match", "subtype": "info", "instructions": "Which paragraph contains the following information? Choose **A–D**.",
+    "options": [ { "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" } ],
+    "questions": [
+      { "id": "d11-1", "n": 1, "prompt": "a technological solution to waste", "answer": "D", "quote": "Apps that connect consumers with restaurants selling surplus meals", "explain": "\"technological\" = **apps**." },
+      { "id": "d11-2", "n": 2, "prompt": "a legal requirement placed on businesses", "answer": "B", "quote": "France became the first country to ban large supermarkets from destroying unsold food", "explain": "\"legal requirement\" = **ban** + must donate." },
+      { "id": "d11-3", "n": 3, "prompt": "a reason why edible food is discarded", "answer": "A", "quote": "because it has passed a 'best before' date or looks imperfect", "explain": "\"edible\" = safe to eat; neden: tarih veya görünüş." },
+      { "id": "d11-4", "n": 4, "prompt": "the main source of food waste in one country", "answer": "C", "quote": "about 70% of food waste after the farm comes from homes", "explain": "İngiltere'de israfın %70'i evlerden." } ] } ] }

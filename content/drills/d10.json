@@ -1,0 +1,12 @@
+{ "paragraphs": [
+    { "key": "A", "text": "Volcanic eruptions can affect the global climate. When Mount Pinatubo in the Philippines erupted in 1991, it released millions of tonnes of sulphur dioxide into the upper atmosphere." },
+    { "key": "B", "text": "The gas formed tiny droplets that reflected sunlight back into space. As a result, average global temperatures fell by about half a degree Celsius over the following two years." },
+    { "key": "C", "text": "Some scientists have proposed copying this effect deliberately to slow global warming, by spraying similar particles into the atmosphere from aircraft." },
+    { "key": "D", "text": "Critics warn that such geoengineering could disrupt rainfall patterns, and that once started, it would have to continue for decades to avoid sudden warming." } ],
+  "groups": [ { "type": "match", "subtype": "info", "instructions": "Which paragraph contains the following information? Choose **A–D**.", "tip": "Bilginin türünü ara: sayı mı, öneri mi, risk mi, örnek mi?",
+    "options": [ { "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" } ],
+    "questions": [
+      { "id": "d10-1", "n": 1, "prompt": "a measurement of a cooling effect", "answer": "B", "quote": "average global temperatures fell by about half a degree Celsius", "explain": "Ölçüm: yarım derece düşüş." },
+      { "id": "d10-2", "n": 2, "prompt": "possible risks of a proposed solution", "answer": "D", "quote": "could disrupt rainfall patterns", "explain": "\"risks\" = yağış düzenini bozma, ani ısınma." },
+      { "id": "d10-3", "n": 3, "prompt": "a specific example of an eruption", "answer": "A", "quote": "When Mount Pinatubo in the Philippines erupted in 1991", "explain": "Pinatubo, 1991." },
+      { "id": "d10-4", "n": 4, "prompt": "an idea for imitating a natural process", "answer": "C", "quote": "copying this effect deliberately to slow global warming", "explain": "\"imitating\" = **copying**." } ] } ] }

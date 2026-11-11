@@ -1,0 +1,12 @@
+{ "paragraphs": [
+    { "key": "A", "text": "Bicycle-sharing schemes first appeared in Amsterdam in the 1960s, when activists painted bicycles white and left them unlocked for anyone to use. Within weeks, most had been stolen or thrown into canals." },
+    { "key": "B", "text": "Modern schemes solve this problem with technology. Bikes are locked to docking stations or fitted with GPS trackers, and users unlock them with a smartphone app or a card linked to their bank account, which makes theft far less attractive." },
+    { "key": "C", "text": "Supporters point to clear benefits. In Paris, the Vélib' scheme carries over 100,000 trips a day, reducing traffic and encouraging people who would never buy a bike to start cycling." },
+    { "key": "D", "text": "Not every scheme has succeeded. In several Chinese cities, companies flooded the streets with millions of dockless bikes, many of which were abandoned in huge piles when the firms went bankrupt." } ],
+  "groups": [ { "type": "match", "subtype": "headings", "instructions": "Choose the correct heading for each paragraph from the list below.", "tip": "Başlık ana fikirdir. A paragrafında \"Amsterdam\" geçiyor diye şehirle ilgili başlık arama; asıl konu deneyin başarısızlığı.",
+    "options": [ { "key": "i", "text": "An idealistic experiment that failed" }, { "key": "ii", "text": "Too much, too quickly" }, { "key": "iii", "text": "Using technology to prevent crime" }, { "key": "iv", "text": "Evidence of success" }, { "key": "v", "text": "The high cost of bicycles" } ],
+    "questions": [
+      { "id": "d07-1", "n": 1, "prompt": "Paragraph A", "answer": "i", "quote": "Within weeks, most had been stolen or thrown into canals.", "explain": "İdealist deneme → birkaç haftada başarısız." },
+      { "id": "d07-2", "n": 2, "prompt": "Paragraph B", "answer": "iii", "quote": "which makes theft far less attractive", "explain": "Teknoloji ile **hırsızlığı önleme**." },
+      { "id": "d07-3", "n": 3, "prompt": "Paragraph C", "answer": "iv", "quote": "the Vélib' scheme carries over 100,000 trips a day", "explain": "Başarı kanıtı: günde 100.000 yolculuk." },
+      { "id": "d07-4", "n": 4, "prompt": "Paragraph D", "answer": "ii", "quote": "companies flooded the streets with millions of dockless bikes", "explain": "\"Too much, too quickly\" = milyonlarca bisiklet, sonra iflas." } ] } ] }

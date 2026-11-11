@@ -1,0 +1,54 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Plastic was once celebrated as a miracle material: cheap, light and almost indestructible. Its durability, however, has become its greatest problem. Since the 1950s, more than eight billion tonnes of plastic have been produced, and only around 9% of it has ever been recycled. A large proportion has ended up in the environment, where it does not biodegrade but gradually breaks into smaller and smaller pieces." },
+    { "key": "B", "text": "Fragments smaller than five millimetres are known as microplastics. Some are produced deliberately, such as the tiny beads once added to toothpaste and facial scrubs, many of which have now been banned. Most, however, come from the breakdown of larger items: bottles, fishing nets and bags are broken up by sunlight and waves. Another major source is synthetic clothing. A single wash of a polyester garment can release hundreds of thousands of fibres, which are too small to be caught by most wastewater treatment plants." },
+    { "key": "C", "text": "Microplastics have now been found almost everywhere scientists have looked: in Arctic sea ice, in the deepest ocean trenches, in table salt and in tap water. In 2022, researchers in the Netherlands reported detecting plastic particles in human blood for the first time. Their presence in the food chain is particularly well documented in marine life. Small organisms such as plankton mistake the particles for food, and these organisms are in turn eaten by fish, seabirds and eventually humans." },
+    { "key": "D", "text": "What this means for human health remains unclear. Laboratory studies have shown that very high concentrations of microplastics can damage cells and cause inflammation, but the levels used in such experiments are often far higher than those to which people are actually exposed. Scientists are also concerned about the chemicals that plastics contain or absorb from the surrounding water, some of which are known to interfere with hormones. Most researchers agree that more long-term studies are needed before firm conclusions can be drawn." },
+    { "key": "E", "text": "Removing microplastics from the oceans is virtually impossible because of their size and the vast area over which they are spread. Efforts are therefore focused on preventing new plastic from entering the environment. Measures include charges on plastic bags, which reduced their use by more than 80% in some countries, improved waste collection in developing nations and filters for washing machines. In 2022, member states of the United Nations agreed to begin negotiating a legally binding global treaty on plastic pollution." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "headings", "label": "Matching headings",
+      "instructions": "Choose the correct heading for each paragraph, **A–E**, from the list below.",
+      "options": [
+        { "key": "i", "text": "Uncertain effects on people" },
+        { "key": "ii", "text": "Where the tiny particles come from" },
+        { "key": "iii", "text": "A strength that became a weakness" },
+        { "key": "iv", "text": "Stopping the problem at its source" },
+        { "key": "v", "text": "Found in every corner of the planet" },
+        { "key": "vi", "text": "The rising cost of recycling" },
+        { "key": "vii", "text": "New technology to clean the seas" }
+      ],
+      "questions": [
+        { "id": "r10-1", "n": 1, "prompt": "Paragraph A", "answer": "iii", "quote": "Its durability, however, has become its greatest problem.", "explain": "Dayanıklılık (strength) → en büyük sorun (weakness)." },
+        { "id": "r10-2", "n": 2, "prompt": "Paragraph B", "answer": "ii", "quote": "Most, however, come from the breakdown of larger items", "explain": "Mikroplastiklerin **kaynakları**: boncuklar, parçalanma, giysiler." },
+        { "id": "r10-3", "n": 3, "prompt": "Paragraph C", "answer": "v", "quote": "Microplastics have now been found almost everywhere scientists have looked", "explain": "Kuzey Kutbu'ndan insan kanına kadar **her yerde**." },
+        { "id": "r10-4", "n": 4, "prompt": "Paragraph D", "answer": "i", "quote": "What this means for human health remains unclear.", "explain": "\"uncertain\" = **remains unclear**." },
+        { "id": "r10-5", "n": 5, "prompt": "Paragraph E", "answer": "iv", "quote": "Efforts are therefore focused on preventing new plastic from entering the environment.", "explain": "Temizlemek değil **önlemek**; vii çeldirici (temizleme neredeyse imkânsız)." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r10-6", "n": 6, "prompt": "What is said about plastic microbeads?", "options": ["They are the main source of microplastics.", "Many of them are no longer permitted.", "They are caught by treatment plants.", "They are produced by sunlight."], "answer": "B", "quote": "many of which have now been banned", "explain": "\"no longer permitted\" = **banned**. Ana kaynak büyük eşyaların parçalanması (A yanlış)." },
+        { "id": "r10-7", "n": 7, "prompt": "Why do fibres from synthetic clothes reach the environment?", "options": ["They are thrown away with old clothes.", "They are too small for most treatment plants to catch.", "They are carried by wind.", "They are deliberately added to water."], "answer": "B", "quote": "which are too small to be caught by most wastewater treatment plants", "explain": "Lifler arıtma tesislerinin yakalayamayacağı kadar **küçük**." },
+        { "id": "r10-8", "n": 8, "prompt": "What is the problem with many laboratory studies?", "options": ["They use animals instead of humans.", "They use much higher levels of microplastics than people experience.", "They ignore chemical effects.", "They were carried out too long ago."], "answer": "B", "quote": "the levels used in such experiments are often far higher than those to which people are actually exposed", "explain": "Deneylerdeki yoğunluk gerçek maruziyetten **çok daha yüksek**." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion (kelime listesi)",
+      "instructions": "Complete the summary using the list of words, **A–H**, below.",
+      "bank": [{ "key": "A", "text": "treaty" }, { "key": "B", "text": "plankton" }, { "key": "C", "text": "blood" }, { "key": "D", "text": "filters" }, { "key": "E", "text": "hormones" }, { "key": "F", "text": "fish" }, { "key": "G", "text": "charges" }, { "key": "H", "text": "salt" }],
+      "text": "# Microplastics: from the sea to our bodies\nIn 2022, plastic particles were found in human {{9}} for the first time.\nThey enter the food chain when {{10}} eat them by mistake.\nSome chemicals in plastics may affect people's {{11}}.\nTo reduce plastic waste, some countries introduced {{12}} on plastic bags, and UN members agreed to negotiate a global {{13}}.",
+      "questions": [
+        { "id": "r10-9", "n": 9, "answer": "C", "quote": "detecting plastic particles in human blood for the first time", "explain": "**blood** (kan). Salt'ta da bulundu ama \"for the first time\" kan için söyleniyor." },
+        { "id": "r10-10", "n": 10, "answer": "B", "quote": "Small organisms such as plankton mistake the particles for food", "explain": "\"by mistake\" = **mistake … for food**; ilk yiyen plankton." },
+        { "id": "r10-11", "n": 11, "answer": "E", "quote": "some of which are known to interfere with hormones", "explain": "\"affect\" = **interfere with** hormones." },
+        { "id": "r10-12", "n": 12, "answer": "G", "quote": "charges on plastic bags", "explain": "Poşet **ücreti** (charges)." },
+        { "id": "r10-13", "n": 13, "answer": "A", "quote": "a legally binding global treaty on plastic pollution", "explain": "Küresel **treaty** (antlaşma)." }
+      ]
+    }
+  ]
+}

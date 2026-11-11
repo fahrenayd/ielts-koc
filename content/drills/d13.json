@@ -1,0 +1,8 @@
+{ "paragraphs": [ { "key": "", "text": "Desalination, the process of removing salt from seawater, now supplies drinking water to around 300 million people. The most common method, reverse osmosis, forces seawater through membranes with extremely small holes under high pressure. The main drawback is cost: the process requires large amounts of energy. It also produces brine, a highly salty waste liquid which, when pumped back into the sea, can harm marine life near the outlet. Engineers are now experimenting with solar-powered plants and ways of extracting useful minerals from brine." } ],
+  "groups": [ { "type": "gap", "subtype": "summary", "maxWords": 1, "instructions": "Complete the summary. Choose **ONE WORD ONLY** from the passage for each answer.", "tip": "Özetteki boşluk bir isim mi, sıfat mı istiyor? Önce kelime türünü belirle.",
+    "text": "# Desalination\nReverse osmosis pushes seawater through {{1}} under high pressure.\nIts biggest disadvantage is its {{2}}, because it uses a lot of energy.\nThe waste product, called {{3}}, can damage sea creatures.\nResearchers are testing plants powered by {{4}} energy.",
+    "questions": [
+      { "id": "d13-1", "n": 1, "answer": ["membranes"], "quote": "forces seawater through membranes", "explain": "**membranes** (çoğul)." },
+      { "id": "d13-2", "n": 2, "answer": ["cost"], "quote": "The main drawback is cost", "explain": "\"biggest disadvantage\" = **main drawback**." },
+      { "id": "d13-3", "n": 3, "answer": ["brine"], "quote": "It also produces brine", "explain": "**brine** (tuzlu atık su)." },
+      { "id": "d13-4", "n": 4, "answer": ["solar"], "quote": "experimenting with solar-powered plants", "explain": "\"powered by ___ energy\" → **solar**." } ] } ] }

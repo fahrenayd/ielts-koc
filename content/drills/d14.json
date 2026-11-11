@@ -1,0 +1,9 @@
+{ "paragraphs": [ { "key": "", "text": "Bamboo is sometimes promoted as an ideal sustainable material. Some species can grow almost a metre in a single day, and the plant regrows from its roots after cutting, so it does not need to be replanted. Its strength-to-weight ratio is comparable to that of steel, which is why it has been used for scaffolding in Asia for centuries. However, turning bamboo into textiles often involves toxic chemicals, and plantations sometimes replace natural forests, reducing their environmental benefits." } ],
+  "groups": [ { "type": "gap", "subtype": "summary", "instructions": "Complete the summary using the list of words, **A–G**.", "tip": "Kelime listesi sorularında seçenekler genellikle metindeki kelimelerin eş anlamlılarıdır.",
+    "bank": [ { "key": "A", "text": "rapidly" }, { "key": "B", "text": "replanting" }, { "key": "C", "text": "steel" }, { "key": "D", "text": "harmful" }, { "key": "E", "text": "forests" }, { "key": "F", "text": "slowly" }, { "key": "G", "text": "plastic" } ],
+    "text": "# Bamboo: a green material?\nBamboo grows very {{1}} and does not require {{2}} after harvesting.\nIt is as strong for its weight as {{3}}.\nHowever, making bamboo fabric can involve {{4}} chemicals.",
+    "questions": [
+      { "id": "d14-1", "n": 1, "answer": "A", "quote": "Some species can grow almost a metre in a single day", "explain": "Günde bir metre = çok **hızlı**." },
+      { "id": "d14-2", "n": 2, "answer": "B", "quote": "so it does not need to be replanted", "explain": "\"does not need to be replanted\" → **replanting** gerekmez." },
+      { "id": "d14-3", "n": 3, "answer": "C", "quote": "comparable to that of steel", "explain": "**steel** ile karşılaştırılabilir." },
+      { "id": "d14-4", "n": 4, "answer": "D", "quote": "often involves toxic chemicals", "explain": "\"toxic\" = **harmful**." } ] } ] }

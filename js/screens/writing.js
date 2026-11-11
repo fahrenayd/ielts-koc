@@ -6,6 +6,7 @@ import { listItems, loadItem } from '../content.js';
 import { renderChart, chartText } from '../charts.js';
 import { analyzeWriting, writingPrompt, parseResult, W_CRIT } from '../eval.js';
 import { fmtBand } from '../scoring.js';
+import { mascot } from '../mascot.js';
 
 const KIND_TR = { line: 'Çizgi grafik', bar: 'Sütun grafik', pie: 'Pasta grafik', table: 'Tablo', process: 'Süreç', map: 'Harita',
   opinion: 'Opinion (agree/disagree)', discussion: 'Discussion (both views)', problem: 'Problem–Solution', advdis: 'Advantages–Disadvantages', twopart: 'Two-part question' };
@@ -238,7 +239,7 @@ export async function renderReview(recId) {
     topbar(`Task ${w.task}: ${w.title}`),
     h('div', { class: 'card' }, h('div', { class: 'row spread' }, h('b', null, `${w.words} kelime`), h('span', { class: 'small muted' }, `${new Date(w.date).toLocaleDateString('tr-TR')} · ${w.minutes} dk`)),
       h('details', null, h('summary', { class: 'small' }, 'Metnimi göster'), h('div', { class: 'essay small' }, w.text.split('\n').map((p) => h('p', null, p))))),
-    h('div', { class: 'card' }, h('h3', null, '⚡ Hızlı kontrol (internetsiz)'), h('p', { class: 'small muted' }, 'Band vermez; sık hataları anında yakalar.'),
+    h('div', { class: 'card' }, h('h3', null, '⚡ Hızlı kontrol (internetsiz)'), mascot(findings.some((f) => f.level === 'bad') ? 'think' : 'happy', findings.some((f) => f.level === 'bad') ? 'Metnine baktım, düzeltilecek birkaç önemli nokta var. Band vermem ama bunlar puanını doğrudan etkiler 👇' : 'İlk kontrolden geçti! Şimdi asıl bandı görmek için Claude ile değerlendir.'),
       findings.map((f) => h('div', { class: 'finding ' + f.level }, f.text))),
     evalPanel({
       crit: W_CRIT, existing: w.eval,

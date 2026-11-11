@@ -1,6 +1,7 @@
 // Ortak soru motoru: Reading, Listening, Hata Defteri, seviye tespiti ve deneme sınavı bunu kullanır.
 // Grup tipleri: tfng, ynng, mcq, multi, match (subtype: headings|info|features|endings|map), gap (subtype: sentence|summary|note|form|table|short)
 import { h, mdEl, md } from './util.js';
+import { mascot, pick } from './mascot.js';
 
 export const LETTERS = 'ABCDEFGHIJKLMNOP'.split('');
 
@@ -14,8 +15,50 @@ const TYPE_TR = {
 export const KIND_TR = {
   blank: 'Boş bırakıldı', limit: 'Kelime sınırı aşıldı', spelling: 'Yazım hatası (doğruya çok yakın)', wrong: 'Yanlış cevap',
   corrected: 'Tuzak: konuşmacı bilgiyi sonradan düzeltti', distractor: 'Tuzak: bahsedilen ama doğru olmayan seçenek (distractor)',
-  paraphrase: 'Eş anlamlı ifade (paraphrase) kaçırıldı', ngfalse: 'Not Given / False karışıklığı'
+  paraphrase: 'Eş anlamlı ifade (paraphrase) kaçırıldı', ngfalse: 'NOT GIVEN karışıklığı'
 };
+
+// Hata türüne göre kısa ders
+export const KIND_TIP = {
+  blank: 'Hiçbir soruyu boş bırakma. IELTS\'te yanlış cevap puan götürmez; tahmin bile şans verir.',
+  limit: 'Kelime sınırını aştın. "the", "a" gibi kelimeler de sayılır; sınırı aşan cevap doğru bilgiyi içerse bile **yanlış** sayılır.',
+  spelling: 'Cevabın neredeyse doğru ama yazımı hatalı. Gerçek sınavda yazım hatası = yanlış. Bu kelimeyi not al ve yazarak tekrar et.',
+  corrected: 'Konuşmacılar sık sık ilk söylediklerini düzeltir ("Actually, no…", "sorry, I mean…"). Her zaman **son söylenen** bilgiyi yaz.',
+  distractor: 'Çeldirici: metinde/kayıtta geçen ama sorunun cevabı olmayan bilgi. Sorunun **tam olarak neyi** sorduğunu (tarih mi, fiyat mı, kimin görüşü mü) altını çizerek oku.',
+  paraphrase: 'Soru ve metin aynı fikri farklı kelimelerle anlatır. Anahtar kelimenin eş anlamlılarını düşünerek dinle/oku.',
+  ngfalse: '**FALSE** = metin ifadenin **tersini** açıkça söylüyor. **NOT GIVEN** = metin bu konuda **hiç bilgi vermiyor**. Kendine sor: "Metinde bunu çürüten bir cümle var mı?" Varsa FALSE, yoksa NOT GIVEN.'
+};
+// Soru tipine göre strateji (genel yanlışlarda gösterilir)
+export const TYPE_TIP = {
+  tfng: 'TRUE: metin aynı şeyi söylüyor · FALSE: tersini söylüyor · NOT GIVEN: bilgi yok. Kendi genel bilgini kullanma; "some, all, always, only" gibi kelimelere dikkat et.',
+  ynng: 'YES/NO yazarın **görüşü** ile ilgilidir. "I believe, it would be wrong, in my view" gibi değerlendirme ifadelerini ara; başkalarının görüşünü (some people argue) yazarınkiyle karıştırma.',
+  mcq: 'Seçenekteki kelimeler metinde geçse bile anlam farklı olabilir. Her seçeneği metindeki ilgili cümleyle tek tek karşılaştır, kesin yanlışları ele.',
+  multi: 'İki cevaplı sorularda her seçeneği ayrı ayrı doğrula; konuşmada bahsedilip reddedilen seçenekler çeldiricidir.',
+  headings: 'Başlık paragrafın **ana fikri** olmalı, tek bir detay değil. Paragrafın ilk ve son cümlesine odaklan.',
+  info: 'Bilginin **türünü** ara: örnek mi, istatistik mi, neden mi, öneri mi? Bu sorular metindeki sırayı izlemez.',
+  features: 'İsimlerin geçtiği cümleleri tara ve fikrin **kime ait olduğuna** dikkat et.',
+  endings: 'Önce gramer olarak uyan sonları belirle, sonra anlamı metinle kontrol et.',
+  map: 'Girişten başla ve yön ifadelerini takip et: on your left/right, opposite, beyond, north-east corner.',
+  sentence: 'Boşluğa gereken kelime türünü (isim, fiil, sıfat) tahmin et; cevabı metinden **birebir** al ve kelime sınırını aşma.',
+  summary: 'Özet metnin bir bölümünü paraphrase eder. O bölümü bul, boşluk için gramer olarak uyan kelimeyi seç.',
+  note: 'Notlar konuşmanın sırasını izler. Boşluğun öncesindeki/sonrasındaki kelimeyi kayıtta yakalamaya çalış.',
+  form: 'Form sorularında isim, tarih, sayı ve yazım çok önemlidir. Harf harf söylenen kelimeleri dikkatle yaz.',
+  table: 'Tablonun başlıkları hangi bilgi türünün (sayı, isim) gerektiğini söyler.',
+  short: 'Cevap metinden birebir alınır; kelime sınırını ve sayıların doğru yazımını kontrol et.'
+};
+
+// Bir maddenin açıklaması (iki cevaplı gruplarda tüm açıklamalar birleştirilir)
+export function explainFor(it) {
+  if (it.g.type === 'multi') return it.g.questions.map((x) => x.explain).filter(Boolean).join(' ');
+  if (it.q.explain) return it.q.explain;
+  if (it.q.quote) return `Metindeki ilgili kısım: "${it.q.quote}"`;
+  return '';
+}
+export function lessonFor(it) {
+  if (it.ok) return '';
+  if (it.kind && it.kind !== 'wrong' && KIND_TIP[it.kind]) return KIND_TIP[it.kind];
+  return TYPE_TIP[it.type] || '';
+}
 
 export function qType(g) {
   if (g.type === 'match') return g.subtype || 'match';
@@ -218,13 +261,24 @@ export function renderGroups(groups, answers, opts = {}) {
 }
 
 // Satır içi geri bildirim (pratik modu)
-export function feedbackEl(it, opts = {}) {
-  return h('div', { class: 'feedback ' + (it.ok ? 'ok' : 'no') },
+// Her cevap için: sonuç, doğru cevap, nedeni, metindeki kanıt ve (yanlışsa) hata türüne göre ders
+export function feedbackBody(it, opts = {}) {
+  const why = explainFor(it);
+  const lesson = lessonFor(it);
+  return [
     h('div', null, h('b', null, `${it.q.n}. ${it.ok ? '✓ Doğru' : '✗ ' + (KIND_TR[it.kind] || 'Yanlış')}`)),
-    !it.ok ? h('div', { class: 'small' }, 'Senin cevabın: ', h('b', null, it.given)) : null,
-    !it.ok ? h('div', { class: 'small' }, 'Doğru cevap: ', h('b', null, it.expected)) : null,
-    it.q.explain ? mdEl('div', it.q.explain, 'small fb-explain') : null,
-    it.q.quote && opts.showQuote !== false ? h('div', { class: 'small quote' }, '📌 ', h('i', null, `"${it.q.quote}"`)) : null);
+    !it.ok ? h('div', { class: 'small' }, 'Senin cevabın: ', h('b', { class: 'txt-bad' }, it.given)) : null,
+    h('div', { class: 'small' }, it.ok ? 'Cevap: ' : 'Doğru cevap: ', h('b', { class: 'txt-good' }, it.expected)),
+    why ? h('div', { class: 'small fb-explain' }, h('b', null, '💡 Neden? '), h('span', { html: md(why) })) : null,
+    it.q.quote && opts.showQuote !== false && !why.includes(it.q.quote) ? h('div', { class: 'small quote' }, '📌 ', h('i', null, `"${it.q.quote}"`)) : null,
+    lesson ? h('div', { class: 'small fb-lesson' }, h('b', null, '🧭 Ders: '), h('span', { html: md(lesson) })) : null
+  ];
+}
+
+export function feedbackEl(it, opts = {}) {
+  const mood = it.ok ? 'happy' : it.kind === 'blank' ? 'think' : 'sad';
+  const line = it.ok ? pick('correct') : it.kind === 'blank' ? pick('blank') : pick('wrong');
+  return h('div', { class: 'feedback ' + (it.ok ? 'ok' : 'no') }, mascot(mood, line, ...feedbackBody(it, opts)));
 }
 
 export function lockGroups(root) {

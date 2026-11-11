@@ -8,6 +8,7 @@ import { createRecorder, support, STT_ERR_TR } from '../recorder.js';
 import { analyzeSpeech, speakingPrompt, S_CRIT } from '../eval.js';
 import { evalPanel } from './writing.js';
 import { fmtBand } from '../scoring.js';
+import { mascot } from '../mascot.js';
 
 export async function renderHome() {
   const [p1, p2, sessions] = await Promise.all([loadItem('speaking', 'part1'), loadItem('speaking', 'part2'), db.all('speaking')]);
@@ -202,7 +203,7 @@ function metricsView(m, seconds, part) {
       h('div', { class: 'kpi' }, h('b', null, m.words), h('span', null, 'kelime')),
       h('div', { class: 'kpi' }, h('b', null, m.wpm || '–'), h('span', null, 'kelime/dk')),
       h('div', { class: 'kpi' }, h('b', null, Math.round(seconds)), h('span', null, 'saniye'))),
-    tips.map((t) => h('div', { class: 'finding warn' }, t)));
+    tips.length ? mascot('think', 'Konuşmanı dinledim, şunlara dikkat edelim:', ...tips.map((t) => h('div', { class: 'finding warn' }, t))) : mascot('happy', 'Akıcı ve yeterli uzunlukta bir cevap! 👏'));
 }
 
 export async function renderArchive() {

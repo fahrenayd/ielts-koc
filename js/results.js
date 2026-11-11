@@ -3,7 +3,8 @@ import { h, mdEl, highlight, topbar } from './util.js';
 import { db } from './db.js';
 import { state, logDay } from './store.js';
 import { rawToBand, fmtBand } from './scoring.js';
-import { typeName, KIND_TR, snapshot } from './qengine.js';
+import { typeName, KIND_TR, snapshot, feedbackBody } from './qengine.js';
+import { mascot, resultMood } from './mascot.js';
 
 // res: grade() çıktısı. Bandı 40 soruya ölçekleyerek tahmin eder.
 export function estimateBand(module, res) {
@@ -11,8 +12,9 @@ export function estimateBand(module, res) {
   return rawToBand(module, res.correct, res.total, state.profile.examType);
 }
 
-export async function saveOutcome({ module, itemIds, title, res, mode, seconds = 0, band }) {
-  const b = band ?? estimateBand(module, res);
+export async function saveOutcome({ module, itemIds, title, res, mode, seconds = 0, band, noBand = false }) {
+  // Kısa antrenmanlar (az soru) bandı yanıltmasın diye bandsız kaydedilir
+  const b = noBand ? null : band ?? estimateBand(module, res);
   const row = {
     module, itemIds, title, mode, date: new Date().toISOString(), correct: res.correct, total: res.total,
     band: b, byType: res.byType
@@ -34,12 +36,14 @@ export async function saveOutcome({ module, itemIds, title, res, mode, seconds =
 
 export function scoreCard(res, band, label) {
   const pct = Math.round((res.correct / Math.max(1, res.total)) * 100);
-  return h('div', { class: 'card hero center' },
+  const [mood, line] = resultMood(pct / 100);
+  return h('div', null, h('div', { class: 'card hero center' },
     h('div', { class: 'small muted' }, label || 'Sonuç'),
     h('div', { class: 'big-num' }, `${res.correct} / ${res.total}`),
     h('div', { class: 'muted' }, `%${pct} doğru`),
     band != null ? h('div', { style: { marginTop: '10px' } }, h('span', { class: 'band-pill' }, `Tahmini band ${fmtBand(band)}`)) : null,
-    h('p', { class: 'small muted', style: { margin: '8px 0 0' } }, res.total < 40 ? 'Band, doğru oranının 40 soruya ölçeklenmesiyle tahmin edildi; az soruyla yapılan tahmin kabadır.' : 'Tahmini band (resmi tablolar sınava göre biraz değişir).'));
+    h('p', { class: 'small muted', style: { margin: '8px 0 0' } }, res.total < 40 ? 'Band, doğru oranının 40 soruya ölçeklenmesiyle tahmin edildi; az soruyla yapılan tahmin kabadır.' : 'Tahmini band (resmi tablolar sınava göre biraz değişir).')),
+    h('div', { class: 'card' }, mascot(mood, line)));
 }
 
 export function byTypeCard(byType) {
@@ -59,10 +63,8 @@ export function renderResults({ title, module, res, band, items, onRetry, extra 
     const box = h('div', { class: 'card res-item ' + (it.ok ? 'is-ok' : 'is-no') },
       h('div', { class: 'row spread' }, h('b', null, `${it.ok ? '✓' : '✗'} Soru ${it.q.n}`), h('span', { class: 'pill' }, typeName(it.type))),
       it.q.prompt ? mdEl('p', it.q.prompt.replace(/___/g, '______'), 'small') : it.g.prompt ? mdEl('p', it.g.prompt, 'small') : null,
-      h('div', { class: 'small' }, 'Senin cevabın: ', h('b', { class: it.ok ? 'txt-good' : 'txt-bad' }, it.given)),
-      !it.ok ? h('div', { class: 'small' }, 'Doğru cevap: ', h('b', { class: 'txt-good' }, it.expected)) : null,
-      !it.ok && it.kind ? h('div', { class: 'small', style: { marginTop: '4px' } }, h('span', { class: 'pill warn' }, KIND_TR[it.kind] || it.kind)) : null,
-      it.q.explain ? mdEl('p', it.q.explain, 'small fb-explain') : null);
+      !it.ok && it.kind ? h('div', { class: 'small', style: { margin: '2px 0 6px' } }, h('span', { class: 'pill warn' }, KIND_TR[it.kind] || it.kind)) : null,
+      ...feedbackBody(it, { showQuote: false }).slice(1));
     if (it.q.quote && src) {
       const para = module === 'reading'
         ? src.paragraphs.find((p) => p.text.includes(it.q.quote))

@@ -6,6 +6,7 @@ import { loadIndex, loadVocabTopic } from '../content.js';
 import { buildQueue, vocabStats, cardStates } from '../planner.js';
 import { GRADES, review, intervalLabel, isLearned, isMature } from '../srs.js';
 import { speak, ttsSupported } from '../tts.js';
+import { mascotSVG } from '../mascot.js';
 
 const say = (text) => speak(text, { accent: state.settings.accent, rate: state.settings.rate });
 
@@ -147,7 +148,7 @@ export async function renderReview(topicId = null) {
 
   function finish() {
     root.replaceChildren(topbar('Oturum bitti'), h('div', { class: 'card empty' },
-      h('div', { style: { fontSize: '3rem' } }, '🎉'),
+      h('div', { html: mascotSVG(again ? 'happy' : 'celebrate', 96) }),
       h('h3', null, `${done} kart tamamlandı`),
       h('p', null, again ? `${again} kez "Tekrar" dedin; bu kartlar yarın ve sonraki günlerde daha sık gelecek.` : 'Hepsini hatırladın, harika!'),
       h('div', { class: 'row', style: { justifyContent: 'center' } },

@@ -1,0 +1,12 @@
+{ "paragraphs": [
+    { "key": "A", "text": "The modern shipping container was introduced in 1956 by an American businessman, Malcolm McLean, who realised that loading whole boxes directly from lorries onto ships would be far quicker than handling goods individually." },
+    { "key": "B", "text": "Before containers, loading a ship could take a week and cost a large share of the value of the goods. Theft by dock workers was also common." },
+    { "key": "C", "text": "Standardisation was the key to success. Once international sizes were agreed in the late 1960s, the same box could travel by ship, train and lorry without ever being opened." },
+    { "key": "D", "text": "The effects reshaped the world economy. Transport costs fell so dramatically that it became profitable to manufacture goods far from where they were sold, contributing to the rise of Asian exporting economies." } ],
+  "groups": [ { "type": "match", "subtype": "headings", "instructions": "Choose the correct heading for each paragraph from the list below.", "tip": "Başlıktaki soyut kelimeleri (insecure, transformation) metindeki somut örneklerle eşleştir.",
+    "options": [ { "key": "i", "text": "A global economic transformation" }, { "key": "ii", "text": "The importance of common measurements" }, { "key": "iii", "text": "A simple but powerful idea" }, { "key": "iv", "text": "Slow, costly and insecure" }, { "key": "v", "text": "The decline of the shipping industry" } ],
+    "questions": [
+      { "id": "d09-1", "n": 1, "prompt": "Paragraph A", "answer": "iii", "quote": "loading whole boxes directly from lorries onto ships would be far quicker", "explain": "Basit fikir: kutuları doğrudan yüklemek." },
+      { "id": "d09-2", "n": 2, "prompt": "Paragraph B", "answer": "iv", "quote": "loading a ship could take a week and cost a large share of the value of the goods", "explain": "Yavaş (bir hafta), pahalı, hırsızlık (insecure)." },
+      { "id": "d09-3", "n": 3, "prompt": "Paragraph C", "answer": "ii", "quote": "Once international sizes were agreed", "explain": "\"common measurements\" = **international sizes**." },
+      { "id": "d09-4", "n": 4, "prompt": "Paragraph D", "answer": "i", "quote": "The effects reshaped the world economy.", "explain": "\"global economic transformation\" = **reshaped the world economy**." } ] } ] }

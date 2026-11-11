@@ -16,7 +16,7 @@ import * as writing from './screens/writing.js';
 import * as speaking from './screens/speaking.js';
 import * as placement from './screens/placement.js';
 
-export const APP_VERSION = '2.0.0 · Tüm modüller';
+export const APP_VERSION = '2.1.0 · Pofi';
 
 // rota → [ekran fonksiyonu, sekme, alt menü görünsün mü]
 const routes = [
@@ -35,6 +35,7 @@ const routes = [
   [/^me$/, me.render, 'me', true],
   [/^settings$/, settings.render, 'me', true],
   [/^reading$/, reading.renderList, 'practice', true],
+  [/^drill\/([\w-]+)$/, reading.renderDrill, 'practice', false],
   [/^reading\/([\w-]+)$/, reading.renderIntro, 'practice', true],
   [/^reading\/([\w-]+)\/(practice|timed)$/, reading.renderRun, 'practice', false],
   [/^listening$/, listening.renderList, 'practice', true],

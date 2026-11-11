@@ -1,0 +1,53 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "Coral reefs cover less than 1% of the ocean floor, yet they support around a quarter of all marine species. They protect coastlines from storms, provide food for hundreds of millions of people and attract tourists worth billions of dollars a year. They are also among the ecosystems most threatened by climate change. Since the 1950s, the world has lost roughly half of its living coral." },
+    { "key": "B", "text": "The main cause is coral bleaching. Corals depend on tiny algae that live inside their tissues and provide them with most of their food through photosynthesis. When the water becomes too warm for too long, the relationship breaks down and the corals expel the algae, turning white. Bleached corals are not dead, and they can recover if temperatures return to normal quickly, but repeated or prolonged bleaching usually kills them. Australia's Great Barrier Reef experienced mass bleaching in 2016, 2017, 2020, 2022 and 2024." },
+    { "key": "C", "text": "Scientists are now trying to help reefs recover. One common method is coral gardening: small fragments are cut from healthy corals, grown in underwater nurseries attached to frames or ropes, and then planted onto damaged reefs. Because many corals grow slowly, researchers in Florida have developed a technique called micro-fragmenting, in which corals are cut into pieces of about one square centimetre. Surprisingly, these tiny fragments grow much faster than larger pieces, possibly because the damage triggers a healing response." },
+    { "key": "D", "text": "Other projects aim to make corals more resistant to heat. At the Australian Institute of Marine Science, researchers are breeding corals that have survived bleaching events, in the hope of producing offspring that can tolerate higher temperatures. This 'assisted evolution' is controversial. Critics worry that releasing selected corals could reduce genetic diversity or have unexpected effects on other species." },
+    { "key": "E", "text": "Most scientists involved in restoration are careful not to overstate its potential. Even the largest projects cover only a few hectares, while the Great Barrier Reef alone stretches for more than 2,300 kilometres. Restoration can help protect particularly valuable sites and buy time, they argue, but it cannot replace the need to reduce greenhouse gas emissions. Without that, the conditions that cause bleaching will continue to worsen faster than any reef can be repaired." }
+  ],
+  "groups": [
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r20-1", "n": 1, "prompt": "What proportion of marine species depend on coral reefs?", "options": ["less than 1%", "about a quarter", "about half", "hundreds of millions"], "answer": "B", "quote": "they support around a quarter of all marine species", "explain": "%1 okyanus tabanındaki alan (çeldirici); türlerin **dörtte biri**." },
+        { "id": "r20-2", "n": 2, "prompt": "What happens during coral bleaching?", "options": ["Corals die immediately.", "Corals expel the algae that feed them.", "Algae grow too quickly.", "The water becomes polluted."], "answer": "B", "quote": "the corals expel the algae, turning white", "explain": "Mercanlar algleri **dışarı atar**; hemen ölmezler." },
+        { "id": "r20-3", "n": 3, "prompt": "Why is micro-fragmenting described as surprising?", "options": ["It was discovered by accident.", "Very small pieces grow faster than larger ones.", "It works only in Florida.", "It does not damage the coral."], "answer": "B", "quote": "these tiny fragments grow much faster than larger pieces", "explain": "Küçük parçalar **daha hızlı** büyüyor." },
+        { "id": "r20-4", "n": 4, "prompt": "What concern do critics have about assisted evolution?", "options": ["It is too expensive.", "It may reduce genetic diversity.", "It is too slow.", "Corals cannot be bred."], "answer": "B", "quote": "could reduce genetic diversity", "explain": "Genetik çeşitliliği **azaltabilir**." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "endings", "label": "Sentence endings",
+      "instructions": "Complete each sentence with the correct ending, **A–F**.",
+      "options": [
+        { "key": "A", "text": "can recover if the water cools quickly." },
+        { "key": "B", "text": "are grown in underwater nurseries before being planted." },
+        { "key": "C", "text": "come from corals that survived bleaching." },
+        { "key": "D", "text": "cover only a small area compared with whole reefs." },
+        { "key": "E", "text": "provide corals with most of their food." },
+        { "key": "F", "text": "have completely stopped bleaching." }
+      ],
+      "questions": [
+        { "id": "r20-5", "n": 5, "prompt": "The algae inside coral tissues", "answer": "E", "quote": "provide them with most of their food through photosynthesis", "explain": "Algler mercanın besininin çoğunu sağlar." },
+        { "id": "r20-6", "n": 6, "prompt": "Bleached corals", "answer": "A", "quote": "they can recover if temperatures return to normal quickly", "explain": "\"water cools quickly\" = **temperatures return to normal quickly**." },
+        { "id": "r20-7", "n": 7, "prompt": "In coral gardening, small fragments", "answer": "B", "quote": "grown in underwater nurseries attached to frames or ropes, and then planted onto damaged reefs", "explain": "Önce **fidanlıkta** büyütülüp sonra dikiliyor." },
+        { "id": "r20-8", "n": 8, "prompt": "Even the biggest restoration projects", "answer": "D", "quote": "Even the largest projects cover only a few hectares", "explain": "Birkaç hektar vs 2.300 km resif." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "summary", "label": "Summary completion (kelime listesi)",
+      "instructions": "Complete the summary using the list of words, **A–H**, below.",
+      "bank": [{ "key": "A", "text": "emissions" }, { "key": "B", "text": "half" }, { "key": "C", "text": "storms" }, { "key": "D", "text": "tourists" }, { "key": "E", "text": "repeated" }, { "key": "F", "text": "time" }, { "key": "G", "text": "rare" }, { "key": "H", "text": "pesticides" }],
+      "text": "# Reefs under pressure\nReefs protect coasts from {{9}} and bring in money from {{10}}.\nAbout {{11}} of the world's living coral has been lost since the 1950s.\nCorals usually die if bleaching is prolonged or {{12}}.\nRestoration can buy {{13}}, but reducing greenhouse gas emissions remains essential.",
+      "questions": [
+        { "id": "r20-9", "n": 9, "answer": "C", "quote": "They protect coastlines from storms", "explain": "**storms**." },
+        { "id": "r20-10", "n": 10, "answer": "D", "quote": "attract tourists worth billions of dollars a year", "explain": "**tourists**." },
+        { "id": "r20-11", "n": 11, "answer": "B", "quote": "the world has lost roughly half of its living coral", "explain": "yaklaşık **yarısı**." },
+        { "id": "r20-12", "n": 12, "answer": "E", "quote": "repeated or prolonged bleaching usually kills them", "explain": "**repeated** or prolonged." },
+        { "id": "r20-13", "n": 13, "answer": "F", "quote": "can help protect particularly valuable sites and buy time", "explain": "buy **time** (zaman kazandırır). \"emissions\" cümlenin devamında zaten geçiyor — çeldirici." }
+      ]
+    }
+  ]
+}

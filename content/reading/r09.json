@@ -1,0 +1,44 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "According to a popular legend, coffee was discovered by an Ethiopian goat herder who noticed that his animals became unusually lively after eating the red berries of a certain shrub. The story is almost certainly invented, but it is true that the coffee plant, Coffea arabica, originated in the highlands of Ethiopia. The earliest reliable evidence of coffee drinking, however, comes not from Africa but from Yemen, where Sufi religious communities in the fifteenth century used the drink to stay awake during night-time prayers." },
+    { "key": "B", "text": "From Yemen, coffee spread rapidly across the Islamic world. By the early sixteenth century, coffee houses had opened in Mecca, Cairo and Istanbul. These establishments quickly became centres of social life, where men gathered to talk, listen to music and play games. Not everyone welcomed them. Religious and political authorities sometimes viewed coffee houses with suspicion, fearing that they encouraged gossip and criticism of rulers, and several attempts were made to close them. None of these bans lasted long." },
+    { "key": "C", "text": "Coffee reached Europe in the seventeenth century through trade with the Ottoman Empire. The first coffee house in England opened in Oxford in 1650, and within a few decades London had hundreds. They were sometimes called 'penny universities', because for the price of a cup of coffee a customer could join conversations on politics, science and business. Some of the most important financial institutions of the modern world began in this way: the insurance market Lloyd's of London started in a coffee house where shipowners and merchants met to exchange news." },
+    { "key": "D", "text": "For many years, Yemen controlled the world's supply, and it was illegal to export plants or fertile seeds. This monopoly was eventually broken. In 1616 Dutch traders managed to obtain a coffee plant, and by the end of the century the Dutch were growing coffee in their colonies in Java. The French and Portuguese soon followed, establishing plantations in the Caribbean and Brazil. These plantations depended heavily on the labour of enslaved Africans, a history that is often forgotten by today's consumers." },
+    { "key": "E", "text": "Today, coffee is one of the most widely traded agricultural products in the world, and Brazil alone produces around a third of the global supply. Yet most of the roughly 25 million farmers who grow it are smallholders who receive only a small fraction of the price paid in shops. Climate change poses a further threat: some studies suggest that the area suitable for growing arabica coffee could fall by half by 2050, as rising temperatures and new diseases affect the plant." }
+  ],
+  "groups": [
+    {
+      "type": "tfng", "label": "True/False/Not Given",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose **TRUE**, **FALSE** or **NOT GIVEN**.",
+      "questions": [
+        { "id": "r09-1", "n": 1, "prompt": "The story of the goat herder is probably not true.", "answer": "TRUE", "quote": "The story is almost certainly invented", "explain": "\"probably not true\" = **almost certainly invented**." },
+        { "id": "r09-2", "n": 2, "prompt": "The first evidence of people drinking coffee comes from Ethiopia.", "answer": "FALSE", "quote": "The earliest reliable evidence of coffee drinking, however, comes not from Africa but from Yemen", "explain": "Bitki Etiyopya kökenli ama en eski içme kanıtı **Yemen**'den." },
+        { "id": "r09-3", "n": 3, "prompt": "Women were not allowed to enter early coffee houses.", "answer": "NOT GIVEN", "quote": "where men gathered to talk, listen to music and play games", "explain": "Erkeklerin toplandığı söyleniyor ama kadınların **yasaklandığına** dair bilgi yok. \"men gathered\" ≠ \"women were not allowed\"." },
+        { "id": "r09-4", "n": 4, "prompt": "Attempts to ban coffee houses were short-lived.", "answer": "TRUE", "quote": "None of these bans lasted long.", "explain": "\"short-lived\" = **did not last long**." },
+        { "id": "r09-5", "n": 5, "prompt": "The first English coffee house opened in London.", "answer": "FALSE", "quote": "The first coffee house in England opened in Oxford in 1650", "explain": "İlki **Oxford**'da açıldı." }
+      ]
+    },
+    {
+      "type": "match", "subtype": "info", "label": "Matching information",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, **A–E**.",
+      "options": [{ "key": "A", "text": "" }, { "key": "B", "text": "" }, { "key": "C", "text": "" }, { "key": "D", "text": "" }, { "key": "E", "text": "" }],
+      "questions": [
+        { "id": "r09-6", "n": 6, "prompt": "a reason why coffee houses were seen as places of learning", "answer": "C", "quote": "a customer could join conversations on politics, science and business", "explain": "'penny universities': bir fincan kahve fiyatına bilim ve siyaset sohbetleri." },
+        { "id": "r09-7", "n": 7, "prompt": "a prediction about future coffee production", "answer": "E", "quote": "the area suitable for growing arabica coffee could fall by half by 2050", "explain": "\"prediction\" = **could fall by half by 2050**." },
+        { "id": "r09-8", "n": 8, "prompt": "how one country lost its control of the coffee trade", "answer": "D", "quote": "This monopoly was eventually broken.", "explain": "Yemen tekeli Hollandalıların bitkiyi elde etmesiyle kırıldı." },
+        { "id": "r09-9", "n": 9, "prompt": "a reference to the original purpose of drinking coffee", "answer": "A", "quote": "used the drink to stay awake during night-time prayers", "explain": "İlk amaç: gece ibadetlerinde **uyanık kalmak**." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "sentence", "label": "Sentence completion", "maxWords": 2, "number": true,
+      "instructions": "Complete the sentences below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "questions": [
+        { "id": "r09-10", "n": 10, "prompt": "Coffee arrived in Europe as a result of trade with the ___.", "answer": ["Ottoman Empire"], "quote": "through trade with the Ottoman Empire", "explain": "**Ottoman Empire** ile ticaret yoluyla." },
+        { "id": "r09-11", "n": 11, "prompt": "Lloyd's of London began as a meeting place for shipowners and ___.", "answer": ["merchants"], "quote": "where shipowners and merchants met to exchange news", "explain": "shipowners and **merchants**." },
+        { "id": "r09-12", "n": 12, "prompt": "Dutch traders obtained a coffee plant in the year ___.", "answer": ["1616"], "quote": "In 1616 Dutch traders managed to obtain a coffee plant", "explain": "**1616**; 1650 İngiltere'deki ilk kahvehane (çeldirici)." },
+        { "id": "r09-13", "n": 13, "prompt": "About ___ of the world's coffee is produced in Brazil.", "answer": ["a third", "one third", "1/3"], "quote": "Brazil alone produces around a third of the global supply", "explain": "**a third** (üçte bir)." }
+      ]
+    }
+  ]
+}

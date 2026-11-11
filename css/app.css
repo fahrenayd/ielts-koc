@@ -317,3 +317,27 @@ select.gap { display: inline-block; width: auto; min-width: 84px; min-height: 40
 .live { min-height: 1.5em; }
 .self-row { padding: 6px 0; align-items: flex-start; }
 .metrics { margin-top: 10px; }
+
+/* ================= Pofi (maskot) ================= */
+.pofi-row { display: flex; gap: 10px; align-items: flex-start; }
+.pofi-wrap { flex: none; width: 56px; height: 56px; }
+.pofi-wrap svg { display: block; }
+.pofi-bubble { position: relative; flex: 1; min-width: 0; background: var(--surface-2); border-radius: 16px; padding: 10px 12px; }
+.pofi-row:not(.no-pofi) .pofi-bubble::before { content: ''; position: absolute; left: -7px; top: 18px; border: 7px solid transparent; border-left: 0; border-right-color: var(--surface-2); }
+.feedback .pofi-bubble { background: var(--surface); }
+.feedback .pofi-row:not(.no-pofi) .pofi-bubble::before { border-right-color: var(--surface); }
+.pofi-msg { font-weight: 650; margin-bottom: 4px; }
+.pofi-bubble > .small { margin-top: 4px; }
+.fb-lesson { margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: var(--primary-soft); }
+.feedback { padding: 10px; }
+.pofi-happy, .pofi-celebrate { animation: pofi-hop .6s ease-out; }
+.pofi-sad { animation: pofi-shake .5s ease-in-out; }
+.pofi-think { animation: pofi-tilt 1.2s ease-in-out; }
+@keyframes pofi-hop { 0% { transform: translateY(0); } 35% { transform: translateY(-10px); } 70% { transform: translateY(0); } 85% { transform: translateY(-3px); } 100% { transform: translateY(0); } }
+@keyframes pofi-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+@keyframes pofi-tilt { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-8deg); } }
+@media (prefers-reduced-motion: reduce) { .pofi { animation: none !important; } }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 10px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 99px; padding: 8px 14px; font: inherit; font-size: .85rem; cursor: pointer; min-height: 38px; }
+.chip.on { background: var(--primary); color: var(--primary-ink); border-color: var(--primary); }

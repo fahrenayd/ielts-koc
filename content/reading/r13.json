@@ -1,0 +1,53 @@
+{
+  "minutes": 20,
+  "paragraphs": [
+    { "key": "A", "text": "In 2015, electric vehicles accounted for less than 1% of new car sales worldwide. By 2023, that figure had risen to around 18%, and in Norway, where generous tax incentives were introduced early, more than 80% of new cars sold were fully electric. Governments in Europe and parts of Asia have announced plans to ban the sale of new petrol and diesel cars within the next two decades, making the transition seem inevitable." },
+    { "key": "B", "text": "The main attraction of electric cars is environmental. They produce no exhaust emissions, which improves air quality in cities, and over their lifetime they are generally responsible for lower carbon emissions than conventional cars. The size of this advantage, however, depends on how the electricity is generated. A car charged with power from coal-fired stations offers a much smaller benefit than one charged with wind or solar energy. Manufacturing the battery also produces significant emissions, so an electric car begins its life with a larger carbon footprint and only overtakes a petrol car after one to two years of driving." },
+    { "key": "C", "text": "Batteries remain the most expensive component and the source of several concerns. They rely on minerals such as lithium, cobalt and nickel, whose extraction can damage local environments, and a large share of the world's cobalt comes from the Democratic Republic of the Congo, where mining has been linked to child labour. Researchers are developing batteries that use more common materials, such as sodium, and recycling programmes aim to recover valuable metals from old batteries." },
+    { "key": "D", "text": "A further challenge is the electricity grid. If millions of drivers plug in their cars at the same time, for example when they return home from work, demand could rise sharply in the early evening, when it is already at its highest. Engineers propose 'smart charging', in which cars charge automatically during the night or when renewable electricity is plentiful and cheap. Some even suggest that parked cars could act as a vast network of batteries, returning electricity to the grid during periods of peak demand, a concept known as vehicle-to-grid." },
+    { "key": "E", "text": "For many consumers, however, the biggest obstacles are practical. Electric cars are still more expensive to buy than equivalent petrol models in most countries, although they are cheaper to run. Drivers also worry about range and the availability of charging points, especially those who live in flats without a private garage. Surveys suggest that this 'range anxiety' tends to disappear once people have actually owned an electric car for a few months." }
+  ],
+  "groups": [
+    {
+      "type": "match", "subtype": "headings", "label": "Matching headings",
+      "instructions": "Choose the correct heading for each paragraph, **A–E**, from the list below.",
+      "options": [
+        { "key": "i", "text": "Managing the demand for power" },
+        { "key": "ii", "text": "Rapid growth in sales" },
+        { "key": "iii", "text": "Worries that fade with experience" },
+        { "key": "iv", "text": "An environmental benefit with conditions" },
+        { "key": "v", "text": "Problems with a key component" },
+        { "key": "vi", "text": "The end of the petrol station" },
+        { "key": "vii", "text": "Why governments oppose electric cars" }
+      ],
+      "questions": [
+        { "id": "r13-1", "n": 1, "prompt": "Paragraph A", "answer": "ii", "quote": "By 2023, that figure had risen to around 18%", "explain": "%1'den %18'e: **hızlı büyüme**." },
+        { "id": "r13-2", "n": 2, "prompt": "Paragraph B", "answer": "iv", "quote": "The size of this advantage, however, depends on how the electricity is generated.", "explain": "Çevresel fayda var ama **koşullara bağlı**." },
+        { "id": "r13-3", "n": 3, "prompt": "Paragraph C", "answer": "v", "quote": "Batteries remain the most expensive component and the source of several concerns.", "explain": "\"key component\" = **battery**." },
+        { "id": "r13-4", "n": 4, "prompt": "Paragraph D", "answer": "i", "quote": "A further challenge is the electricity grid.", "explain": "Şebekede talebin yönetimi: smart charging, vehicle-to-grid." },
+        { "id": "r13-5", "n": 5, "prompt": "Paragraph E", "answer": "iii", "quote": "this 'range anxiety' tends to disappear once people have actually owned an electric car", "explain": "\"fade with experience\" = **disappear once people have owned** one." }
+      ]
+    },
+    {
+      "type": "gap", "subtype": "table", "label": "Table completion", "maxWords": 2, "number": true,
+      "instructions": "Complete the notes below. Choose **NO MORE THAN TWO WORDS AND/OR A NUMBER** from the passage for each answer.",
+      "text": "# Electric vehicles: key points\nShare of new car sales worldwide in 2023: about {{6}}\nAn electric car overtakes a petrol car's emissions after {{7}} of driving\nMineral linked to child labour in the Congo: {{8}}\nAlternative battery material being researched: {{9}}\nCharging cars at night or when renewable power is cheap: {{10}}",
+      "questions": [
+        { "id": "r13-6", "n": 6, "answer": ["18%", "18 percent", "18 per cent"], "quote": "that figure had risen to around 18%", "explain": "**18%**; %80 Norveç (çeldirici)." },
+        { "id": "r13-7", "n": 7, "answer": ["1-2 years", "1–2 years"], "quote": "only overtakes a petrol car after one to two years of driving", "explain": "Metinde \"one to two years\" (4 kelime) geçiyor; sınır iki kelime + sayı olduğu için rakamla **1-2 years** yazmalısın. Sınavda sayıları rakamla yazmak kelime sınırını korur." },
+        { "id": "r13-8", "n": 8, "answer": ["cobalt"], "quote": "a large share of the world's cobalt comes from the Democratic Republic of the Congo", "explain": "**cobalt**." },
+        { "id": "r13-9", "n": 9, "answer": ["sodium"], "quote": "batteries that use more common materials, such as sodium", "explain": "**sodium**." },
+        { "id": "r13-10", "n": 10, "answer": ["smart charging"], "quote": "Engineers propose 'smart charging'", "explain": "**smart charging**." }
+      ]
+    },
+    {
+      "type": "mcq",
+      "instructions": "Choose the correct letter, **A**, **B**, **C** or **D**.",
+      "questions": [
+        { "id": "r13-11", "n": 11, "prompt": "Why might charging cause problems for the grid?", "options": ["Electric cars use more power than homes.", "Many drivers may charge when demand is already highest.", "Charging points are badly designed.", "Renewable energy is unreliable."], "answer": "B", "quote": "demand could rise sharply in the early evening, when it is already at its highest", "explain": "Herkes akşam aynı anda şarj ederse zirve talebi **daha da artar**." },
+        { "id": "r13-12", "n": 12, "prompt": "What is 'vehicle-to-grid'?", "options": ["a type of fast charger", "a system in which parked cars supply electricity to the grid", "a government subsidy", "a road reserved for electric cars"], "answer": "B", "quote": "returning electricity to the grid during periods of peak demand", "explain": "Park hâlindeki arabalar şebekeye elektrik **geri verir**." },
+        { "id": "r13-13", "n": 13, "prompt": "According to paragraph E, electric cars are", "options": ["cheaper to buy and to run.", "more expensive to buy but cheaper to run.", "cheaper to buy but more expensive to run.", "more expensive to buy and to run."], "answer": "B", "quote": "Electric cars are still more expensive to buy than equivalent petrol models in most countries, although they are cheaper to run.", "explain": "Alması **pahalı**, kullanması **ucuz**." }
+      ]
+    }
+  ]
+}
